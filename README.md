@@ -9,7 +9,7 @@ The main goal is running in a map to reach the end and get the loot to kill the 
 \
 **This plugin does NOT modify tab, nametags above player head, chat or regenerate arenas.**
 ## Resources
-- [Free version](https://www.spigotmc.org/resources/X/)
+- [Free version](https://www.spigotmc.org/resources/108351/)
 - [Issue tracker](https://github.com/AlonsoAliaga/AlonsoRFTB/issues)
 - [Donate](https://paypal.me/AlonsoAliaga)
 - [bStats](https://bstats.org/plugin/bukkit/AlonsoRFTB/17679/)
