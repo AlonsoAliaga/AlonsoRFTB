@@ -1,1 +1,1387 @@
-a
+#               _   _                  ___ ___ _____ ___             Our plugins: https://alonsoaliaga.com/plugins
+#              /_\ | |___ _ _  ___ ___| _ \ __|_   _| _ )            Support server: https://alonsoaliaga.com/discord
+#             / _ \| / _ \ ' \(_-</ _ \   / _|  | | | _ \            Youtube: https://alonsoaliaga.com/play
+#            /_/ \_\_\___/_||_/__/\___/_|_\_|   |_| |___/            Test server: plugins.alonsoaliaga.com
+#                         by AlonsoAliaga                            Twitch: https://alonsoaliaga.com/twitch
+#       Considering donating? https://alonsoaliaga.com/donate        Only buyers receive support.
+Messages:
+  No-permission: "&cYou don't have permission to do this."
+  Reloaded: "&aSome messages and options have been reloaded. Other may require a restart!"
+  Invalid-player: "&cPlayer is not online!"
+  Please-reconnect: "&cYou data couldn't be loaded. Please reconnect to the server!"
+  Please-reconnect-other: "&cTarget data couldn't be loaded. Tell him to reconnect to the server!"
+  Help:
+    Admin:
+    - "&5 /alonsorftb playagain &f- &dSearch for a new game"
+    - "&5 /alonsorftb runnershop &f- &dOpen runners shop"
+    - "&5 /alonsorftb beastshop &f- &dOpen beasts shop"
+    - "&5 /alonsorftb createarena &f- &dCreates a new arena &7(One per world)"
+    - "&5 /alonsorftb editarena &f- &dEdit an existing arena"
+    - "&5 /alonsorftb customitem &f- &dSaves your current main hand item"
+    - "&5 /alonsorftb setlobby &f- &dSet main lobby"
+    - "&5 /alonsorftb stopediting &f- &dStop editing the current arena"
+    - "&5 /alonsorftb togglearena &f- &dToggle arena state &7(enable/disable)"
+    - "&5 /alonsorftb reload &f- &dReload configuration (Restart recommended)"
+    User:
+    - "&5 /alonsorftb playagain &f- &dSearch for a new game"
+    - "&5 /alonsorftb runnershop &f- &dOpen runners shop"
+    - "&5 /alonsorftb beastshop &f- &dOpen beasts shop"
+  Checkpoint:
+    No-space:
+    - "&cThere isn't space enough to place this checkpoint! (2 blocks)"
+    Must-be-same-height:
+    - "&cIn this game you can only place checkpoints in your same height!"
+    Not-selected:
+    - "&cYou haven't selected any checkpoint yet."
+    Teleported:
+    - "&6✦ &bYou were teleported to your last checkpoint."
+    Replaced:
+    - "&aYou replaced your last checkpoint. Right click the checkpoint or the nether star to teleport to it!"
+    Selected:
+    - "&aYou selected a checkpoint. Right click the checkpoint or the nether star to teleport to it!"
+    Beast-disabled:
+    - "&cBeasts cannot select checkpoint.."
+    Hologram-lines:
+    - "%vault_prefix%&f{PLAYER}'s'"
+    - "&7checkpoint"
+  Shop:
+    Cannot-select-more-runner-items:
+    - "&cYou can select up to {AMOUNT} items in the runners store."
+    - "&cPurchase a rank in &bstore.yournetwork.net&c to increase this limit!"
+    Cannot-select-more-beast-items:
+    - "&cYou can select up to {AMOUNT} items in the beasts store."
+    - "&cPurchase a rank in &bstore.yournetwork.net&c to increase this limit!"
+    No-shop-in-this-world: "&cThis world is not an arena. You cannot do this here!"
+    No-shop-game-started: "&cGame has already started in this world!"
+    Broadcast-selected-beast:
+    - "&c&l{PLAYER} was selected to be the Beast!"
+    Broadcast-selected-beast-pass:
+    - "&c&l{PLAYER} used &6⛨ &6&l&nBEAST PASS&r &6⛨&c&l to be selected as the Beast!"
+    Notify-lost-beast-pass:
+    - "&a- {PRICE} &7(Purchased {NAME}&7)"
+    - "&c&lYou left the game after being selected as beast using a &6⛨ &6&l&nBEAST PASS&r &6⛨&c&l."
+  Placeholders:
+    Player: "%vault_prefix% {PLAYER}"
+    Scoreboard:
+      Beasts: "Beasts"
+      Runners: "Runners"
+    Tab:
+      Arena: "&7[&6{ARENA_NAME}&7]"
+      Spawn: "&7[&6Lobby&7]"
+      Beast: " &c&lBEAST"
+      Runner: ""
+      Spectator: "&7[SPECTATOR]"
+      None: ""
+    Tag:
+      Arena: "&7[&6{ARENA_NAME}&7]"
+      Spawn: "&7[&6Lobby&7]"
+      Beast: " &c&lBEAST"
+      Runner: ""
+      Spectator: " &7[SPECTATOR]"
+      None: ""
+    Chat:
+      Arena: "&7[&6{ARENA_NAME}&7]"
+      Spawn: "&7[&6Lobby&7]"
+      Beast: " &c&lBEAST"
+      Runner: ""
+      Spectator: ""
+      None: ""
+    Score:
+      Arena: "&7[&6{ARENA_NAME}&7]"
+      Spawn: "&7[&6Lobby&7]"
+      Beast: "&c&lBEAST"
+      Runner: "&e&lRunner"
+      Spectator: "&7Spectator"
+      None: "&7Unknown"
+      Beasts: "&c&lBEASTS"
+      Runners: "&e&lRUNNERS"
+  Leaderboards:
+    Signs:
+      Runner-wins:
+        Rank:
+        - "&c--&e #{RANKING} &c--"
+        - "&f{PLAYER}"
+        - "&b{SCORE} wins"
+        - "&c-------------"
+        None:
+        - "&c--&e #{RANKING} &c--"
+        - "&cNo player"
+        - "&bUnknown"
+        - "&c-------------"
+      Beast-wins:
+        Rank:
+        - "&c--&e #{RANKING} &c--"
+        - "&f{PLAYER}"
+        - "&b{SCORE} wins"
+        - "&c-------------"
+        None:
+        - "&c--&e #{RANKING} &c--"
+        - "&cNo player"
+        - "&bUnknown"
+        - "&c-------------"
+      Runner-kills:
+        Rank:
+        - "&c--&e #{RANKING} &c--"
+        - "&f{PLAYER}"
+        - "&b{SCORE} kills"
+        - "&c-------------"
+        None:
+        - "&c--&e #{RANKING} &c--"
+        - "&cNo player"
+        - "&bUnknown"
+        - "&c-------------"
+      Beast-kills:
+        Rank:
+        - "&c--&e #{RANKING} &c--"
+        - "&f{PLAYER}"
+        - "&b{SCORE} kills"
+        - "&c-------------"
+        None:
+        - "&c--&e #{RANKING} &c--"
+        - "&cNo player"
+        - "&bUnknown"
+        - "&c-------------"
+      Played-games:
+        Rank:
+        - "&c--&e #{RANKING} &c--"
+        - "&f{PLAYER}"
+        - "&b{SCORE} games"
+        - "&c-------------"
+        None:
+        - "&c--&e #{RANKING} &c--"
+        - "&cNo player"
+        - "&bUnknown"
+        - "&c-------------"
+      Gg-amount:
+        Rank:
+        - "&c--&e #{RANKING} &c--"
+        - "&f{PLAYER}"
+        - "&b{SCORE} GGs"
+        - "&c-------------"
+        None:
+        - "&c--&e #{RANKING} &c--"
+        - "&cNo player"
+        - "&bUnknown"
+        - "&c-------------"
+    Placeholders:
+      Disabled: "&7Leaderboards not available!"
+      Runner-wins:
+        No-name: "&7Unknown"
+        No-score: "&7Unknown"
+        Rank: "&e{RANKING}. &b{PLAYER} &7- &e{SCORE}"
+        None: "&7No data available"
+      Beast-wins:
+        No-name: "&7Unknown"
+        No-score: "&7Unknown"
+        Rank: "&e{RANKING}. &b{PLAYER} &7- &e{SCORE}"
+        None: "&7No data available"
+      Runner-kills:
+        No-name: "&7Unknown"
+        No-score: "&7Unknown"
+        Rank: "&e{RANKING}. &b{PLAYER} &7- &e{SCORE}"
+        None: "&7No data available"
+      Beast-kills:
+        No-name: "&7Unknown"
+        No-score: "&7Unknown"
+        Rank: "&e{RANKING}. &b{PLAYER} &7- &e{SCORE}"
+        None: "&7No data available"
+      Played-games:
+        No-name: "&7Unknown"
+        No-score: "&7Unknown"
+        Rank: "&e{RANKING}. &b{PLAYER} &7- &e{SCORE}"
+        None: "&7No data available"
+      Gg-amount:
+        No-name: "&7Unknown"
+        No-score: "&7Unknown"
+        Rank: "&e{RANKING}. &b{PLAYER} &7- &e{SCORE}"
+        None: "&7No data available"
+  Game:
+    Scout-rod-cooldown: "&cScout rod is on cooldown for {TIME}!"
+    Cannot-use-two-scout-rods: "&cYou cannot wear two rods at the same time!"
+    Mount-no-permission:
+    - "&cYou can't mount players. Purchase &a[RANK]&c on &bstore.yournetwork.net&c!"
+    Dismount-no-permission:
+    - "&cYou can't dismount players. Purchase &a[RANK]&c on &bstore.yournetwork.net&c!"
+    Someone-already-mounting: "&c&lA player is already mounting {TARGET}!"
+    You-already-mounting: "&c&lYou are already mounting a player!"
+    Target-is-mounting: "&c&l{TARGET} is mounting a player!"
+    You-dismounted-player: "&eYou dismounted {TARGET}!"
+    Someone-dismounted-you: "&e{RIDER} is no longer mounting you!"
+    Blacklisted-until-game-ends-message:
+    - "&cYou can not longer join this arena until game ends!"
+    Disabled-cobweb-message:
+    - "&cCobweb cannot be removed in this arena!"
+    You-are-riding-player:
+    - "&cYou are riding {TARGET}!"
+    Someone-is-riding-you-ranked:
+    - "&c{PLAYER} is riding you and cannot receive damage!"
+    Someone-is-riding-you-no-ranked:
+    - "&c{PLAYER} is riding you and cannot receive damage!"
+    - "&cPurchase &a[RANK]&c on &bstore.yournetwork.net&c to ride others!"
+    Eject-no-permission:
+    - "&cPurchase &a[RANK]&c on &bstore.yournetwork.net&c to eject players!"
+    Left-click-to-eject: "&fLeft click to eject {PLAYER}!"
+    You-were-ejected: "&cYou were ejected by {PLAYER}!"
+    You-ejected-player: "&cYou ejected {TARGET} from your head!"
+    Arena-cannot-receive-players-already-started:
+    - "&cArena has already started and cannot receive players!"
+    Arena-cannot-receive-players-restarting:
+    - "&cArena is busy and cannot receive players!"
+    Arena-cannot-receive-spectators-not-started:
+    - "&cArena is waiting for players and cannot receive spectators!"
+    Arena-cannot-receive-spectators-restarting:
+    - "&cArena is busy and cannot receive spectators!"
+    Select-game-no-permission:
+    - "&cYou cannot select an arena to join. Only random arenas :("
+    - "&cPurchase &a[RANK]&c in &bstore.yournetwork.net&c to select arenas!"
+    Open-arenas-while-playing:
+    - "&cYou cannot open arenas while playing a game!"
+    Open-arenas-no-this-world:
+    - "&cYou can use this command in lobby only!"
+    Play-again-already-playing:
+    - "&cYou are already playing a game!"
+    Random-arena-already-playing:
+    - "&cYou are already playing a game!"
+    Random-arena-no-arena:
+    - "&cThere aren't arenas waiting for players. Try again in some seconds :("
+    Play-again-no-arena:
+    - "&cThere aren't arenas waiting for players. Try again in some seconds :("
+    Random-arena-no-arena-no-rank:
+    - "&cThere aren't arenas available with a free slot for you :("
+    - "&cPurchase &a[RANK]&c in &bstore.yournetwork.net&c to join full arenas!"
+    Play-again-no-arena-no-rank:
+    - "&cThere aren't arenas available with a free slot for you :("
+    - "&cPurchase &a[RANK]&c in &bstore.yournetwork.net&c to join full arenas!"
+    Play-again-no-permission:
+    - "&cPurchase &a[RANK]&c in &bstore.yournetwork.net&c to use play again shortcut!"
+    Game-is-full:
+    - "&cGame is full! Purchase &a[RANK]&c in &bstore.yournetwork.net&c to join full games!"
+    Stopped-not-enough-players:
+    - "&cGame will not start! There aren't enough players to start the game. (&f{PLAYERS}&c/&f{MIN}&c)"
+    Stopped-not-enough-beasts:
+    - "&cGame will not start! All beasts left the game."
+    Stopped-not-enough-runners:
+    - "&cGame will not start! All runners left the game."
+    Joined-arena:
+    - "&a%vault_prefix% &f{PLAYER} &7joined the game! (&f{PLAYERS}&7/&f{MAX}&7)"
+    Joined-full-arena:
+    - "&a%vault_prefix% &f{PLAYER} &7joined the game! (&c&l{PLAYERS}&7/&f{MAX}&7)"
+    Left-arena:
+    - "&a%vault_prefix% &f{PLAYER} &7left the game! (&f{PLAYERS}&7/&f{MAX}&7)"
+    Starting:
+    - "&eThe game starts in {TIME} seconds."
+    Started-runners:
+    - "&eRun! Beast will be released in {TIME} seconds."
+    Started-beasts:
+    - "&eRunners have been released! Be ready to hunt them."
+    Releasing:
+    - "&eBeasts will be released in {TIME} seconds!"
+    Released-runners:
+    - "&c&lRUN! BEASTS HAVE BEEN RELEASED!"
+    Released-beasts:
+    - "&c&lYOU HAVE BEEN RELEASED! HUNT ALL RUNNERS!"
+    Escaping-runners-win-runners:
+    - "&b✦ &eIf you survive for {TIME} seconds you'll win the game!"
+    Escaping-beasts-win-runners:
+    - "&b✦ &cYou have {TIME} to kill runners, otherwise they will win!"
+    Escaping-spectators-win-runners:
+    - "&b✦ &cRunners must survival for {TIME} seconds to win!"
+    Escaping-runners-win-beasts:
+    - "&b✦ &eIf you don't kill the beast in {TIME} seconds you'll lose the game!"
+    Escaping-beasts-win-beasts:
+    - "&b✦ &cThe runners have {TIME} seconds to kill you, otherwise you will win!"
+    Escaping-spectators-win-beasts:
+    - "&b✦ &cRunners have {TIME} seconds to kill the beast!"
+    Beast-left:
+    - "&6✦ &cBeast {PLAYER} left the game!"
+    - "&6✦ &cBeast {PLAYER} abandoned the game!"
+    Beast-killed:
+    - "&6✦ &cBeast {KILLED} was killed!"
+    - "&6✦ &cSomehow beast {KILLED} died!"
+    - "&6✦ &cBeast {KILLED} found his death!"
+    Beast-killed-by-player:
+    - "&6✦ &cBeast {KILLED} was killed by {KILLER}!"
+    - "&6✦ &cRunner {KILLER} killed the beast {KILLED}!"
+    - "&6✦ &cRunner {KILLER} finished the beast {KILLED}!"
+    Runner-left:
+    - "&6✦ &cRunner {PLAYER} left the game!"
+    - "&6✦ &cRunner {PLAYER} abandoned the game!"
+    Runner-killed:
+    - "&6✦ &cRunner {KILLED} was killed!"
+    - "&6✦ &cSomehow runner {KILLED} died!"
+    - "&6✦ &cRunner {KILLED} found his death!"
+    Runner-killed-by-player:
+    - "&6✦ &cBeast {KILLER} killed the runner {KILLED}!"
+    - "&6✦ &cRunner {KILLED} was killed by the beast {KILLER}!"
+    - "&6✦ &cRunner {KILLED} was finished by the beast {KILLER}!"
+    - "&6✦ &cBeast {KILLER} finished the runner {KILLED}!"
+    Ending:
+    - "&cReturning to lobby in {TIME}!"
+    Ending-done:
+    - "&b✦ &cYou returned to lobby!"
+    Cobweb-no-permission:
+    - "&cYou cannot break cobweb. Purchase &a[RANK]&c rank on &bstore.yournetwork.net&c to unlock this! "
+    Cannot-place-here: "&cYou cannot place that here."
+    Cannot-break-here: "&cYou cannot break that here."
+    Zapper-shooter: "&eYou hit &b{TARGET}&e with your zapper!"
+    Zapper-target: "&c&lYou were zapped!"
+    Beasts-win:
+      Player-placeholder: "&c%vault_prefix% {PLAYER}"
+      Joiner: "&f, "
+      Message-for-beasts:
+      - "&a&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+      - "                           &c&lBEASTS WON THE GAME!"
+      - "                    &7Beasts have defeated all runners!"
+      - "&cBeasts: {BEASTS}"
+      - "{CREDITS}"
+      - "&a&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+      Message-for-runners:
+      - "&a&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+      - "                           &c&lBEASTS WON THE GAME!"
+      - "                    &7Beasts have defeated all runners!"
+      - "&cBeasts: {BEASTS}"
+      - "{CREDITS}"
+      - "&a&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+      Message-for-others:
+      - "&a&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+      - "                           &c&lBEASTS WON THE GAME!"
+      - "                    &7Beasts have defeated all runners!"
+      - "&cBeasts: {BEASTS}"
+      - "{CREDITS}"
+      - "&a&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+      Left-game:
+      - "&6✦ Arena {ARENA_NAME} has finished. Here is your reward for playing!"
+      Broadcast:
+      - "&4☠ &c&nBeasts&7 defeated runners in arena &c{ARENA_NAME}&7!"
+      - "&4☠ &c&nBeasts&7 destroyed runners in arena &c{ARENA_NAME}&7!"
+      - "&4☠ &c&nBeasts&7 hunted runners in arena &c{ARENA_NAME}&7!"
+      - "&4☠ &c&nBeasts&7 murdered runners in arena &c{ARENA_NAME}&7!"
+    Runners-win:
+      Player-placeholder: "&e%vault_prefix% {PLAYER}"
+      Joiner: "&f, "
+      Message-for-runners:
+      - "&a&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+      - "                        &e&lRUNNERS WON THE GAME!"
+      - "                    &7Runners have defeated the beast!"
+      - "&eRunners: {RUNNERS}"
+      - "{CREDITS}"
+      - "&a&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+      Message-for-beasts:
+      - "&a&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+      - "                        &e&lRUNNERS WON THE GAME!"
+      - "                    &7Runners have defeated the beast!"
+      - "&eRunners: {RUNNERS}"
+      - "{CREDITS}"
+      - "&a&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+      Message-for-others:
+      - "&a&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+      - "                        &e&lRUNNERS WON THE GAME!"
+      - "                    &7Runners have defeated the beast!"
+      - "&eRunners: {RUNNERS}"
+      - "{CREDITS}"
+      - "&a&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+      Left-game:
+      - "&6✦ Arena {ARENA_NAME} has finished. Here is your reward for playing!"
+      Broadcast:
+      - "&a⛏ &e&nRunners&7 defeated beast in arena &e{ARENA_NAME}&7!"
+      - "&a⛏ &e&nRunners&7 destroyed beast in arena &e{ARENA_NAME}&7!"
+      - "&a⛏ &e&nRunners&7 hunted beast in arena &e{ARENA_NAME}&7!"
+      - "&a⛏ &e&nRunners&7 murdered beast in arena &e{ARENA_NAME}&7!"
+    #This feature is in BETA and is not part of the plugin. Just for testing.
+    BossBar:
+      WAITING:
+        Color: "PINK"
+        Lines:
+        - "&e&lYOU ARE PLAYING IN &b&lYOURNETWORK.NET&e!"
+        - "&a&lYOU ARE PLAYING IN &b&lYOURNETWORK.NET&e!"
+        - "&e&lYOU ARE PLAYING IN &b&lYOURNETWORK.NET&e!"
+        - "&d&lYOU ARE PLAYING IN &b&lYOURNETWORK.NET&e!"
+        - "&e&lYOU ARE PLAYING IN &b&lYOURNETWORK.NET&e!"
+      STARTING:
+        Color: "RED"
+        Lines:
+        - "&eGame starts in &c{TIME_LEFT} seconds&e!"
+        - "&bGame starts in &c{TIME_LEFT} seconds&b!"
+      RELEASING:
+        Color: "GREEN"
+        Lines:
+        - "&c&lRUN! &eBeast will be released in &c{TIME_LEFT} seconds&e!"
+        - "&c&lRUN! &bBeast will be released in &c{TIME_LEFT} seconds&b!"
+      PLAYING:
+        Color: "YELLOW"
+        Lines:
+        - "&fDistance from beast: &c{DISTANCE}"
+        - "&eDistance from beast: &c{DISTANCE}"
+      FINISHING:
+        Color: "RED"
+        Lines:
+        - "&eReturning to lobby in &c{TIME_LEFT} seconds&e!"
+        - "&bReturning to lobby in &c{TIME_LEFT} seconds&b!"
+  Spectate:
+    Title: "&8Spectator menu"
+    No-permission:
+    - "&cYou don't have permission. Purchase &a[RANK]&c to spectate games!"
+    Target-not-online: "&c{TARGET} is not in this game anymore!"
+    Teleported-to-beast:
+    - "&cYou were teleported to the beast &f%vault_prefix% {TARGET}&c!"
+    Teleported-to-runner:
+    - "&cYou were teleported to the runner &f%vault_prefix% {TARGET}&c!"
+    Target-not-in-game: "&c{TARGET} is not in this game anymore!"
+
+Scoreboards:
+  WAITING:
+    v1_8:
+      Title: "&e&lRUN FROM THE BEAST"
+      #Max amount of lines is 16 of course. as MINECRAFT as always been.
+      Lines:
+      - ""
+      - "&fMap: &a{ARENA_NAME}"
+      - "&fPlayers: &a{PLAYERS}/{MAX_PLAYERS}"
+      - ""
+      - "&fWaiting.."
+      - ""
+      - "&fServer: &a{FAKE_SERVER}"
+      - ""
+      - "&e     yournetwork.net     "
+    v1_13:
+      Title: "&e&lRUN FROM THE BEAST"
+      Lines:
+      - ""
+      - "&fMap: &a{ARENA_NAME}"
+      - "&fPlayers: &a{PLAYERS}/{MAX_PLAYERS}"
+      - ""
+      - "&fWaiting.."
+      - ""
+      - "&fServer: &a{FAKE_SERVER}"
+      - ""
+      - "&e     yournetwork.net     "
+    v1_16:
+      Title: "&#ff9b17&lE&#ffa216&lS&#ffa915&lC&#ffb014&lA&#ffb613&lP&#ffbd12&lA &#ffc411&lD&#ffcd0f&lE &#ffd70c&lN&#ffe00a&lI&#ffe907&lH&#fff305&lI&#fffc02&lL"
+      Lines:
+      - ""
+      - "&fMap: &a{ARENA_NAME}"
+      - "&fPlayers: &a{PLAYERS}/{MAX_PLAYERS}"
+      - ""
+      - "&fWaiting.."
+      - ""
+      - "&fServer: &a{FAKE_SERVER}"
+      - ""
+      - "&e     yournetwork.net     "
+  STARTING:
+    v1_8:
+      Title: "&e&lRUN FROM THE BEAST"
+      Lines:
+      - ""
+      - "&fMap: &a{ARENA_NAME}"
+      - "&fPlayers: &a{PLAYERS}/{MAX_PLAYERS}"
+      - ""
+      - "&fStarting in &a{TIME_LEFT}s"
+      - ""
+      - "&fServer: &a{FAKE_SERVER}"
+      - ""
+      - "&e     yournetwork.net     "
+    v1_13:
+      Title: "&e&lRUN FROM THE BEAST"
+      Lines:
+      - ""
+      - "&fMap: &a{ARENA_NAME}"
+      - "&fPlayers: &a{PLAYERS}/{MAX_PLAYERS}"
+      - ""
+      - "&fStarting in &a{TIME_LEFT}s"
+      - ""
+      - "&fServer: &a{FAKE_SERVER}"
+      - ""
+      - "&e     yournetwork.net     "
+    v1_16:
+      Title: "&#ff9b17&lE&#ffa216&lS&#ffa915&lC&#ffb014&lA&#ffb613&lP&#ffbd12&lA &#ffc411&lD&#ffcd0f&lE &#ffd70c&lN&#ffe00a&lI&#ffe907&lH&#fff305&lI&#fffc02&lL"
+      Lines:
+      - ""
+      - "&fMap: &a{ARENA_NAME}"
+      - "&fPlayers: &a{PLAYERS}/{MAX_PLAYERS}"
+      - ""
+      - "&fStarting in &a{TIME_LEFT}s"
+      - ""
+      - "&fServer: &a{FAKE_SERVER}"
+      - ""
+      - "&e     yournetwork.net     "
+  RELEASING:
+    v1_8:
+      Title: "&e&lRUN FROM THE BEAST"
+      Lines:
+      - "&7{DATE} &8{FAKE_SERVER}"
+      - ""
+      - "&fMap: &a{ARENA_NAME}"
+      - ""
+      - "&fBeasts: &b{BEASTS}"
+      - "&fRunners: &b{RUNNERS}"
+      - ""
+      - "&fBeast released in &c{TIME_LEFT}s"
+      - ""
+      - "&e     yournetwork.net     "
+    v1_13:
+      Title: "&e&lRUN FROM THE BEAST"
+      Lines:
+      - "&7{DATE} &8{FAKE_SERVER}"
+      - ""
+      - "&fMap: &a{ARENA_NAME}"
+      - ""
+      - "&fBeasts: &b{BEASTS}"
+      - "&fRunners: &b{RUNNERS}"
+      - ""
+      - "&fBeast released in &c{TIME_LEFT}s"
+      - ""
+      - "&e     yournetwork.net     "
+    v1_16:
+      Title: "&#ff9b17&lE&#ffa216&lS&#ffa915&lC&#ffb014&lA&#ffb613&lP&#ffbd12&lA &#ffc411&lD&#ffcd0f&lE &#ffd70c&lN&#ffe00a&lI&#ffe907&lH&#fff305&lI&#fffc02&lL"
+      Lines:
+      - "&7{DATE} &8{FAKE_SERVER}"
+      - ""
+      - "&fMap: &a{ARENA_NAME}"
+      - ""
+      - "&fBeasts: &b{BEASTS}"
+      - "&fRunners: &b{RUNNERS}"
+      - ""
+      - "&fBeast released in &c{TIME_LEFT}s"
+      - ""
+      - "&e     yournetwork.net     "
+  PLAYING:
+    v1_8:
+      Title: "&e&lRUN FROM THE BEAST"
+      Lines:
+      - "&7{DATE} &8{FAKE_SERVER}"
+      - ""
+      - "&fMap: &a{ARENA_NAME}"
+      - ""
+      - "&fBeasts: &b{BEASTS}"
+      - "&fRunners: &b{RUNNERS}"
+      - ""
+      - "&fYou are {YOU_ARE}"
+      - "&f{TEAM_TIME_OUT} win in &a{TIME_LEFT}s"
+      - ""
+      - "&e     yournetwork.net     "
+    v1_13:
+      Title: "&e&lRUN FROM THE BEAST"
+      Lines:
+      - "&7{DATE} &8{FAKE_SERVER}"
+      - ""
+      - "&fMap: &a{ARENA_NAME}"
+      - ""
+      - "&fBeasts: &b{BEASTS}"
+      - "&fRunners: &b{RUNNERS}"
+      - ""
+      - "&fYou are {YOU_ARE}"
+      - "&f{TEAM_TIME_OUT} win in &a{TIME_LEFT}s"
+      - ""
+      - "&e     yournetwork.net     "
+    v1_16:
+      Title: "&#ff9b17&lE&#ffa216&lS&#ffa915&lC&#ffb014&lA&#ffb613&lP&#ffbd12&lA &#ffc411&lD&#ffcd0f&lE &#ffd70c&lN&#ffe00a&lI&#ffe907&lH&#fff305&lI&#fffc02&lL"
+      Lines:
+      - "&7{DATE} &8{FAKE_SERVER}"
+      - ""
+      - "&fMap: &a{ARENA_NAME}"
+      - ""
+      - "&fBeasts: &b{BEASTS}"
+      - "&fRunners: &b{RUNNERS}"
+      - ""
+      - "&fYou are {YOU_ARE}"
+      - "&f{TEAM_TIME_OUT} win in &a{TIME_LEFT}s"
+      - ""
+      - "&e     yournetwork.net     "
+  FINISHING:
+    v1_8:
+      Title: "&e&lRUN FROM THE BEAST"
+      Lines:
+      - "&7{DATE} &8{FAKE_SERVER}"
+      - ""
+      - "&fMap: &a{ARENA_NAME}"
+      - ""
+      - "&fYou are {YOU_ARE}"
+      - "&fWinner team: {WINNER_TEAM}"
+      - ""
+      - "&fReturning to lobby in &c{TIME_LEFT}s"
+      - ""
+      - "&e     yournetwork.net     "
+    v1_13:
+      Title: "&e&lRUN FROM THE BEAST"
+      Lines:
+      - "&7{DATE} &8{FAKE_SERVER}"
+      - ""
+      - "&fMap: &a{ARENA_NAME}"
+      - ""
+      - "&fYou are {YOU_ARE}"
+      - "&fWinner team: {WINNER_TEAM}"
+      - ""
+      - "&fReturning to lobby in &c{TIME_LEFT}s"
+      - ""
+      - "&e     yournetwork.net     "
+    v1_16:
+      Title: "&#ff9b17&lE&#ffa216&lS&#ffa915&lC&#ffb014&lA&#ffb613&lP&#ffbd12&lA &#ffc411&lD&#ffcd0f&lE &#ffd70c&lN&#ffe00a&lI&#ffe907&lH&#fff305&lI&#fffc02&lL"
+      Lines:
+      - "&7{DATE} &8{FAKE_SERVER}"
+      - ""
+      - "&fMap: &a{ARENA_NAME}"
+      - ""
+      - "&fYou are {YOU_ARE}"
+      - "&fWinner team: {WINNER_TEAM}"
+      - ""
+      - "&fReturning to lobby in &c{TIME_LEFT}s"
+      - ""
+      - "&e     yournetwork.net     "
+
+Items:
+  Setup:
+    Waiting-location:
+      Material: "CLOCK"
+      Texture: ""
+      Custom-model-data: 0
+      Displayname: "&eSet waiting location &7(Right click to select)"
+      Lore: []
+      Glow: true
+      Hide-flags: true
+    Cage-location:
+      Material: "IRON_INGOT"
+      Texture: ""
+      Custom-model-data: 0
+      Displayname: "&bSet cage location &7(Right click to select)"
+      Lore: []
+      Glow: true
+      Hide-flags: true
+    Runners-location:
+      Material: "FEATHER"
+      Texture: ""
+      Custom-model-data: 0
+      Displayname: "&aSet runners location &7(Right click to select)"
+      Lore: []
+      Glow: true
+      Hide-flags: true
+    Beasts-location:
+      Material: "DIAMOND"
+      Texture: ""
+      Custom-model-data: 0
+      Displayname: "&cSet beasts location &7(Right click to select)"
+      Lore: []
+      Glow: true
+      Hide-flags: true
+    Spectators-location:
+      Material: "EMERALD"
+      Texture: ""
+      Custom-model-data: 0
+      Displayname: "&cSet spectator location &6&l(OPTIONAL)"
+      Lore:
+      - "&7Right click to set spectator location."
+      - "&7If selected, players will be teleported"
+      - "&7to this location when spectating and won't"
+      - "&7be teleported to random beast or player."
+      Glow: true
+      Hide-flags: true
+    Refill-chest:
+      Material: "BLAZE_ROD"
+      Texture: ""
+      Custom-model-data: 0
+      Displayname: "&6Add refill chest &7(Right click a chest)"
+      Lore:
+      - "&7Right click a chest with items in it"
+      - "&7to add this chest as a chest that will"
+      - "&7never be empty for players."
+      Glow: true
+      Hide-flags: true
+    No-refill-chest:
+      Material: "STICK"
+      Texture: ""
+      Custom-model-data: 0
+      Displayname: "&6Add no refill chest &7(Right click a chest)"
+      Lore:
+      - "&7Right click a chest with items in it"
+      - "&7to add this chest as a chest will be"
+      - "&7refilled once per game only."
+      Glow: true
+      Hide-flags: true
+    Remove-chest:
+      Material: "ARROW"
+      Texture: ""
+      Custom-model-data: 0
+      Displayname: "&cRemove chest &7(Right click a chest)"
+      Lore:
+      - "&7Right click a chest to remove it from"
+      - "&7saved chests if previously selected."
+      Glow: true
+      Hide-flags: true
+    Save-arena:
+      Material: "NETHER_STAR"
+      Texture: ""
+      Custom-model-data: 0
+      Displayname: "&c&lSave arena &7(Right click to select)"
+      Lore:
+      - "&7Save arena and enable it!"
+      Glow: true
+      Hide-flags: true
+  Game:
+    Checkpoint:
+      Material: "BEACON"
+      Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2RlMzNjOTVmZWMxYjhkOTg4MjUwZjVmNWIzYTI0ODU3NDI0MzlmYWVhYTc1ZWQ1MDZlYTAxZDc1ZTE3ZjIxIn19fQ=="
+      Custom-model-data: 0
+      Displayname: "&bCheckpoint &7(Place to select)"
+      Lore:
+      - "&7Place to save checkpoint!"
+      Glow: false
+      Hide-flags: true
+    Checkpoint-back:
+      Material: "NETHER_STAR"
+      Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2RlMzNjOTVmZWMxYjhkOTg4MjUwZjVmNWIzYTI0ODU3NDI0MzlmYWVhYTc1ZWQ1MDZlYTAxZDc1ZTE3ZjIxIn19fQ=="
+      Custom-model-data: 0
+      Displayname: "&dSaved checkpoint (&7Right click)"
+      Lore:
+      - "&7Return to your last checkpoint!"
+      Glow: false
+      Hide-flags: true
+    Teleport-players:
+      Material: "COMPASS"
+      Texture: ""
+      Custom-model-data: 0
+      Displayname: "&cTeleport &7(Right click)"
+      Lore: []
+      Glow: false
+      Hide-flags: true
+    Leave-game:
+      Material: "RED_BED"
+      Texture: ""
+      Custom-model-data: 0
+      Displayname: "&cLeave game &7(Right click)"
+      Lore: []
+      Glow: false
+      Hide-flags: true
+    Previous-page-spectator:
+      Material: "ARROW"
+      Texture: ""
+      Custom-model-data: 0
+      Displayname: "&9Previous page"
+      Lore: []
+      Glow: false
+      Hide-flags: true
+    Next-page-spectator:
+      Material: "ARROW"
+      Texture: ""
+      Custom-model-data: 0
+      Displayname: "&9Next page"
+      Lore: []
+      Glow: false
+      Hide-flags: true
+    Spectate-player-beast:
+      Material: "PLAYER"
+      Texture: ""
+      Custom-model-data: 0
+      Displayname: "%vault_prefix% &a{PLAYER} &c&lBEAST"
+      Lore:
+      - "&eClick to teleport to {PLAYER}!"
+      Glow: false
+      Hide-flags: true
+    Spectate-player-runner:
+      Material: "PLAYER"
+      Texture: ""
+      Custom-model-data: 0
+      Displayname: "%vault_prefix% &a{PLAYER} &e&lRUNNER"
+      Lore:
+      - "&eClick to teleport to {PLAYER}!"
+      Glow: false
+      Hide-flags: true
+
+Arenas:
+  LOADING:
+    Material: "DARK_RED_FIREWORK_STAR"
+    Texture: ""
+    Custom-model-data: 0
+    Displayname: "&4{ARENA_DISPLAYNAME}"
+    Lore:
+    - "&7State: &4Loading"
+    - " "
+    - "&cArena will be available soon!"
+    Glow: false
+    Hide-flags: true
+  WAITING:
+    Material: "LIME_FIREWORK_STAR"
+    Texture: ""
+    Custom-model-data: 0
+    Displayname: "&a{ARENA_DISPLAYNAME}"
+    Lore:
+    - "&7State: &aWaiting"
+    - " "
+    - "&7Players: &a{PLAYERS}&7/&a{MAX}"
+    - "&7Beasts amount: &a{BEASTS}"
+    - " "
+    - "&eLeft click to join!"
+    - "&6Right click to spectate!"
+    Glow: false
+    Hide-flags: true
+  STARTING:
+    Material: "YELLOW_FIREWORK_STAR"
+    Texture: ""
+    Custom-model-data: 0
+    Displayname: "&e{ARENA_DISPLAYNAME}"
+    Lore:
+    - "&7State: &eStarting"
+    - " "
+    - "&7Players: &a{PLAYERS}&7/&a{MAX}"
+    - "&7Beasts amount: &a{BEASTS}"
+    - " "
+    - "&eLeft click to join!"
+    - "&6Right click to spectate!"
+    Glow: false
+    Hide-flags: true
+  RELEASING:
+    Material: "PINK_FIREWORK_STAR"
+    Texture: ""
+    Custom-model-data: 0
+    Displayname: "&d{ARENA_DISPLAYNAME}"
+    Lore:
+    - "&7State: &dReleasing"
+    - " "
+    - "&7Players: &a{PLAYERS}&7/&a{MAX}"
+    - "&7Beasts amount: &a{BEASTS}"
+    - " "
+    - "&6Right click to spectate!"
+    Glow: false
+    Hide-flags: true
+  PLAYING:
+    Material: "BLUE_FIREWORK_STAR"
+    Texture: ""
+    Custom-model-data: 0
+    Displayname: "&9{ARENA_DISPLAYNAME}"
+    Lore:
+    - "&7State: &9Playing"
+    - " "
+    - "&7Beasts left: &a{BEASTS_LEFT}"
+    - "&7Runners left: &a{RUNNERS_LEFT}"
+    - " "
+    - "&6Right click to spectate!"
+    Glow: false
+    Hide-flags: true
+  FINISHING:
+    Material: "DARK_RED_FIREWORK_STAR"
+    Texture: ""
+    Custom-model-data: 0
+    Displayname: "&4{ARENA_DISPLAYNAME}"
+    Lore:
+    - "&7State: &4Finishing"
+    - " "
+    - "&7Winners: {WINNER_TEAM}"
+    - " "
+    - "&cArena will be available soon!"
+    Glow: false
+    Hide-flags: true
+  RESTARTING:
+    Material: "DARK_RED_FIREWORK_STAR"
+    Texture: ""
+    Custom-model-data: 0
+    Displayname: "&4{ARENA_DISPLAYNAME}"
+    Lore:
+    - "&7State: &4Restarting"
+    - " "
+    - "&cArena will be available soon!"
+    Glow: false
+    Hide-flags: true
+  RELOADING:
+    Material: "DARK_RED_FIREWORK_STAR"
+    Texture: ""
+    Custom-model-data: 0
+    Displayname: "&4{ARENA_DISPLAYNAME}"
+    Lore:
+    - "&7State: &4Reloading"
+    - " "
+    - "&cArena will be available soon!"
+    Glow: false
+    Hide-flags: true
+  Previous-item:
+    Material: "ARROW"
+    Texture: ""
+    Custom-model-data: 0
+    Displayname: "&9Previous page"
+    Lore: []
+    Glow: false
+    Hide-flags: true
+  Next-item:
+    Material: "ARROW"
+    Texture: ""
+    Custom-model-data: 0
+    Displayname: "&9Next page"
+    Lore: []
+    Glow: false
+    Hide-flags: true
+  Play-again-no-permission:
+    Material: "PAPER"
+    Texture: ""
+    Custom-model-data: 0
+    Displayname: "&bPlay again &c(&cRequires &a[RANK]&c!)"
+    Lore:
+    - "&cPurchase &a[RANK]&c it on &bstore.yournetwork.net&c!"
+    Glow: false
+    Hide-flags: true
+  Play-again:
+    Material: "PAPER"
+    Texture: ""
+    Custom-model-data: 0
+    Displayname: "&bPlay again &7(Right click)"
+    Lore:
+    - "&7Join a new game!"
+    Glow: false
+    Hide-flags: true
+  Random-arena:
+    Material: "FIREWORK_ROCKET"
+    Texture: ""
+    Custom-model-data: 0
+    Displayname: "&aRandom arena"
+    Lore:
+    - "&7Join a random game that"
+    - "&7is about to start to play"
+    - "&7as soon as possible!"
+    - ""
+    - "&aClick to search an arena!"
+    Glow: false
+    Hide-flags: true
+  Unlocked-arena-pick:
+    Material: "DIAMOND"
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDU1ODdkYTdmZTczMzZlOGFiOWY3OTFlYTVlMmNmYzhhODI3Y2E5NTk1NjdlYjlkNTNhNjQ3YmFiZjk0OGQ1In19fQ=="
+    Custom-model-data: 0
+    Displayname: "&6&lThanks for supporting us! &b✦"
+    Lore:
+    - "&aYou can select which arena"
+    - "&ayou want to play!"
+    Glow: false
+    Hide-flags: true
+  Locked-arena-pick:
+    Material: "COAL"
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODQ0NDk4YTBmZTI3ODk1NmUzZDA0MTM1ZWY0YjEzNDNkMDU0OGE3ZTIwOGM2MWIxZmI2ZjNiNGRiYzI0MGRhOCJ9fX0="
+    Custom-model-data: 0
+    Displayname: "&aYou can only join random arenas!"
+    Lore:
+    - "&7Only ranked players can select"
+    - "&7which arena to join!"
+    - " "
+    - "&cPurchase &a[RANK]&con &bstore.yournetwork.net&c!"
+    Glow: false
+    Hide-flags: true
+
+Permissions:
+  Admin: "alonsorftb.admin"
+  Join-full: "alonsorftb.bypass-full"
+  Admin-bypass: "alonsorftb.admin-bypass.DO_NOT_GIVE_THIS_PERMISSION"
+  Admin-spy-chat: "alonsorftb.admin-spy-chat"
+  #Permission to "break" cobweb when left clicking (cobweb will disappear for X seconds). Set to "none" to not require permission.
+  Cobweb: "alonsorftb.cobweb"
+  Spectate: "none"
+  #Checkpoints amount permission MUST be longer than 10 chars and MUST end with ".{AMOUNT}" to work. Otherwise default one will be used!
+  Checkpoints-amount: "alonsorftb.checkpoints.{AMOUNT}"
+  #Permission to keep the "purchases" active between games so players don't need to select them again. This is a donor perk.
+  #This is only to keep items SELECTED. All items are one time use only and will ALWAYS BE.
+  Keep-purchases: "alonsorftb.keep-purchases"
+  #Amount of items that can be active in beasts shop for this player.
+  #Permission MUST be longer than 10 chars and MUST end with ".{AMOUNT}" to work. Otherwise default one will be used!
+  Beasts-shop-amount: "alonsorftb.beast-shop.{AMOUNT}"
+  #Amount of items that can be active in runners shop for this player.
+  #Permission MUST be longer than 10 chars and MUST end with ".{AMOUNT}" to work. Otherwise default one will be used!
+  Runners-shop-amount: "alonsorftb.runners-shop.{AMOUNT}"
+  #Priority when using beast pass. This means that if 2 players have an active beast pass, the player with highest priority will be selected.
+  #This REQUIRES to enable "Options.Shop.Beasts.Beast-pass-priority" which is disabled by default as it MIGHT take more resources because of permission loop.
+  #Permission MUST be longer than 10 chars and MUST end with ".{AMOUNT}" to work. Otherwise default one will be used!
+  Beast-pass-priority: "alonsorftb.beast.beast-pass-priority.{AMOUNT}"
+  #Permission to use the item to play again or the command ""/alonsorftb playagain". Set to "none" to not require any permission.
+  Play-again: "alonsorftb.play-again"
+  #Permission to allow players choose the arena they want to join!
+  Select-arena: "none" #Example: alonsorftb.play-again"
+  #Permission to mount players.
+  Mount-players: "alonsorftb.mount"
+  #Permission to eject players from you. RECOMMENDED TO LEAVE IT AS "none"
+  Dismount-players: "none"
+  #Permission to convert the gg to "&6&lGG" automatically.
+  GG-chat: "alonsorftb.gg"
+
+Options:
+  #Enable only if the developer asks you to do it otherwise you'll get a big spam in console and server chat.
+  Debug: false
+  #Option added to hide some information on load like "Loading X feature.." if there are too many of them.
+  #Might not apply in all cases as some log ARE NECESSARY for me to understand issues if you have any. Don't insist.
+  Log-mode: true
+  #You want to support the developer leaving the first line in help menu that contains plugin name and version? <3
+  Support-developer: true
+  Command:
+    #Custom main command. REQUIRES RESTART TO APPLY CHANGES.
+    Main: "alonsorftb"
+    #Custom aliases. REQUIRES RESTART TO APPLY CHANGES.
+    Aliases:
+    - "arftb"
+    - "arftbeast"
+    - "alonsorunfromthebeast"
+    - "arunfromthebeast"
+  Colors:
+    #This is an attempt to make hex color look as close as possible to minecraft native colors for 1.8 - 1.15 players.
+    Fix: true
+  Placeholders:
+    #This is ONLY USED FOR %advancedchat_restorehex_ANOTHERPLACECHOLDER%
+    #Do NOT modify if you don't know what it does.
+    Hex-format: "&#{COLOR}"
+  Spawn:
+    #Option to make it look like big networks. When players join the world, they are not teleported
+    #directly to one block but in a random location inside a radius of the selected spawn location.
+    Spawn-radius: 2
+  Respawn:
+    #Delay in ticks before player is respawned after dying. Recommended to leave it in 5.
+    Delay: 5
+  Shop:
+    Runners:
+      Rows: 1
+      Title: "&8Runners shop"
+    Beasts:
+      Rows: 6
+      Title: "&8Beasts shop"
+      #By default disabled as it MIGHT consume more resources (because of permission looping)
+      Beast-pass-priority: false
+      #Make sure this is the SAME price as in shop.yml
+      Beast-pass-price: 50
+  Hooks:
+    #Hooks with AlonsoGG? More information about it on https://alonsoaliaga.com/AlonsoGG
+    #If enabled, GG feature is disabled and AlonsoGG is used instead.
+    #In that case you must use placeholder from AlonsoGG instead.
+    AlonsoGG:
+      Enabled: true
+      #These are the identifiers of gg rewards type. This must be configured in AlonsoGG's config.yml file!
+      Winners-identifier: "winners"
+      Losers-identifier: "losers"
+    #You can just ignore this. It's for internal use.
+    ProCosmetics:
+      Enabled: true
+      Silent-mode: false
+    #You can just ignore this. It's for internal use.
+    GadgetsMenu:
+      Enabled: true
+  Game:
+    Date-format: "MM/dd/yyyy"
+    #You should not disable this option unless you KNOW what you are doing.
+    #Disabling this message will make default death message appear.
+    Remove-death-message: true
+    #Do not enable this as it might glitch the player visually. (This is a LibDisguises/ProtocolLib thing).
+    Disguise-self-view: false
+    Ghosts:
+      #Should spectator menu be disabled in arenas?
+      #this is a global setting that applies for all arenas.
+      Disable-spectator-menu: false
+      On-hit:
+        Teleport-to-start-location: true
+        Commands:
+        - "[MESSAGE]&6✦ &ePlease, do not stand in front of players or you'll be punished! &7(&e{CURRENT-HITS}&7/&6{MAX-HITS}&7)"
+        #- "[CONSOLE]kick {GHOST} &c&lYou have been kicked for blocking player shoots."
+      Max-hits:
+        #Max amount of hits a ghost can receive (for blocking player using a bow) before it gets sent to Lobby.
+        #You can also warn, kick or ban the player using console commands.
+        Amount: 3
+        Commands:
+        - "[MESSAGE]&6✦ &cYou have reached max amount of hits by players while being ghost!"
+        - "[CONSOLE]alonsorftb spawn {GHOST}"
+        #- "[CONSOLE]kick {GHOST} &c&lYou have been kicked for blocking player shoots."
+    Runners:
+      #Default checkpoints amount for runners.
+      Checkpoints-amount: 1
+      #Default amount of items that can be active for beasts in runners shop.
+      Shop-amount: 1
+      Dismount:
+        #This makes that the player dismounting other gets teleported directly
+        #to the mounted player location to prevent issues/bugs when dismounting in corners.
+        Safe: true
+      #Default items per type. Read beasts default-items to understand more.
+      Default-items: {}
+    Beasts:
+      #Default amount of items that can be active for beasts in beasts shop.
+      Shop-amount: 2
+      #Default items per type.
+      Default-items:
+        #If no item (ZAPPER type) has been selected in the store the section below is run.
+        ZAPPER:
+          #Priority: "permission required | item identifier" Greater values are read first.
+          #Item identifier can be "custom:item-identifier" if you want to give a custom item.
+          100: "alonsorftb.beast.zapper-five|zapper-five" #The item "zapper-five" will be given if the player has the permission "alonsorftb.beast.zapper-five"
+          50: "alonsorftb.beast.zapper-four|zapper-four" #The item "zapper-four" will be given if the player has the permission "alonsorftb.beast.zapper-four"
+          30: "alonsorftb.beast.zapper-three|zapper-three" #The item "zapper-three" will be given if the player has the permission "alonsorftb.beast.zapper-three"
+          20: "alonsorftb.beast.zapper-two|zapper-two" #The item "zapper-two" will be given if the player has the permission "alonsorftb.beast.zapper-two"
+          1: "none|zapper-one" #The item "zapper-one" will be given if the player doesn't have any of the permissions above
+    Zapper:
+      Radius: 2
+      Effects:
+      - "CONFUSION,60,0,true,true"
+      - "BLINDNESS,100,1,true,true"
+      - "SLOW,100,5,true,true"
+    #Times are in seconds.
+    Times:
+      Starting-time: 10
+      Select-time: 5
+      Finishing-time: 15
+      Cobweb-time: 5
+      Scout-rod-cooldown: 5
+    Block:
+      #Prevent beasts from dropping items.
+      Beast-drop-item: true
+      #Prevent beasts from dropping items on death.
+      Beast-drop-item-on-death: true
+      #Prevent runners from dropping items.
+      Runner-drop-item: true
+      #Prevent Runner from dropping items on death.
+      Runner-drop-item-on-death: true
+      #Prevent beasts from picking up items.
+      Beast-pickup-item: true
+      #Prevent runners from picking up items.
+      Runner-pickup-item: true
+      #Prevent players from losing food points? Recommended to leave this enabled.
+      Food-change: true
+      #Prevent players from using pressure plates, etc.
+      Physical-interaction: true
+      #Prevent players from using crafting tables, dispensers, levers, doors, etc.
+      Right-click-interaction: true
+      #Materials which interaction (right click and physical) is NOT blocked. (Only applies when "Cancel-right-click-interaction" is enabled)
+      #Useful to allow players to interact with certain blocks like buttons, levers.
+      #Recommended to use WorldGuard to protect the arena.
+      Whitelisted-materials-for-interaction:
+      #Allow enchanting table (In case you want players to enchant stuff)
+      - "ENCHANTING_TABLE"
+      - "ENCHANTMENT_TABLE"
+      #Allow levers
+      - "LEVER"
+      #Allow buttons
+      - "STONE_BUTTON"
+      - "WOOD_BUTTON"
+      - "WOODEN_BUTTON"
+      - "ACACIA_BUTTON"
+      - "BIRCH_BUTTON"
+      - "MANGROVE_BUTTON"
+      - "DARK_OAK_BUTTON"
+      - "JUNGLE_BUTTON"
+      - "OAK_BUTTON"
+      - "SPRUCE_BUTTON"
+      - "WARPED_BUTTON"
+      - "CRIMSON_BUTTON"
+      #Allow trapdoors
+      - "WOOD_TRAPDOOR"
+      - "WOODEN_TRAPDOOR"
+      - "ACACIA_TRAPDOOR"
+      - "BIRCH_TRAPDOOR"
+      - "MANGROVE_TRAPDOOR"
+      - "DARK_OAK_TRAPDOOR"
+      - "JUNGLE_TRAPDOOR"
+      - "OAK_TRAPDOOR"
+      - "SPRUCE_TRAPDOOR"
+      - "WARPED_TRAPDOOR"
+      - "CRIMSON_TRAPDOOR"
+      - "IRON_TRAPDOOR"
+      #Allow doors
+      - "WOOD_DOOR"
+      - "WOODEN_DOOR"
+      - "ACACIA_DOOR"
+      - "BIRCH_DOOR"
+      - "MANGROVE_DOOR"
+      - "DARK_OAK_DOOR"
+      - "JUNGLE_DOOR"
+      - "OAK_DOOR"
+      - "SPRUCE_DOOR"
+      - "WARPED_DOOR"
+      - "CRIMSON_DOOR"
+      - "IRON_DOOR"
+      #Allow fence gates
+      - "FENCE_GATE"
+      - "WOOD_FENCE_GATE"
+      - "WOODEN_FENCE_GATE"
+      - "ACACIA_FENCE_GATE"
+      - "BIRCH_FENCE_GATE"
+      - "MANGROVE_FENCE_GATE"
+      - "DARK_OAK_FENCE_GATE"
+      - "JUNGLE_FENCE_GATE"
+      - "OAK_FENCE_GATE"
+      - "SPRUCE_FENCE_GATE"
+      - "WARPED_FENCE_GATE"
+      - "CRIMSON_FENCE_GATE"
+      #Allow pressure plates
+      - "ACACIA_PRESSURE_PLATE"
+      - "BIRCH_PRESSURE_PLATE"
+      - "MANGROVE_PRESSURE_PLATE"
+      - "DARK_OAK_PRESSURE_PLATE"
+      - "JUNGLE_PRESSURE_PLATE"
+      - "OAK_PRESSURE_PLATE"
+      - "SPRUCE_PRESSURE_PLATE"
+      - "WARPED_PRESSURE_PLATE"
+      - "CRIMSON_PRESSURE_PLATE"
+      - "STONE_PRESSURE_PLATE"
+      - "HEAVY_WEIGHTED_PRESSURE_PLATE"
+      - "LIGHT_WEIGHTED_PRESSURE_PLATE"
+      - "POLISHED_BLACKSTONE_PRESSURE_PLATE"
+    Chat:
+      #This plugin DOES NOT AND WILL NEVER FORMAT CHAT.
+      #This option is only to make any chat plugin to separate chats for each world. (If the chat plugin is made correctly)
+      Per-world:
+        Enabled: true
+        #This is the "prefix" to be recognized when using global chat.
+        Start-prefix: "!"
+      GG:
+        Enabled: true
+        Message-to-replace: "gg"
+        #Message that will replace player's message.
+        Message: "&6&lGG"
+        #Commands that will be run
+        Rewards:
+        - "[MESSAGE]&d+5 coins &7(Thanks for playing!)"
+        - "[CONSOLE]eco give {PLAYER} 5"
+        #- "[CONSOLE]balance give {PLAYER} 5"
+        #This is an example of AlonsoLevels command to add random amount of exp.
+        #More info on https://alonsoaliaga.com/AlonsoLevels
+        - "[CONSOLE]alonsolevels addrandomexp {PLAYER} 5 10 true false"
+    Win-beasts:
+      Broadcast-only-spawn: true
+      Alive-beasts:
+        #PlaceholderAPI is available here for the player however is NOT RECOMMENDED TO USE any placeholder from PlaceholderAPI!
+        #For more information about command actions/modifiers visit https://alonsoaliaga.com/AlonsoRFTB/command-modifiers
+        Commands:
+        #This is an example of AlonsoLevels command to add random amount of exp.
+        #More info on https://alonsoaliaga.com/AlonsoLevels
+        - "[CONSOLE]alonsolevels addrandomexp {PLAYER} 25 60 true false"
+        - "[CONSOLE]eco give {PLAYER} 20"
+      Dead-beasts:
+        Commands:
+        #This is an example of AlonsoLevels command to add random amount of exp.
+        #More info on https://alonsoaliaga.com/AlonsoLevels
+        - "[CONSOLE]alonsolevels addrandomexp {PLAYER} 5 15 true false"
+        - "[CONSOLE]eco give {PLAYER} 5"
+      Alive-runners: #Probably never used as if beasts win (In NORMAL arenas) no runners can be alive. So keep it simple.
+        Commands:
+        #This is an example of AlonsoLevels command to add random amount of exp.
+        #More info on https://alonsoaliaga.com/AlonsoLevels
+        - "[CONSOLE]alonsolevels addrandomexp {PLAYER} 5 10 true false"
+        - "[CONSOLE]eco give {PLAYER} 5"
+      Dead-runners:
+        Commands:
+        #This is an example of AlonsoLevels command to add random amount of exp.
+        #More info on https://alonsoaliaga.com/AlonsoLevels
+        - "[CONSOLE]alonsolevels addrandomexp {PLAYER} 5 10 true false"
+        - "[CONSOLE]eco give {PLAYER} 5"
+    Win-runners:
+      Broadcast-only-spawn: true
+      Alive-runners:
+        Commands:
+        #This is an example of AlonsoLevels command to add random amount of exp.
+        #More info on https://alonsoaliaga.com/AlonsoLevels
+        - "[CONSOLE]alonsolevels addrandomexp {PLAYER} 20 50 true false"
+        - "[CONSOLE]eco give {PLAYER} 20"
+      Dead-runners:
+        Commands:
+        #This is an example of AlonsoLevels command to add random amount of exp.
+        #More info on https://alonsoaliaga.com/AlonsoLevels
+        - "[CONSOLE]alonsolevels addrandomexp {PLAYER} 5 15 true false"
+        - "[CONSOLE]eco give {PLAYER} 5"
+      Alive-beasts:
+        Commands:
+        #This is an example of AlonsoLevels command to add random amount of exp.
+        #More info on https://alonsoaliaga.com/AlonsoLevels
+        - "[CONSOLE]alonsolevels addrandomexp {PLAYER} 5 10 true false"
+        - "[CONSOLE]eco give {PLAYER} 5"
+      Dead-beasts:
+        Commands:
+        #This is an example of AlonsoLevels command to add random amount of exp.
+        #More info on https://alonsoaliaga.com/AlonsoLevels
+        - "[CONSOLE]alonsolevels addrandomexp {PLAYER} 5 10 true false"
+        - "[CONSOLE]eco give {PLAYER} 5"
+  Arenas:
+    Title: "&8Select an arena"
+    Rows: 6
+    #These are the slots in which arena (items) will be sorted.
+    Arena-slots: "11,12,13,14,15,20,21,22,23,24,29,30,31,32,33"
+    Slots:
+      Previous: 18
+      Next: 26
+      Random: 40
+      Warning: 53
+  #This is the amount of ticks the plugin will wait before loading data.
+  #Useful if your have issues with players "losing" their stats on server change or reconnect.
+  #Set to 0 to disable. If enabled, it's like that some plugins that send messages on join will not fetch correct data from placeholders.
+  #To "fix" this use this plugin made by our team which adds messages on player join with an option to set delay.
+  #We also support placeholder check to prevent message to be sent when player is in vanish mode. (Using placeholder to check if player is vanished)
+  #Check our plugin on https://alonsoaliaga.com/AlonsoJoin (If available)
+  Data-delay: 30
+  Leaderboards:
+    #If enabled, leaderboards will be loaded.
+    Enabled: true
+    #Amount in minutes before first attempt to load data from database is made.
+    First-delay: 3
+    #Interval in minutes between plugin attempts to load information AND update leaderboards.
+    #Recommended 10 minutes.
+    Interval: 10
+    #Play particles if AlonsoLeaderboards is installed when updating sign.
+    Play-flames: true
+  Auto-save:
+    #Time in minutes to auto save player data. Minimum 0 (If zero it will be disabled). Recommended 7.
+    #Remember this is REQUIRED for Leaderboards!!!
+    Interval: 7
+
+Database:
+  #Available types: SQLite, MySQL, HikariCP and IWantMySQL
+  #You can use MySQL to make it global or you can use SQLite to make it local.
+  #MySQL requires a server (local or external) it uses HikariCP <=========== BY DEFAULT as it's faster.
+  #SQLite doesn't require anything, it's saved in a db file in the folder.
+  #IN CASE YOU WANT TO USE MYSQL AND NOT HIKARICP YOU MUST USE
+  #      Type: "IWantMySQL"    <---- Yes, like that.
+  Type: "SQLite"
+  Table: "alonsorftb"
+  #If type is SQLite
+  File: "database-alonsorftb"
+  #If type is MySQL or HikariCP
+  Host: 127.0.0.1
+  Port: 3306
+  Database: "alonsorftb"
+  Username: "root"
+  Password: "12345"
+  #Used to keep connection alive to prevent connection timeout.
+  #Time is in minutes. Every X minutes the plugin will run a test query to keep connection alive. Recommended 30. Minimum 5.
+  Keep-connection-interval: 30
+  #Modify this just if you know what you are doing.
+  #This will be added at the end of database url (in SQLITE and in MySQL).
+  #HOWEVER THERE IS NO WARRANTY THAT THIS WORK WITH SQLITE, SO PLEASE LEAVE IT EMPTY IF YOU ARE USING SQLITE.
+  #Useful if you want to set useSSL or autoReconnect or any other modifier.
+  #Make sure you know what you are doing before modifying this option.
+  #Remember you need to add a question mark (?) if you are using a property, OTHERWISE leave empty.
+  #Example: "?useSSL=false"
+  #Remember this only applies if you are using "IWantMySQL", for MySQL and HikariCP you need to use options below.
+  Additional-url: "?useSSL=false"
+  #Not available for SQLite or "IWantMySQL"
+  HikariCP:
+    #It will use HikariCP if available. This works for everything EXCEPT SQLite as you can have only one connection opened in SQLite.
+    #This plugin only supports SQLite and variants (MariaDB for example which runs with the same code).
+    #Any other database type WILL NOT BE ADDED. Don't insists asking for mongodb support or any other type, thanks.
+    Enabled: true
+    Warning:
+    - "Using HikariCP will make the process of getting/saving data faster. This SHOULD (not tested) work correctly."
+    - "However, it will also increase a lot the amount of active/opened connections to your database simultaneously."
+    - "This means that if you have 20 servers using this option with a Pool-size of 5. you'll have in total 100 active connections."
+    - "If you don't/can't modify the max amount of connections in your sql server you should not use this option as new connections"
+    - "won't be established and your plugins will fail. Use ONLY if you can set your max connections amount to greater numbers like 500+"
+    - "depending on how many servers you might have using this database."
+    - "Remember that if more than one plugin uses this, you'll have even MORE active connections and probably reach the limit"
+    - "even faster. Make sure you set max amount of connections in your server options to numbers like 1000 or more if you"
+    - "plan to use the same database with pool size options."
+    #Maximum pool size. A greater the value means that more connections will be opened and remain opened. Minimum 1.
+    #This option is ONLY AVAILABLE if you are using HikariCP which requires.
+    #READ WARNING BEFORE USING THIS OPTION/ADDON.
+    #If you set this to high values, your database would probably reach max connections limit really fast.
+    #Make sure you increase this ONLY if you are using it in a single server (no bungeecord) or you are sure
+    #you have enough connections amount available. (If you increased your database max connections amount).
+    Pool-size: 3
+    #Don't change this unless you know what it is. By default it uses SQLite and MySQL.
+    #List of popular data sources classes name can be found here https://alonsoaliaga.com/HikariCP-Class-names
+    Custom-source-class-name: "default"
+    #If you don't need this simply remove the section or leave it as Source-properties: {}
+    Source-properties:
+      "useSSL": false
+      "requireSSL": false
+
+Updates:
+  #Auto update configuration? Enabling will delete comments.
+  Auto-update-configuration: true
+  #Check for updates? Recommended to keep it enabled.
+  Check-updates: true
+  #Notify updates when player with permission joins the server?
+  Notify-updates: true
+  #Permission required to receive update message.
+  Permission: "alonsorftb.update"
+  #Message to send when update is found.
+  Message: "&5[AlonsoRFTB] &eA new update has been found! You are using version {CURRENT}. Download version {NEW} here &c{LINK}"
