@@ -1,1 +1,4355 @@
-a
+Runners-shop:
+  cobweb:
+    Slot: 0
+    #Permission required to BUY this upgrade? Set to "none" to not require any permission.
+    Permission: "none"
+    #Permission to allow player to buy this item for FREE. This REQUIRES a permission, "none" is NOT SUPPORTED!
+    Free-permission: "alonsorftb.runners-shop.cobweb.free"
+    Name: "&e&lCobweb"
+    #Price for this skin?
+    Price: 25
+    Economy:
+      #Economy type for this skin? Available types are: VAULT, PLAYER_POINTS, TOKEN_MANAGER and LEVEL.
+      Type: "VAULT"
+      #Ignore this for now.
+      Material: "DIAMOND"
+    #Want to set a custom model data for this skin?
+    Custom-model-data: 0
+    #Time in seconds before the placed block disappears. This is only applicable to placeable blocks! Minimum 1 second.
+    Delay-time: 5
+    #This is how the item will look like in the shop.
+    Item-shop:
+      Free:
+        #Amount of items displayed in gui when its LOCKED.
+        Amount: 1
+        Material: COBWEB
+        Custom-model-data: 0
+        Displayname: "&e&lCobweb"
+        Lore:
+        - "&7Use this to slow down the beast!"
+        - ""
+        - "&7Price: &c&m{PRICE}&r &aFREE!"
+        - ""
+        - "&cFree with your current rank!"
+        Glow: false
+        Hide-flags: true
+      Locked:
+        #Amount of items displayed in gui when its LOCKED.
+        Amount: 1
+        Material: COBWEB
+        Custom-model-data: 0
+        Displayname: "&e&lCobweb"
+        Lore:
+        - "&7Use this to slow down the beast!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&cRequires &a[RANK]&c rank!"
+        - "&cPurchase on &bstore.yournetwork.net&c!"
+        Glow: false
+        Hide-flags: true
+      Unlocked:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: COBWEB
+        Custom-model-data: 0
+        Displayname: "&e&lCobweb"
+        Lore:
+        - "&7Use this to slow down the beast!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&eClick to purchase!"
+        Glow: false
+        Hide-flags: true
+      Selected-free:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: COBWEB
+        Custom-model-data: 0
+        Displayname: "&e&lCobweb"
+        Lore:
+        - "&7Use this to slow down the beast!"
+        - ""
+        - "&7Price: &c&m{PRICE}&r &aFREE!"
+        - ""
+        - "&aSelected!"
+        Glow: true
+        Hide-flags: true
+      Selected:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: COBWEB
+        Custom-model-data: 0
+        Displayname: "&e&lCobweb"
+        Lore:
+        - "&7Use this to slow down the beast!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&aSelected."
+        Glow: true
+        Hide-flags: true
+    #This is how the item will look like when given to the player.
+    Item:
+      #Amount of items given to the player.
+      Amount: 1
+      Material: COBWEB
+      Custom-model-data: 0
+      Displayname: "&e&lCobweb"
+      Lore:
+      - "&7Use this to slow down the beast!"
+      Glow: false
+      Hide-flags: true
+    Messages:
+      Economy-not-available: "&cEconomy for this item is not available. If you think this is an error contact an administrator."
+      No-permission: "&cYou need &a[RANK]&c rank to purchase this item. Get it on &bstore.yournetwork.net&c!"
+      No-enough-money: "&cYou don't have enough money to purchase this item!"
+      Selected-free:
+      - "&aYou selected {NAME}&a."
+      - "&aYou'll receive the item(s) in your next game!"
+      Unselected-free: "&cYou unselected {NAME}&c!"
+      Purchased-success-free:
+      - "&d✫ &7Purchased {NAME}&7 for &aFREE&7!"
+      Selected:
+      - "&aYou selected {NAME}&a."
+      - "&aYou'll receive the item(s) in your next game!"
+      - "&aMoney will be taken in that moment if enough, otherwise &c&nitem will be unselected&a!."
+      Unselected: "&cYou unselected {NAME}&c. You won't be charged in next games!"
+      Purchased-success:
+      - "&c- {PRICE} &7(Purchased {NAME}&7)"
+      Purchased-failed: "&cNot enough money to purchase {NAME}&c."
+  scout-rod:
+    Type: "SCOUT_ROD"
+    Slot: 1
+    #Permission required to BUY this upgrade? Set to "none" to not require any permission.
+    Permission: "alonsorftb.runners-shop.scout-rod"
+    Free-permission: "alonsorftb.runners-shop.scout-rod.free"
+    Name: "&6&lScout Rod"
+    #Price for this skin?
+    Price: 50
+    Economy:
+      #Economy type for this skin? Available types are: VAULT, PLAYER_POINTS, TOKEN_MANAGER and LEVEL.
+      Type: "VAULT"
+      #Ignore this for now.
+      Material: "DIAMOND"
+    #Want to set a custom model data for this skin?
+    Custom-model-data: 0
+    #This is how the item will look like in the shop.
+    Item-shop:
+      Free:
+        #Amount of items displayed in gui when its LOCKED.
+        Amount: 1
+        Material: FISHING_ROD
+        Custom-model-data: 0
+        Displayname: "&6&lScout Rod"
+        Lore:
+        - "&7Use this rod to climb and"
+        - "&7move faster while running!"
+        - ""
+        - "&7Price: &c&m{PRICE}&r &aFREE!"
+        - ""
+        - "&cFree with your current rank!"
+        Glow: false
+        Hide-flags: true
+      Locked:
+        #Amount of items displayed in gui when its LOCKED.
+        Amount: 1
+        Material: FISHING_ROD
+        Custom-model-data: 0
+        Displayname: "&6&lScout Rod"
+        Lore:
+        - "&7Use this rod to climb and"
+        - "&7move faster while running!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&cRequires &a[RANK]&c rank!"
+        - "&cPurchase on &bstore.yournetwork.net&c!"
+        Glow: false
+        Hide-flags: true
+      Unlocked:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: FISHING_ROD
+        Custom-model-data: 0
+        Displayname: "&6&lScout Rod"
+        Lore:
+        - "&7Use this rod to climb and"
+        - "&7move faster while running!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&eClick to purchase!"
+        Glow: false
+        Hide-flags: true
+      Selected:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: FISHING_ROD
+        Custom-model-data: 0
+        Displayname: "&6&lScout Rod"
+        Lore:
+        - "&7Use this rod to climb and"
+        - "&7move faster while running!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&aSelected."
+        Glow: true
+        Hide-flags: true
+      Selected-free:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: FISHING_ROD
+        Custom-model-data: 0
+        Displayname: "&6&lScout Rod"
+        Lore:
+        - "&7Use this rod to climb and"
+        - "&7move faster while running!"
+        - ""
+        - "&7Price: &c&m{PRICE}&r &aFREE!"
+        - ""
+        - "&aSelected!"
+        Glow: true
+        Hide-flags: true
+    #This is how the item will look like when given to the player.
+    Item:
+      #Amount of items given to the player.
+      Amount: 1
+      Material: FISHING_ROD
+      Custom-model-data: 0
+      Displayname: "&6&lScout Rod"
+      Lore:
+      - "&7Use this rod to climb and"
+      - "&7move faster while running!"
+      Glow: false
+      Hide-flags: true
+    Messages:
+      Economy-not-available: "&cEconomy for this item is not available. If you think this is an error contact an administrator."
+      No-permission: "&cYou need &a[RANK]&c rank to purchase this item. Get it on &bstore.yournetwork.net&c!"
+      No-enough-money: "&cYou don't have enough money to purchase this item!"
+      Selected-free:
+      - "&aYou selected {NAME}&a."
+      - "&aYou'll receive the item(s) in your next game!"
+      Unselected-free: "&cYou unselected {NAME}&c!"
+      Purchased-success-free:
+      - "&d✫ &7Purchased {NAME}&7 for &aFREE&7!"
+      Selected:
+      - "&aYou selected {NAME}&a."
+      - "&aYou'll receive the item(s) in your next game!"
+      - "&aMoney will be taken in that moment if enough, otherwise &c&nitem will be unselected&a!."
+      Unselected: "&cYou unselected {NAME}&c. You won't be charged in next games!"
+      Purchased-success:
+      - "&c- {PRICE} &7(Purchased {NAME}&7)"
+      Purchased-failed: "&cNot enough money to purchase {NAME}&c."
+  #Identifier can be anything you want. MUST BE LOWERCASE AND CAN ONLY CONTAIN LETTER, NUMBERS AND DASHES. It MUST be unique!
+  armor-remover-trap:
+    Type: "ARMOR_REMOVER_TRAP"
+    Slot: 2
+    #Permission required to BUY this upgrade? Set to "none" to not require any permission.
+    Permission: "alonsorftb.runners-shop.armor-remover-trap"
+    Free-permission: "alonsorftb.runners-shop.armor-remover-trap.free"
+    Name: "&c&lArmor Remover Trap"
+    #Price for this skin?
+    Price: 100
+    Economy:
+      #Economy type for this skin? Available types are: VAULT, PLAYER_POINTS, TOKEN_MANAGER and LEVEL.
+      Type: "VAULT"
+      #Ignore this for now.
+      Material: "DIAMOND"
+    #Want to set a custom model data for this skin?
+    Custom-model-data: 0
+    #This is how the item will look like in the shop.
+    Item-shop:
+      Free:
+        #Amount of items displayed in gui when its LOCKED.
+        Amount: 2
+        Material: LIGHT_WEIGHTED_PRESSURE_PLATE
+        Custom-model-data: 0
+        Displayname: "&c&lArmor Remover Trap"
+        Lore:
+        - "&7Place on the floor to arm the trap."
+        - "&7If the beast walks in it, it will"
+        - "&7lose the armor it's wearing!"
+        - ""
+        - "&7Price: &c&m{PRICE}&r &aFREE!"
+        - ""
+        - "&cFree with your current rank!"
+        Glow: false
+        Hide-flags: true
+      Locked:
+        #Amount of items displayed in gui when its LOCKED.
+        Amount: 2
+        Material: LIGHT_WEIGHTED_PRESSURE_PLATE
+        Custom-model-data: 0
+        Displayname: "&c&lArmor Remover Trap"
+        Lore:
+        - "&7Place on the floor to arm the trap."
+        - "&7If the beast walks in it, it will"
+        - "&7lose the armor it's wearing!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&cRequires &a[RANK]&c rank!"
+        - "&cPurchase on &bstore.yournetwork.net&c!"
+        Glow: false
+        Hide-flags: true
+      Unlocked:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 2
+        Material: LIGHT_WEIGHTED_PRESSURE_PLATE
+        Custom-model-data: 0
+        Displayname: "&c&lArmor Remover Trap"
+        Lore:
+        - "&7Place on the floor to arm the trap."
+        - "&7If the beast walks in it, it will"
+        - "&7lose the armor it's wearing!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&eClick to purchase!"
+        Glow: false
+        Hide-flags: true
+      Selected:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 2
+        Material: LIGHT_WEIGHTED_PRESSURE_PLATE
+        Custom-model-data: 0
+        Displayname: "&c&lArmor Remover Trap"
+        Lore:
+        - "&7Place on the floor to arm the trap."
+        - "&7If the beast walks in it, it will"
+        - "&7lose the armor it's wearing!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&aSelected."
+        Glow: true
+        Hide-flags: true
+      Selected-free:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 2
+        Material: LIGHT_WEIGHTED_PRESSURE_PLATE
+        Custom-model-data: 0
+        Displayname: "&c&lArmor Remover Trap"
+        Lore:
+        - "&7Place on the floor to arm the trap."
+        - "&7If the beast walks in it, it will"
+        - "&7lose the armor it's wearing!"
+        - ""
+        - "&7Price: &c&m{PRICE}&r &aFREE!"
+        - ""
+        - "&aSelected!"
+        Glow: true
+        Hide-flags: true
+    #This is how the item will look like when given to the player.
+    Item:
+      #Amount of items given to the player.
+      Amount: 2
+      Material: LIGHT_WEIGHTED_PRESSURE_PLATE
+      Custom-model-data: 0
+      Displayname: "&c&lArmor Remover Trap"
+      Lore:
+      - "&7Place on the floor to arm the trap."
+      - "&7If the beast walks in it, it will"
+      - "&7lose the armor it's wearing!"
+      Glow: false
+      Hide-flags: true
+    Messages:
+      Economy-not-available: "&cEconomy for this item is not available. If you think this is an error contact an administrator."
+      No-permission: "&cYou need &a[RANK]&c rank to purchase this item. Get it on &bstore.yournetwork.net&c!"
+      No-enough-money: "&cYou don't have enough money to purchase this item!"
+      Selected-free:
+      - "&aYou selected {NAME}&a."
+      - "&aYou'll receive the item(s) in your next game!"
+      Unselected-free: "&cYou unselected {NAME}&c!"
+      Purchased-success-free:
+      - "&d✫ &7Purchased {NAME}&7 for &aFREE&7!"
+      Selected:
+      - "&aYou selected {NAME}&a."
+      - "&aYou'll receive the item(s) in your next game!"
+      - "&aMoney will be taken in that moment if enough, otherwise &c&nitem will be unselected&a!."
+      Unselected: "&cYou unselected {NAME}&c. You won't be charged in next games!"
+      Purchased-success:
+      - "&c- {PRICE} &7(Purchased {NAME}&7)"
+      Purchased-failed: "&cNot enough money to purchase {NAME}&c."
+  speed-potion:
+    Type: "POTION"
+    Slot: 3
+    #Permission required to BUY this upgrade? Set to "none" to not require any permission.
+    Permission: "alonsorftb.runners-shop.speed-potion"
+    Free-permission: "alonsorftb.runners-shop.speed-potion.free"
+    Name: "&b&lSpeed Potion"
+    #Price for this skin?
+    Price: 50
+    Economy:
+      #Economy type for this skin? Available types are: VAULT, PLAYER_POINTS, TOKEN_MANAGER and LEVEL.
+      Type: "VAULT"
+      #Ignore this for now.
+      Material: "DIAMOND"
+    #Want to set a custom model data for this skin?
+    Custom-model-data: 0
+    #This is how the item will look like in the shop.
+    Item-shop:
+      Free:
+        #Amount of items displayed in gui when its LOCKED.
+        Amount: 1
+        Material: "custom:speed-potion"
+        Custom-model-data: 0
+        Displayname: "&b&lSpeed Potion"
+        Lore:
+        - "&7Boost your start!"
+        - ""
+        - "&7Price: &c&m{PRICE}&r &aFREE!"
+        - ""
+        - "&cFree with your current rank!"
+        Glow: false
+        Hide-flags: true
+      Locked:
+        #Amount of items displayed in gui when its LOCKED.
+        Amount: 1
+        Material: "custom:speed-potion"
+        Custom-model-data: 0
+        Displayname: "&b&lSpeed Potion"
+        Lore:
+        - "&7Boost your start!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&cRequires &a[RANK]&c rank!"
+        - "&cPurchase on &bstore.yournetwork.net&c!"
+        Glow: false
+        Hide-flags: true
+      Unlocked:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "custom:speed-potion"
+        Custom-model-data: 0
+        Displayname: "&b&lSpeed Potion"
+        Lore:
+        - "&7Boost your start!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&eClick to purchase!"
+        Glow: false
+        Hide-flags: true
+      Selected:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "custom:speed-potion"
+        Custom-model-data: 0
+        Displayname: "&b&lSpeed Potion"
+        Lore:
+        - "&7Boost your start!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&aSelected."
+        Glow: true
+        Hide-flags: true
+      Selected-free:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "custom:speed-potion"
+        Custom-model-data: 0
+        Displayname: "&b&lSpeed Potion"
+        Lore:
+        - "&7Boost your start!"
+        - ""
+        - "&7Price: &c&m{PRICE}&r &aFREE!"
+        - ""
+        - "&aSelected!"
+        Glow: true
+        Hide-flags: true
+    #This is how the item will look like when given to the player.
+    Item:
+      #Amount of items given to the player.
+      Amount: 1
+      Material: "custom:speed-potion"
+      Custom-model-data: 0
+      Displayname: "&b&lSpeed Potion"
+      Lore:
+      - "&7Boost your start!"
+      Glow: false
+      Hide-flags: true
+    Messages:
+      Economy-not-available: "&cEconomy for this item is not available. If you think this is an error contact an administrator."
+      No-permission: "&cYou need &a[RANK]&c rank to purchase this item. Get it on &bstore.yournetwork.net&c!"
+      No-enough-money: "&cYou don't have enough money to purchase this item!"
+      Selected-free:
+      - "&aYou selected {NAME}&a."
+      - "&aYou'll receive the item(s) in your next game!"
+      Unselected-free: "&cYou unselected {NAME}&c!"
+      Purchased-success-free:
+      - "&d✫ &7Purchased {NAME}&7 for &aFREE&7!"
+      Selected:
+      - "&aYou selected {NAME}&a."
+      - "&aYou'll receive the item(s) in your next game!"
+      - "&aMoney will be taken in that moment if enough, otherwise &c&nitem will be unselected&a!."
+      Unselected: "&cYou unselected {NAME}&c. You won't be charged in next games!"
+      Purchased-success:
+      - "&c- {PRICE} &7(Purchased {NAME}&7)"
+      Purchased-failed: "&cNot enough money to purchase {NAME}&c."
+
+Beasts-shop:
+  #Identifier can be anything you want. MUST BE LOWERCASE AND CAN ONLY CONTAIN LETTER, NUMBERS AND DASHES. It MUST be unique!
+  developer-disguise:
+    Type: "BEAST_SKIN"
+    Disguise-type: "PLAYER"
+    Disguise-data: "AlonsoAliaga"
+    Slot: 0
+    #Permission required to BUY this upgrade? Set to "none" to not require any permission.
+    Permission: "alonsorftb.beasts-shop.developer-disguise"
+    Free-permission: "alonsorftb.beasts-shop.developer-disguise.free"
+    Name: "&5&lDeveloper disguise"
+    #Price for this skin?
+    Price: 25
+    Economy:
+      #Economy type for this skin? Available types are: VAULT, PLAYER_POINTS, TOKEN_MANAGER and LEVEL.
+      Type: "VAULT"
+      #Ignore this for now.
+      Material: "DIAMOND"
+    #Want to set a custom model data for this skin?
+    Custom-model-data: 0
+    #This is how the item will look like in the shop.
+    Item-shop:
+      Free:
+        #Amount of items displayed in gui when its LOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "ewogICJ0aW1lc3RhbXAiIDogMTU5NDQ0NjkyMDI5NiwKICAicHJvZmlsZUlkIiA6ICJlMWMxYTE5NDdlODY0MTRmODZiYjQyZDgyYTIxY2ZiOCIsCiAgInByb2ZpbGVOYW1lIiA6ICJBbG9uc29BbGlhZ2EiLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTY4YWE3NGNjODg1NzgwNjBkMGZlM2JkOTA4YjM0ZjY5ZjEyZTA3ZjFmODljNWRkYzE1ZTZiZjYwZjA0Y2NjNiIKICAgIH0KICB9Cn0="
+        Custom-model-data: 0
+        Displayname: "&5&lDeveloper disguise"
+        Lore:
+        - "&7Disguise as the developer"
+        - "&7of this amazing minigame"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &c&m{PRICE}&r &aFREE!"
+        - ""
+        - "&cFree with your current rank!"
+        Glow: false
+        Hide-flags: true
+      Locked:
+        #Amount of items displayed in gui when its LOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "ewogICJ0aW1lc3RhbXAiIDogMTU5NDQ0NjkyMDI5NiwKICAicHJvZmlsZUlkIiA6ICJlMWMxYTE5NDdlODY0MTRmODZiYjQyZDgyYTIxY2ZiOCIsCiAgInByb2ZpbGVOYW1lIiA6ICJBbG9uc29BbGlhZ2EiLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTY4YWE3NGNjODg1NzgwNjBkMGZlM2JkOTA4YjM0ZjY5ZjEyZTA3ZjFmODljNWRkYzE1ZTZiZjYwZjA0Y2NjNiIKICAgIH0KICB9Cn0="
+        Custom-model-data: 0
+        Displayname: "&5&lDeveloper disguise"
+        Lore:
+        - "&7Disguise as the developer"
+        - "&7of this amazing minigame"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&cRequires &e[RANK]&c rank!"
+        - "&cPurchase on &bstore.yournetwork.net&c!"
+        Glow: false
+        Hide-flags: true
+      Unlocked:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "ewogICJ0aW1lc3RhbXAiIDogMTU5NDQ0NjkyMDI5NiwKICAicHJvZmlsZUlkIiA6ICJlMWMxYTE5NDdlODY0MTRmODZiYjQyZDgyYTIxY2ZiOCIsCiAgInByb2ZpbGVOYW1lIiA6ICJBbG9uc29BbGlhZ2EiLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTY4YWE3NGNjODg1NzgwNjBkMGZlM2JkOTA4YjM0ZjY5ZjEyZTA3ZjFmODljNWRkYzE1ZTZiZjYwZjA0Y2NjNiIKICAgIH0KICB9Cn0="
+        Custom-model-data: 0
+        Displayname: "&5&lDeveloper disguise"
+        Lore:
+        - "&7Disguise as the developer"
+        - "&7of this amazing minigame"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&eClick to purchase!"
+        Glow: false
+        Hide-flags: true
+      Selected:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "ewogICJ0aW1lc3RhbXAiIDogMTU5NDQ0NjkyMDI5NiwKICAicHJvZmlsZUlkIiA6ICJlMWMxYTE5NDdlODY0MTRmODZiYjQyZDgyYTIxY2ZiOCIsCiAgInByb2ZpbGVOYW1lIiA6ICJBbG9uc29BbGlhZ2EiLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTY4YWE3NGNjODg1NzgwNjBkMGZlM2JkOTA4YjM0ZjY5ZjEyZTA3ZjFmODljNWRkYzE1ZTZiZjYwZjA0Y2NjNiIKICAgIH0KICB9Cn0="
+        Custom-model-data: 0
+        Displayname: "&5&lDeveloper disguise"
+        Lore:
+        - "&7Disguise as the developer"
+        - "&7of this amazing minigame"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&aSelected."
+        Glow: true
+        Hide-flags: true
+      Selected-free:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "ewogICJ0aW1lc3RhbXAiIDogMTU5NDQ0NjkyMDI5NiwKICAicHJvZmlsZUlkIiA6ICJlMWMxYTE5NDdlODY0MTRmODZiYjQyZDgyYTIxY2ZiOCIsCiAgInByb2ZpbGVOYW1lIiA6ICJBbG9uc29BbGlhZ2EiLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTY4YWE3NGNjODg1NzgwNjBkMGZlM2JkOTA4YjM0ZjY5ZjEyZTA3ZjFmODljNWRkYzE1ZTZiZjYwZjA0Y2NjNiIKICAgIH0KICB9Cn0="
+        Custom-model-data: 0
+        Displayname: "&5&lDeveloper disguise"
+        Lore:
+        - "&7Disguise as the developer"
+        - "&7of this amazing minigame"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &c&m{PRICE}&r &aFREE!"
+        - ""
+        - "&aSelected!"
+        Glow: true
+        Hide-flags: true
+    Messages:
+      Economy-not-available: "&cEconomy for this item is not available. If you think this is an error contact an administrator."
+      No-permission: "&cYou need &e[RANK]&c rank to purchase this item. Get it on &bstore.yournetwork.net&c!"
+      No-enough-money: "&cYou don't have enough money to purchase this item!"
+      Selected-free:
+      - "&aYou selected {NAME}&a."
+      - "&aYou'll receive the item(s) in your next game!"
+      Unselected-free: "&cYou unselected {NAME}&c!"
+      Purchased-success-free:
+      - "&d✫ &7Purchased {NAME}&7 for &aFREE&7!"
+      Selected:
+      - "&aYou selected {NAME}&a."
+      - "&aYou'll receive the item(s) in your next game!"
+      - "&aMoney will be taken in that moment if enough, otherwise &c&nitem will be unselected&a!."
+      Unselected: "&cYou unselected {NAME}&c. You won't be charged in next games!"
+      Purchased-success:
+      - "&c- {PRICE} &7(Purchased {NAME}&7)"
+      Purchased-failed: "&cNot enough money to purchase {NAME}&c."
+      Disguise-success: "&c&lYou are now disguised as &5&lAlonsoAliaga&c&l!"
+  wolf-disguise:
+    Type: "BEAST_SKIN"
+    Disguise-type: "WOLF"
+    Slot: 1
+    #Permission required to BUY this upgrade? Set to "none" to not require any permission.
+    Permission: "none"
+    Free-permission: "alonsorftb.beasts-shop.wolf-disguise.free"
+    Name: "&f&lWolf disguise"
+    #Price for this skin?
+    Price: 50
+    Economy:
+      #Economy type for this skin? Available types are: VAULT, PLAYER_POINTS, TOKEN_MANAGER and LEVEL.
+      Type: "VAULT"
+      #Ignore this for now.
+      Material: "DIAMOND"
+    #Want to set a custom model data for this skin?
+    Custom-model-data: 0
+    #This is how the item will look like in the shop.
+    Item-shop:
+      Free:
+        #Amount of items displayed in gui when its LOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjhkNDA4ODQyZTc2YTVhNDU0ZGMxYzdlOWFjNWMxYThhYzNmNGFkMzRkNjk3M2I1Mjc1NDkxZGZmOGM1YzI1MSJ9fX0="
+        Custom-model-data: 0
+        Displayname: "&f&lWolf disguise"
+        Lore:
+        - "&7Disguise as a wolf"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &c&m{PRICE}&r &aFREE!"
+        - ""
+        - "&cFree with your current rank!"
+        Glow: false
+        Hide-flags: true
+      Locked:
+        #Amount of items displayed in gui when its LOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjhkNDA4ODQyZTc2YTVhNDU0ZGMxYzdlOWFjNWMxYThhYzNmNGFkMzRkNjk3M2I1Mjc1NDkxZGZmOGM1YzI1MSJ9fX0="
+        Custom-model-data: 0
+        Displayname: "&f&lWolf disguise"
+        Lore:
+        - "&7Disguise as a wolf"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&cRequires &e[RANK]&c rank!"
+        - "&cPurchase on &bstore.yournetwork.net&c!"
+        Glow: false
+        Hide-flags: true
+      Unlocked:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjhkNDA4ODQyZTc2YTVhNDU0ZGMxYzdlOWFjNWMxYThhYzNmNGFkMzRkNjk3M2I1Mjc1NDkxZGZmOGM1YzI1MSJ9fX0="
+        Custom-model-data: 0
+        Displayname: "&f&lWolf disguise"
+        Lore:
+        - "&7Disguise as a wolf"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&eClick to purchase!"
+        Glow: false
+        Hide-flags: true
+      Selected:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjhkNDA4ODQyZTc2YTVhNDU0ZGMxYzdlOWFjNWMxYThhYzNmNGFkMzRkNjk3M2I1Mjc1NDkxZGZmOGM1YzI1MSJ9fX0="
+        Custom-model-data: 0
+        Displayname: "&f&lWolf disguise"
+        Lore:
+        - "&7Disguise as a wolf"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&aSelected."
+        Glow: true
+        Hide-flags: true
+      Selected-free:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjhkNDA4ODQyZTc2YTVhNDU0ZGMxYzdlOWFjNWMxYThhYzNmNGFkMzRkNjk3M2I1Mjc1NDkxZGZmOGM1YzI1MSJ9fX0="
+        Custom-model-data: 0
+        Displayname: "&f&lWolf disguise"
+        Lore:
+        - "&7Disguise as a wolf"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &c&m{PRICE}&r &aFREE!"
+        - ""
+        - "&aSelected!"
+        Glow: true
+        Hide-flags: true
+    Messages:
+      Economy-not-available: "&cEconomy for this item is not available. If you think this is an error contact an administrator."
+      No-permission: "&cYou need &e[RANK]&c rank to purchase this item. Get it on &bstore.yournetwork.net&c!"
+      No-enough-money: "&cYou don't have enough money to purchase this item!"
+      Selected-free:
+      - "&aYou selected {NAME}&a."
+      - "&aYou'll receive the item(s) in your next game!"
+      Unselected-free: "&cYou unselected {NAME}&c!"
+      Purchased-success-free:
+      - "&d✫ &7Purchased {NAME}&7 for &aFREE&7!"
+      Selected:
+      - "&aYou selected {NAME}&a."
+      - "&aYou'll receive the item(s) in your next game!"
+      - "&aMoney will be taken in that moment if enough, otherwise &c&nitem will be unselected&a!."
+      Unselected: "&cYou unselected {NAME}&c. You won't be charged in next games!"
+      Purchased-success:
+      - "&c- {PRICE} &7(Purchased {NAME}&7)"
+      Purchased-failed: "&cNot enough money to purchase {NAME}&c."
+      Disguise-success: "&c&lYou are now disguised as &f&lWolf&c&l!"
+  blaze-disguise:
+    Type: "BEAST_SKIN"
+    Disguise-type: "BLAZE"
+    Slot: 2
+    #Permission required to BUY this upgrade? Set to "none" to not require any permission.
+    Permission: "none"
+    Free-permission: "alonsorftb.beasts-shop.blaze-disguise.free"
+    Name: "&6&lBlaze disguise"
+    #Price for this skin?
+    Price: 50
+    Economy:
+      #Economy type for this skin? Available types are: VAULT, PLAYER_POINTS, TOKEN_MANAGER and LEVEL.
+      Type: "VAULT"
+      #Ignore this for now.
+      Material: "DIAMOND"
+    #Want to set a custom model data for this skin?
+    Custom-model-data: 0
+    #This is how the item will look like in the shop.
+    Item-shop:
+      Free:
+        #Amount of items displayed in gui when its LOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjc4ZWYyZTRjZjJjNDFhMmQxNGJmZGU5Y2FmZjEwMjE5ZjViMWJmNWIzNWE0OWViNTFjNjQ2Nzg4MmNiNWYwIn19fQ=="
+        Custom-model-data: 0
+        Displayname: "&6&lBlaze disguise"
+        Lore:
+        - "&7Disguise as a blaze"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &c&m{PRICE}&r &aFREE!"
+        - ""
+        - "&cFree with your current rank!"
+        Glow: false
+        Hide-flags: true
+      Locked:
+        #Amount of items displayed in gui when its LOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjc4ZWYyZTRjZjJjNDFhMmQxNGJmZGU5Y2FmZjEwMjE5ZjViMWJmNWIzNWE0OWViNTFjNjQ2Nzg4MmNiNWYwIn19fQ=="
+        Custom-model-data: 0
+        Displayname: "&6&lBlaze disguise"
+        Lore:
+        - "&7Disguise as a blaze"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&cRequires &e[RANK]&c rank!"
+        - "&cPurchase on &bstore.yournetwork.net&c!"
+        Glow: false
+        Hide-flags: true
+      Unlocked:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjc4ZWYyZTRjZjJjNDFhMmQxNGJmZGU5Y2FmZjEwMjE5ZjViMWJmNWIzNWE0OWViNTFjNjQ2Nzg4MmNiNWYwIn19fQ=="
+        Custom-model-data: 0
+        Displayname: "&6&lBlaze disguise"
+        Lore:
+        - "&7Disguise as a blaze"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&eClick to purchase!"
+        Glow: false
+        Hide-flags: true
+      Selected:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjc4ZWYyZTRjZjJjNDFhMmQxNGJmZGU5Y2FmZjEwMjE5ZjViMWJmNWIzNWE0OWViNTFjNjQ2Nzg4MmNiNWYwIn19fQ=="
+        Custom-model-data: 0
+        Displayname: "&6&lBlaze disguise"
+        Lore:
+        - "&7Disguise as a blaze"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&aSelected."
+        Glow: true
+        Hide-flags: true
+      Selected-free:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjc4ZWYyZTRjZjJjNDFhMmQxNGJmZGU5Y2FmZjEwMjE5ZjViMWJmNWIzNWE0OWViNTFjNjQ2Nzg4MmNiNWYwIn19fQ=="
+        Custom-model-data: 0
+        Displayname: "&6&lBlaze disguise"
+        Lore:
+        - "&7Disguise as a blaze"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &c&m{PRICE}&r &aFREE!"
+        - ""
+        - "&aSelected!"
+        Glow: true
+        Hide-flags: true
+    Messages:
+      Economy-not-available: "&cEconomy for this item is not available. If you think this is an error contact an administrator."
+      No-permission: "&cYou need &e[RANK]&c rank to purchase this item. Get it on &bstore.yournetwork.net&c!"
+      No-enough-money: "&cYou don't have enough money to purchase this item!"
+      Selected-free:
+      - "&aYou selected {NAME}&a."
+      - "&aYou'll receive the item(s) in your next game!"
+      Unselected-free: "&cYou unselected {NAME}&c!"
+      Purchased-success-free:
+      - "&d✫ &7Purchased {NAME}&7 for &aFREE&7!"
+      Selected:
+      - "&aYou selected {NAME}&a."
+      - "&aYou'll receive the item(s) in your next game!"
+      - "&aMoney will be taken in that moment if enough, otherwise &c&nitem will be unselected&a!."
+      Unselected: "&cYou unselected {NAME}&c. You won't be charged in next games!"
+      Purchased-success:
+      - "&c- {PRICE} &7(Purchased {NAME}&7)"
+      Purchased-failed: "&cNot enough money to purchase {NAME}&c."
+      Disguise-success: "&c&lYou are now disguised as &6&lBlaze&c&l!"
+  zombie-disguise:
+    Type: "BEAST_SKIN"
+    Disguise-type: "ZOMBIE"
+    Slot: 3
+    #Permission required to BUY this upgrade? Set to "none" to not require any permission.
+    Permission: "none"
+    Free-permission: "alonsorftb.beasts-shop.zombie-disguise.free"
+    Name: "&2&lZombie disguise"
+    #Price for this skin?
+    Price: 50
+    Economy:
+      #Economy type for this skin? Available types are: VAULT, PLAYER_POINTS, TOKEN_MANAGER and LEVEL.
+      Type: "VAULT"
+      #Ignore this for now.
+      Material: "DIAMOND"
+    #Want to set a custom model data for this skin?
+    Custom-model-data: 0
+    #This is how the item will look like in the shop.
+    Item-shop:
+      Free:
+        #Amount of items displayed in gui when its LOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTZmYzg1NGJiODRjZjRiNzY5NzI5Nzk3M2UwMmI3OWJjMTA2OTg0NjBiNTFhNjM5YzYwZTVlNDE3NzM0ZTExIn19fQ=="
+        Custom-model-data: 0
+        Displayname: "&2&lZombie disguise"
+        Lore:
+        - "&7Disguise as a zombie"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &c&m{PRICE}&r &aFREE!"
+        - ""
+        - "&cFree with your current rank!"
+        Glow: false
+        Hide-flags: true
+      Locked:
+        #Amount of items displayed in gui when its LOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTZmYzg1NGJiODRjZjRiNzY5NzI5Nzk3M2UwMmI3OWJjMTA2OTg0NjBiNTFhNjM5YzYwZTVlNDE3NzM0ZTExIn19fQ=="
+        Custom-model-data: 0
+        Displayname: "&2&lZombie disguise"
+        Lore:
+        - "&7Disguise as a zombie"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&cRequires &e[RANK]&c rank!"
+        - "&cPurchase on &bstore.yournetwork.net&c!"
+        Glow: false
+        Hide-flags: true
+      Unlocked:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTZmYzg1NGJiODRjZjRiNzY5NzI5Nzk3M2UwMmI3OWJjMTA2OTg0NjBiNTFhNjM5YzYwZTVlNDE3NzM0ZTExIn19fQ=="
+        Custom-model-data: 0
+        Displayname: "&2&lZombie disguise"
+        Lore:
+        - "&7Disguise as a zombie"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&eClick to purchase!"
+        Glow: false
+        Hide-flags: true
+      Selected:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTZmYzg1NGJiODRjZjRiNzY5NzI5Nzk3M2UwMmI3OWJjMTA2OTg0NjBiNTFhNjM5YzYwZTVlNDE3NzM0ZTExIn19fQ=="
+        Custom-model-data: 0
+        Displayname: "&2&lZombie disguise"
+        Lore:
+        - "&7Disguise as a zombie"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&aSelected."
+        Glow: true
+        Hide-flags: true
+      Selected-free:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTZmYzg1NGJiODRjZjRiNzY5NzI5Nzk3M2UwMmI3OWJjMTA2OTg0NjBiNTFhNjM5YzYwZTVlNDE3NzM0ZTExIn19fQ=="
+        Custom-model-data: 0
+        Displayname: "&2&lZombie disguise"
+        Lore:
+        - "&7Disguise as a zombie"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &c&m{PRICE}&r &aFREE!"
+        - ""
+        - "&aSelected!"
+        Glow: true
+        Hide-flags: true
+    Messages:
+      Economy-not-available: "&cEconomy for this item is not available. If you think this is an error contact an administrator."
+      No-permission: "&cYou need &e[RANK]&c rank to purchase this item. Get it on &bstore.yournetwork.net&c!"
+      No-enough-money: "&cYou don't have enough money to purchase this item!"
+      Selected-free:
+      - "&aYou selected {NAME}&a."
+      - "&aYou'll receive the item(s) in your next game!"
+      Unselected-free: "&cYou unselected {NAME}&c!"
+      Purchased-success-free:
+      - "&d✫ &7Purchased {NAME}&7 for &aFREE&7!"
+      Selected:
+      - "&aYou selected {NAME}&a."
+      - "&aYou'll receive the item(s) in your next game!"
+      - "&aMoney will be taken in that moment if enough, otherwise &c&nitem will be unselected&a!."
+      Unselected: "&cYou unselected {NAME}&c. You won't be charged in next games!"
+      Purchased-success:
+      - "&c- {PRICE} &7(Purchased {NAME}&7)"
+      Purchased-failed: "&cNot enough money to purchase {NAME}&c."
+      Disguise-success: "&c&lYou are now disguised as &2&lZombie&c&l!"
+  spider-disguise:
+    Type: "BEAST_SKIN"
+    Disguise-type: "SPIDER"
+    Slot: 4
+    #Permission required to BUY this upgrade? Set to "none" to not require any permission.
+    Permission: "none"
+    Free-permission: "alonsorftb.beasts-shop.spider-disguise.free"
+    Name: "&8&lSpider disguise"
+    #Price for this skin?
+    Price: 50
+    Economy:
+      #Economy type for this skin? Available types are: VAULT, PLAYER_POINTS, TOKEN_MANAGER and LEVEL.
+      Type: "VAULT"
+      #Ignore this for now.
+      Material: "DIAMOND"
+    #Want to set a custom model data for this skin?
+    Custom-model-data: 0
+    #This is how the item will look like in the shop.
+    Item-shop:
+      Free:
+        #Amount of items displayed in gui when its LOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzVlMjQ4ZGEyZTEwOGYwOTgxM2E2Yjg0OGEwZmNlZjExMTMwMDk3ODE4MGVkYTQxZDNkMWE3YThlNGRiYTNjMyJ9fX0="
+        Custom-model-data: 0
+        Displayname: "&8&lSpider disguise"
+        Lore:
+        - "&7Disguise as a spider"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &c&m{PRICE}&r &aFREE!"
+        - ""
+        - "&cFree with your current rank!"
+        Glow: false
+        Hide-flags: true
+      Locked:
+        #Amount of items displayed in gui when its LOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzVlMjQ4ZGEyZTEwOGYwOTgxM2E2Yjg0OGEwZmNlZjExMTMwMDk3ODE4MGVkYTQxZDNkMWE3YThlNGRiYTNjMyJ9fX0="
+        Custom-model-data: 0
+        Displayname: "&8&lSpider disguise"
+        Lore:
+        - "&7Disguise as a spider"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&cRequires &e[RANK]&c rank!"
+        - "&cPurchase on &bstore.yournetwork.net&c!"
+        Glow: false
+        Hide-flags: true
+      Unlocked:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzVlMjQ4ZGEyZTEwOGYwOTgxM2E2Yjg0OGEwZmNlZjExMTMwMDk3ODE4MGVkYTQxZDNkMWE3YThlNGRiYTNjMyJ9fX0="
+        Custom-model-data: 0
+        Displayname: "&8&lSpider disguise"
+        Lore:
+        - "&7Disguise as a spider"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&eClick to purchase!"
+        Glow: false
+        Hide-flags: true
+      Selected:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzVlMjQ4ZGEyZTEwOGYwOTgxM2E2Yjg0OGEwZmNlZjExMTMwMDk3ODE4MGVkYTQxZDNkMWE3YThlNGRiYTNjMyJ9fX0="
+        Custom-model-data: 0
+        Displayname: "&8&lSpider disguise"
+        Lore:
+        - "&7Disguise as a spider"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&aSelected."
+        Glow: true
+        Hide-flags: true
+      Selected-free:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzVlMjQ4ZGEyZTEwOGYwOTgxM2E2Yjg0OGEwZmNlZjExMTMwMDk3ODE4MGVkYTQxZDNkMWE3YThlNGRiYTNjMyJ9fX0="
+        Custom-model-data: 0
+        Displayname: "&8&lSpider disguise"
+        Lore:
+        - "&7Disguise as a spider"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &c&m{PRICE}&r &aFREE!"
+        - ""
+        - "&aSelected!"
+        Glow: true
+        Hide-flags: true
+    Messages:
+      Economy-not-available: "&cEconomy for this item is not available. If you think this is an error contact an administrator."
+      No-permission: "&cYou need &e[RANK]&c rank to purchase this item. Get it on &bstore.yournetwork.net&c!"
+      No-enough-money: "&cYou don't have enough money to purchase this item!"
+      Selected-free:
+      - "&aYou selected {NAME}&a."
+      - "&aYou'll receive the item(s) in your next game!"
+      Unselected-free: "&cYou unselected {NAME}&c!"
+      Purchased-success-free:
+      - "&d✫ &7Purchased {NAME}&7 for &aFREE&7!"
+      Selected:
+      - "&aYou selected {NAME}&a."
+      - "&aYou'll receive the item(s) in your next game!"
+      - "&aMoney will be taken in that moment if enough, otherwise &c&nitem will be unselected&a!."
+      Unselected: "&cYou unselected {NAME}&c. You won't be charged in next games!"
+      Purchased-success:
+      - "&c- {PRICE} &7(Purchased {NAME}&7)"
+      Purchased-failed: "&cNot enough money to purchase {NAME}&c."
+      Disguise-success: "&c&lYou are now disguised as &8&lSpider&c&l!"
+  villager-disguise:
+    Type: "BEAST_SKIN"
+    Disguise-type: "VILLAGER"
+    Slot: 5
+    #Permission required to BUY this upgrade? Set to "none" to not require any permission.
+    Permission: "none"
+    Free-permission: "alonsorftb.beasts-shop.villager-disguise.free"
+    Name: "&e&lVillager disguise"
+    #Price for this skin?
+    Price: 50
+    Economy:
+      #Economy type for this skin? Available types are: VAULT, PLAYER_POINTS, TOKEN_MANAGER and LEVEL.
+      Type: "VAULT"
+      #Ignore this for now.
+      Material: "DIAMOND"
+    #Want to set a custom model data for this skin?
+    Custom-model-data: 0
+    #This is how the item will look like in the shop.
+    Item-shop:
+      Free:
+        #Amount of items displayed in gui when its LOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGNhOGVmMjQ1OGEyYjEwMjYwYjg3NTY1NThmNzY3OWJjYjdlZjY5MWQ0MWY1MzRlZmVhMmJhNzUxMDczMTVjYyJ9fX0="
+        Custom-model-data: 0
+        Displayname: "&e&lVillager disguise"
+        Lore:
+        - "&7Disguise as a villager"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &c&m{PRICE}&r &aFREE!"
+        - ""
+        - "&cFree with your current rank!"
+        Glow: false
+        Hide-flags: true
+      Locked:
+        #Amount of items displayed in gui when its LOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGNhOGVmMjQ1OGEyYjEwMjYwYjg3NTY1NThmNzY3OWJjYjdlZjY5MWQ0MWY1MzRlZmVhMmJhNzUxMDczMTVjYyJ9fX0="
+        Custom-model-data: 0
+        Displayname: "&e&lVillager disguise"
+        Lore:
+        - "&7Disguise as a villager"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&cRequires &e[RANK]&c rank!"
+        - "&cPurchase on &bstore.yournetwork.net&c!"
+        Glow: false
+        Hide-flags: true
+      Unlocked:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGNhOGVmMjQ1OGEyYjEwMjYwYjg3NTY1NThmNzY3OWJjYjdlZjY5MWQ0MWY1MzRlZmVhMmJhNzUxMDczMTVjYyJ9fX0="
+        Custom-model-data: 0
+        Displayname: "&e&lVillager disguise"
+        Lore:
+        - "&7Disguise as a villager"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&eClick to purchase!"
+        Glow: false
+        Hide-flags: true
+      Selected:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGNhOGVmMjQ1OGEyYjEwMjYwYjg3NTY1NThmNzY3OWJjYjdlZjY5MWQ0MWY1MzRlZmVhMmJhNzUxMDczMTVjYyJ9fX0="
+        Custom-model-data: 0
+        Displayname: "&e&lVillager disguise"
+        Lore:
+        - "&7Disguise as a villager"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&aSelected."
+        Glow: true
+        Hide-flags: true
+      Selected-free:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGNhOGVmMjQ1OGEyYjEwMjYwYjg3NTY1NThmNzY3OWJjYjdlZjY5MWQ0MWY1MzRlZmVhMmJhNzUxMDczMTVjYyJ9fX0="
+        Custom-model-data: 0
+        Displayname: "&e&lVillager disguise"
+        Lore:
+        - "&7Disguise as a villager"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &c&m{PRICE}&r &aFREE!"
+        - ""
+        - "&aSelected!"
+        Glow: true
+        Hide-flags: true
+    Messages:
+      Economy-not-available: "&cEconomy for this item is not available. If you think this is an error contact an administrator."
+      No-permission: "&cYou need &e[RANK]&c rank to purchase this item. Get it on &bstore.yournetwork.net&c!"
+      No-enough-money: "&cYou don't have enough money to purchase this item!"
+      Selected-free:
+      - "&aYou selected {NAME}&a."
+      - "&aYou'll receive the item(s) in your next game!"
+      Unselected-free: "&cYou unselected {NAME}&c!"
+      Purchased-success-free:
+      - "&d✫ &7Purchased {NAME}&7 for &aFREE&7!"
+      Selected:
+      - "&aYou selected {NAME}&a."
+      - "&aYou'll receive the item(s) in your next game!"
+      - "&aMoney will be taken in that moment if enough, otherwise &c&nitem will be unselected&a!."
+      Unselected: "&cYou unselected {NAME}&c. You won't be charged in next games!"
+      Purchased-success:
+      - "&c- {PRICE} &7(Purchased {NAME}&7)"
+      Purchased-failed: "&cNot enough money to purchase {NAME}&c."
+      Disguise-success: "&c&lYou are now disguised as &e&lVillager&c&l!"
+  donkey-disguise:
+    Type: "BEAST_SKIN"
+    Disguise-type: "DONKEY"
+    Slot: 6
+    #Permission required to BUY this upgrade? Set to "none" to not require any permission.
+    Permission: "none"
+    Free-permission: "alonsorftb.beasts-shop.donkey-disguise.free"
+    Name: "&7&lDonkey disguise"
+    #Price for this skin?
+    Price: 50
+    Economy:
+      #Economy type for this skin? Available types are: VAULT, PLAYER_POINTS, TOKEN_MANAGER and LEVEL.
+      Type: "VAULT"
+      #Ignore this for now.
+      Material: "DIAMOND"
+    #Want to set a custom model data for this skin?
+    Custom-model-data: 0
+    #This is how the item will look like in the shop.
+    Item-shop:
+      Free:
+        #Amount of items displayed in gui when its LOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzk5YmI1MGQxYTIxNGMzOTQ5MTdlMjViYjNmMmUyMDY5OGJmOThjYTcwM2U0Y2MwOGI0MjQ2MmRmMzA5ZDZlNiJ9fX0="
+        Custom-model-data: 0
+        Displayname: "&7&lDonkey disguise"
+        Lore:
+        - "&7Disguise as a donkey"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &c&m{PRICE}&r &aFREE!"
+        - ""
+        - "&cFree with your current rank!"
+        Glow: false
+        Hide-flags: true
+      Locked:
+        #Amount of items displayed in gui when its LOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzk5YmI1MGQxYTIxNGMzOTQ5MTdlMjViYjNmMmUyMDY5OGJmOThjYTcwM2U0Y2MwOGI0MjQ2MmRmMzA5ZDZlNiJ9fX0="
+        Custom-model-data: 0
+        Displayname: "&7&lDonkey disguise"
+        Lore:
+        - "&7Disguise as a donkey"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&cRequires &e[RANK]&c rank!"
+        - "&cPurchase on &bstore.yournetwork.net&c!"
+        Glow: false
+        Hide-flags: true
+      Unlocked:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzk5YmI1MGQxYTIxNGMzOTQ5MTdlMjViYjNmMmUyMDY5OGJmOThjYTcwM2U0Y2MwOGI0MjQ2MmRmMzA5ZDZlNiJ9fX0="
+        Custom-model-data: 0
+        Displayname: "&7&lDonkey disguise"
+        Lore:
+        - "&7Disguise as a donkey"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&eClick to purchase!"
+        Glow: false
+        Hide-flags: true
+      Selected:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzk5YmI1MGQxYTIxNGMzOTQ5MTdlMjViYjNmMmUyMDY5OGJmOThjYTcwM2U0Y2MwOGI0MjQ2MmRmMzA5ZDZlNiJ9fX0="
+        Custom-model-data: 0
+        Displayname: "&7&lDonkey disguise"
+        Lore:
+        - "&7Disguise as a donkey"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&aSelected."
+        Glow: true
+        Hide-flags: true
+      Selected-free:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzk5YmI1MGQxYTIxNGMzOTQ5MTdlMjViYjNmMmUyMDY5OGJmOThjYTcwM2U0Y2MwOGI0MjQ2MmRmMzA5ZDZlNiJ9fX0="
+        Custom-model-data: 0
+        Displayname: "&7&lDonkey disguise"
+        Lore:
+        - "&7Disguise as a donkey"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &c&m{PRICE}&r &aFREE!"
+        - ""
+        - "&aSelected!"
+        Glow: true
+        Hide-flags: true
+    Messages:
+      Economy-not-available: "&cEconomy for this item is not available. If you think this is an error contact an administrator."
+      No-permission: "&cYou need &e[RANK]&c rank to purchase this item. Get it on &bstore.yournetwork.net&c!"
+      No-enough-money: "&cYou don't have enough money to purchase this item!"
+      Selected-free:
+      - "&aYou selected {NAME}&a."
+      - "&aYou'll receive the item(s) in your next game!"
+      Unselected-free: "&cYou unselected {NAME}&c!"
+      Purchased-success-free:
+      - "&d✫ &7Purchased {NAME}&7 for &aFREE&7!"
+      Selected:
+      - "&aYou selected {NAME}&a."
+      - "&aYou'll receive the item(s) in your next game!"
+      - "&aMoney will be taken in that moment if enough, otherwise &c&nitem will be unselected&a!."
+      Unselected: "&cYou unselected {NAME}&c. You won't be charged in next games!"
+      Purchased-success:
+      - "&c- {PRICE} &7(Purchased {NAME}&7)"
+      Purchased-failed: "&cNot enough money to purchase {NAME}&c."
+      Disguise-success: "&c&lYou are now disguised as &7&lDonkey&c&l!"
+  rainbow-sheep-disguise:
+    Type: "BEAST_SKIN"
+    Disguise-type: "SHEEP"
+    Rainbow-sheep: true
+    Slot: 8
+    #Permission required to BUY this upgrade? Set to "none" to not require any permission.
+    Permission: "alonsorftb.beasts-shop.rainbow-sheep-disguise"
+    Free-permission: "alonsorftb.beasts-shop.rainbow-sheep-disguise.free"
+    Name: "&e&lR&e&la&e&li&6&ln&6&lb&c&lo&c&lw &d&lS&d&lh&5&le&5&le&5&lp &9&ld&9&li&3&ls&3&lg&b&lu&b&li&a&ls&a&le"
+    #Price for this skin?
+    Price: 50
+    Economy:
+      #Economy type for this skin? Available types are: VAULT, PLAYER_POINTS, TOKEN_MANAGER and LEVEL.
+      Type: "VAULT"
+      #Ignore this for now.
+      Material: "DIAMOND"
+    #Want to set a custom model data for this skin?
+    Custom-model-data: 0
+    #This is how the item will look like in the shop.
+    Item-shop:
+      Free:
+        #Amount of items displayed in gui when its LOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTQ5YTIwZjE2NDk2NGFhZTU3MWM1OWM5MmM4OGQyNTQ2YjI2OTIzZGM1MWQ0Y2JlNzBhMjg0ODAwM2ZhOGQ4YiJ9fX0="
+        Custom-model-data: 0
+        Displayname: "&e&lR&e&la&e&li&6&ln&6&lb&c&lo&c&lw &d&lS&d&lh&5&le&5&le&5&lp &9&ld&9&li&3&ls&3&lg&b&lu&b&li&a&ls&a&l"
+        Lore:
+        - "&7Disguise as a donkey"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &c&m{PRICE}&r &aFREE!"
+        - ""
+        - "&cFree with your current rank!"
+        Glow: false
+        Hide-flags: true
+      Locked:
+        #Amount of items displayed in gui when its LOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTQ5YTIwZjE2NDk2NGFhZTU3MWM1OWM5MmM4OGQyNTQ2YjI2OTIzZGM1MWQ0Y2JlNzBhMjg0ODAwM2ZhOGQ4YiJ9fX0="
+        Custom-model-data: 0
+        Displayname: "&e&lR&e&la&e&li&6&ln&6&lb&c&lo&c&lw &d&lS&d&lh&5&le&5&le&5&lp &9&ld&9&li&3&ls&3&lg&b&lu&b&li&a&ls&a&l"
+        Lore:
+        - "&7Disguise as a donkey"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&cRequires &6[RANK]&c rank!"
+        - "&cPurchase on &bstore.yournetwork.net&c!"
+        Glow: false
+        Hide-flags: true
+      Unlocked:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTQ5YTIwZjE2NDk2NGFhZTU3MWM1OWM5MmM4OGQyNTQ2YjI2OTIzZGM1MWQ0Y2JlNzBhMjg0ODAwM2ZhOGQ4YiJ9fX0="
+        Custom-model-data: 0
+        Displayname: "&e&lR&e&la&e&li&6&ln&6&lb&c&lo&c&lw &d&lS&d&lh&5&le&5&le&5&lp &9&ld&9&li&3&ls&3&lg&b&lu&b&li&a&ls&a&l"
+        Lore:
+        - "&7Disguise as a donkey"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&eClick to purchase!"
+        Glow: false
+        Hide-flags: true
+      Selected:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTQ5YTIwZjE2NDk2NGFhZTU3MWM1OWM5MmM4OGQyNTQ2YjI2OTIzZGM1MWQ0Y2JlNzBhMjg0ODAwM2ZhOGQ4YiJ9fX0="
+        Custom-model-data: 0
+        Displayname: "&e&lR&e&la&e&li&6&ln&6&lb&c&lo&c&lw &d&lS&d&lh&5&le&5&le&5&lp &9&ld&9&li&3&ls&3&lg&b&lu&b&li&a&ls&a&l"
+        Lore:
+        - "&7Disguise as a donkey"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&aSelected."
+        Glow: true
+        Hide-flags: true
+      Selected-free:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTQ5YTIwZjE2NDk2NGFhZTU3MWM1OWM5MmM4OGQyNTQ2YjI2OTIzZGM1MWQ0Y2JlNzBhMjg0ODAwM2ZhOGQ4YiJ9fX0="
+        Custom-model-data: 0
+        Displayname: "&e&lR&e&la&e&li&6&ln&6&lb&c&lo&c&lw &d&lS&d&lh&5&le&5&le&5&lp &9&ld&9&li&3&ls&3&lg&b&lu&b&li&a&ls&a&l"
+        Lore:
+        - "&7Disguise as a donkey"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &c&m{PRICE}&r &aFREE!"
+        - ""
+        - "&aSelected!"
+        Glow: true
+        Hide-flags: true
+    Messages:
+      Economy-not-available: "&cEconomy for this item is not available. If you think this is an error contact an administrator."
+      No-permission: "&cYou need &6[RANK]&c rank to purchase this item. Get it on &bstore.yournetwork.net&c!"
+      No-enough-money: "&cYou don't have enough money to purchase this item!"
+      Selected-free:
+      - "&aYou selected {NAME}&a."
+      - "&aYou'll receive the item(s) in your next game!"
+      Unselected-free: "&cYou unselected {NAME}&c!"
+      Purchased-success-free:
+      - "&d✫ &7Purchased {NAME}&7 for &aFREE&7!"
+      Selected:
+      - "&aYou selected {NAME}&a."
+      - "&aYou'll receive the item(s) in your next game!"
+      - "&aMoney will be taken in that moment if enough, otherwise &c&nitem will be unselected&a!."
+      Unselected: "&cYou unselected {NAME}&c. You won't be charged in next games!"
+      Purchased-success:
+      - "&c- {PRICE} &7(Purchased {NAME}&7)"
+      Purchased-failed: "&cNot enough money to purchase {NAME}&c."
+      Disguise-success: "&c&lYou are now disguised as &e&lR&e&la&e&li&6&ln&6&lb&c&lo&c&lw &d&lS&d&lh&5&le&5&le&5&lp &9&ld&9&li&3&ls&3&lg&b&lu&b&li&a&ls&a&l&c&l!"
+  chicken-disguise:
+    Type: "BEAST_SKIN"
+    Disguise-type: "CHICKEN"
+    Slot: 9
+    #Permission required to BUY this upgrade? Set to "none" to not require any permission.
+    Permission: "alonsorftb.beasts-shop.chicken-disguise"
+    Free-permission: "alonsorftb.beasts-shop.chicken-disguise.free"
+    Name: "&f&lChicken disguise"
+    #Price for this skin?
+    Price: 50
+    Economy:
+      #Economy type for this skin? Available types are: VAULT, PLAYER_POINTS, TOKEN_MANAGER and LEVEL.
+      Type: "VAULT"
+      #Ignore this for now.
+      Material: "DIAMOND"
+    #Want to set a custom model data for this skin?
+    Custom-model-data: 0
+    #This is how the item will look like in the shop.
+    Item-shop:
+      Free:
+        #Amount of items displayed in gui when its LOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWY1ZmY1NDUxYzAzNjAwZmRhMGQ2MzJmNjlhMzU0Yjk2NzQzZWVkMGY0NTgwMmEwMmUzOWNlZDk5ZmE2YTA0ZiJ9fX0="
+        Custom-model-data: 0
+        Displayname: "&f&lChicken disguise"
+        Lore:
+        - "&7Disguise as a chicken"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &c&m{PRICE}&r &aFREE!"
+        - ""
+        - "&cFree with your current rank!"
+        Glow: false
+        Hide-flags: true
+      Locked:
+        #Amount of items displayed in gui when its LOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWY1ZmY1NDUxYzAzNjAwZmRhMGQ2MzJmNjlhMzU0Yjk2NzQzZWVkMGY0NTgwMmEwMmUzOWNlZDk5ZmE2YTA0ZiJ9fX0="
+        Custom-model-data: 0
+        Displayname: "&f&lChicken disguise"
+        Lore:
+        - "&7Disguise as a chicken"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&cRequires &a[RANK]&c rank!"
+        - "&cPurchase on &bstore.yournetwork.net&c!"
+        Glow: false
+        Hide-flags: true
+      Unlocked:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWY1ZmY1NDUxYzAzNjAwZmRhMGQ2MzJmNjlhMzU0Yjk2NzQzZWVkMGY0NTgwMmEwMmUzOWNlZDk5ZmE2YTA0ZiJ9fX0="
+        Custom-model-data: 0
+        Displayname: "&f&lChicken disguise"
+        Lore:
+        - "&7Disguise as a chicken"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&eClick to purchase!"
+        Glow: false
+        Hide-flags: true
+      Selected:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWY1ZmY1NDUxYzAzNjAwZmRhMGQ2MzJmNjlhMzU0Yjk2NzQzZWVkMGY0NTgwMmEwMmUzOWNlZDk5ZmE2YTA0ZiJ9fX0="
+        Custom-model-data: 0
+        Displayname: "&f&lChicken disguise"
+        Lore:
+        - "&7Disguise as a chicken"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&aSelected."
+        Glow: true
+        Hide-flags: true
+      Selected-free:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWY1ZmY1NDUxYzAzNjAwZmRhMGQ2MzJmNjlhMzU0Yjk2NzQzZWVkMGY0NTgwMmEwMmUzOWNlZDk5ZmE2YTA0ZiJ9fX0="
+        Custom-model-data: 0
+        Displayname: "&f&lChicken disguise"
+        Lore:
+        - "&7Disguise as a chicken"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &c&m{PRICE}&r &aFREE!"
+        - ""
+        - "&aSelected!"
+        Glow: true
+        Hide-flags: true
+    Messages:
+      Economy-not-available: "&cEconomy for this item is not available. If you think this is an error contact an administrator."
+      No-permission: "&cYou need &a[RANK]&c rank to purchase this item. Get it on &bstore.yournetwork.net&c!"
+      No-enough-money: "&cYou don't have enough money to purchase this item!"
+      Selected-free:
+      - "&aYou selected {NAME}&a."
+      - "&aYou'll receive the item(s) in your next game!"
+      Unselected-free: "&cYou unselected {NAME}&c!"
+      Purchased-success-free:
+      - "&d✫ &7Purchased {NAME}&7 for &aFREE&7!"
+      Selected:
+      - "&aYou selected {NAME}&a."
+      - "&aYou'll receive the item(s) in your next game!"
+      - "&aMoney will be taken in that moment if enough, otherwise &c&nitem will be unselected&a!."
+      Unselected: "&cYou unselected {NAME}&c. You won't be charged in next games!"
+      Purchased-success:
+      - "&c- {PRICE} &7(Purchased {NAME}&7)"
+      Purchased-failed: "&cNot enough money to purchase {NAME}&c."
+      Disguise-success: "&c&lYou are now disguised as &f&lChicken&c&l!"
+  witch-disguise:
+    Type: "BEAST_SKIN"
+    Disguise-type: "WITCH"
+    Slot: 10
+    #Permission required to BUY this upgrade? Set to "none" to not require any permission.
+    Permission: "alonsorftb.beasts-shop.witch-disguise"
+    Free-permission: "alonsorftb.beasts-shop.witch-disguise.free"
+    Name: "&5&lWitch disguise"
+    #Price for this skin?
+    Price: 50
+    Economy:
+      #Economy type for this skin? Available types are: VAULT, PLAYER_POINTS, TOKEN_MANAGER and LEVEL.
+      Type: "VAULT"
+      #Ignore this for now.
+      Material: "DIAMOND"
+    #Want to set a custom model data for this skin?
+    Custom-model-data: 0
+    #This is how the item will look like in the shop.
+    Item-shop:
+      Free:
+        #Amount of items displayed in gui when its LOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjBlMTNkMTg0NzRmYzk0ZWQ1NWFlYjcwNjk1NjZlNDY4N2Q3NzNkYWMxNmY0YzNmODcyMmZjOTViZjlmMmRmYSJ9fX0="
+        Custom-model-data: 0
+        Displayname: "&5&lWitch disguise"
+        Lore:
+        - "&7Disguise as a witch"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &c&m{PRICE}&r &aFREE!"
+        - ""
+        - "&cFree with your current rank!"
+        Glow: false
+        Hide-flags: true
+      Locked:
+        #Amount of items displayed in gui when its LOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjBlMTNkMTg0NzRmYzk0ZWQ1NWFlYjcwNjk1NjZlNDY4N2Q3NzNkYWMxNmY0YzNmODcyMmZjOTViZjlmMmRmYSJ9fX0="
+        Custom-model-data: 0
+        Displayname: "&5&lWitch disguise"
+        Lore:
+        - "&7Disguise as a witch"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&cRequires &a[RANK]&c rank!"
+        - "&cPurchase on &bstore.yournetwork.net&c!"
+        Glow: false
+        Hide-flags: true
+      Unlocked:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjBlMTNkMTg0NzRmYzk0ZWQ1NWFlYjcwNjk1NjZlNDY4N2Q3NzNkYWMxNmY0YzNmODcyMmZjOTViZjlmMmRmYSJ9fX0="
+        Custom-model-data: 0
+        Displayname: "&5&lWitch disguise"
+        Lore:
+        - "&7Disguise as a witch"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&eClick to purchase!"
+        Glow: false
+        Hide-flags: true
+      Selected:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjBlMTNkMTg0NzRmYzk0ZWQ1NWFlYjcwNjk1NjZlNDY4N2Q3NzNkYWMxNmY0YzNmODcyMmZjOTViZjlmMmRmYSJ9fX0="
+        Custom-model-data: 0
+        Displayname: "&5&lWitch disguise"
+        Lore:
+        - "&7Disguise as a witch"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&aSelected."
+        Glow: true
+        Hide-flags: true
+      Selected-free:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjBlMTNkMTg0NzRmYzk0ZWQ1NWFlYjcwNjk1NjZlNDY4N2Q3NzNkYWMxNmY0YzNmODcyMmZjOTViZjlmMmRmYSJ9fX0="
+        Custom-model-data: 0
+        Displayname: "&5&lWitch disguise"
+        Lore:
+        - "&7Disguise as a witch"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &c&m{PRICE}&r &aFREE!"
+        - ""
+        - "&aSelected!"
+        Glow: true
+        Hide-flags: true
+    Messages:
+      Economy-not-available: "&cEconomy for this item is not available. If you think this is an error contact an administrator."
+      No-permission: "&cYou need &a[RANK]&c rank to purchase this item. Get it on &bstore.yournetwork.net&c!"
+      No-enough-money: "&cYou don't have enough money to purchase this item!"
+      Selected-free:
+      - "&aYou selected {NAME}&a."
+      - "&aYou'll receive the item(s) in your next game!"
+      Unselected-free: "&cYou unselected {NAME}&c!"
+      Purchased-success-free:
+      - "&d✫ &7Purchased {NAME}&7 for &aFREE&7!"
+      Selected:
+      - "&aYou selected {NAME}&a."
+      - "&aYou'll receive the item(s) in your next game!"
+      - "&aMoney will be taken in that moment if enough, otherwise &c&nitem will be unselected&a!."
+      Unselected: "&cYou unselected {NAME}&c. You won't be charged in next games!"
+      Purchased-success:
+      - "&c- {PRICE} &7(Purchased {NAME}&7)"
+      Purchased-failed: "&cNot enough money to purchase {NAME}&c."
+      Disguise-success: "&c&lYou are now disguised as &5&lWitch&c&l!"
+  skeleton-disguise:
+    Type: "BEAST_SKIN"
+    Disguise-type: "SKELETON"
+    Slot: 11
+    #Permission required to BUY this upgrade? Set to "none" to not require any permission.
+    Permission: "alonsorftb.beasts-shop.skeleton-disguise"
+    Free-permission: "alonsorftb.beasts-shop.skeleton-disguise.free"
+    Name: "&f&lSkeleton disguise"
+    #Price for this skin?
+    Price: 50
+    Economy:
+      #Economy type for this skin? Available types are: VAULT, PLAYER_POINTS, TOKEN_MANAGER and LEVEL.
+      Type: "VAULT"
+      #Ignore this for now.
+      Material: "DIAMOND"
+    #Want to set a custom model data for this skin?
+    Custom-model-data: 0
+    #This is how the item will look like in the shop.
+    Item-shop:
+      Free:
+        #Amount of items displayed in gui when its LOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmNhNDQ1NzQ5MjUxYmRkODk4ZmI4M2Y2Njc4NDRlMzhhMWRmZjc5YTE1MjlmNzlhNDI0NDdhMDU5OTMxMGVhNCJ9fX0="
+        Custom-model-data: 0
+        Displayname: "&f&lSkeleton disguise"
+        Lore:
+        - "&7Disguise as a skeleton"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &c&m{PRICE}&r &aFREE!"
+        - ""
+        - "&cFree with your current rank!"
+        Glow: false
+        Hide-flags: true
+      Locked:
+        #Amount of items displayed in gui when its LOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmNhNDQ1NzQ5MjUxYmRkODk4ZmI4M2Y2Njc4NDRlMzhhMWRmZjc5YTE1MjlmNzlhNDI0NDdhMDU5OTMxMGVhNCJ9fX0="
+        Custom-model-data: 0
+        Displayname: "&f&lSkeleton disguise"
+        Lore:
+        - "&7Disguise as a skeleton"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&cRequires &a[RANK]&c rank!"
+        - "&cPurchase on &bstore.yournetwork.net&c!"
+        Glow: false
+        Hide-flags: true
+      Unlocked:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmNhNDQ1NzQ5MjUxYmRkODk4ZmI4M2Y2Njc4NDRlMzhhMWRmZjc5YTE1MjlmNzlhNDI0NDdhMDU5OTMxMGVhNCJ9fX0="
+        Custom-model-data: 0
+        Displayname: "&f&lSkeleton disguise"
+        Lore:
+        - "&7Disguise as a skeleton"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&eClick to purchase!"
+        Glow: false
+        Hide-flags: true
+      Selected:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmNhNDQ1NzQ5MjUxYmRkODk4ZmI4M2Y2Njc4NDRlMzhhMWRmZjc5YTE1MjlmNzlhNDI0NDdhMDU5OTMxMGVhNCJ9fX0="
+        Custom-model-data: 0
+        Displayname: "&f&lSkeleton disguise"
+        Lore:
+        - "&7Disguise as a skeleton"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&aSelected."
+        Glow: true
+        Hide-flags: true
+      Selected-free:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmNhNDQ1NzQ5MjUxYmRkODk4ZmI4M2Y2Njc4NDRlMzhhMWRmZjc5YTE1MjlmNzlhNDI0NDdhMDU5OTMxMGVhNCJ9fX0="
+        Custom-model-data: 0
+        Displayname: "&f&lSkeleton disguise"
+        Lore:
+        - "&7Disguise as a skeleton"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &c&m{PRICE}&r &aFREE!"
+        - ""
+        - "&aSelected!"
+        Glow: true
+        Hide-flags: true
+    Messages:
+      Economy-not-available: "&cEconomy for this item is not available. If you think this is an error contact an administrator."
+      No-permission: "&cYou need &a[RANK]&c rank to purchase this item. Get it on &bstore.yournetwork.net&c!"
+      No-enough-money: "&cYou don't have enough money to purchase this item!"
+      Selected-free:
+      - "&aYou selected {NAME}&a."
+      - "&aYou'll receive the item(s) in your next game!"
+      Unselected-free: "&cYou unselected {NAME}&c!"
+      Purchased-success-free:
+      - "&d✫ &7Purchased {NAME}&7 for &aFREE&7!"
+      Selected:
+      - "&aYou selected {NAME}&a."
+      - "&aYou'll receive the item(s) in your next game!"
+      - "&aMoney will be taken in that moment if enough, otherwise &c&nitem will be unselected&a!."
+      Unselected: "&cYou unselected {NAME}&c. You won't be charged in next games!"
+      Purchased-success:
+      - "&c- {PRICE} &7(Purchased {NAME}&7)"
+      Purchased-failed: "&cNot enough money to purchase {NAME}&c."
+      Disguise-success: "&c&lYou are now disguised as &f&lSkeleton&c&l!"
+  snowman-disguise:
+    Type: "BEAST_SKIN"
+    Disguise-type: "SNOWMAN"
+    Slot: 12
+    #Permission required to BUY this upgrade? Set to "none" to not require any permission.
+    Permission: "alonsorftb.beasts-shop.snowman-disguise"
+    Free-permission: "alonsorftb.beasts-shop.snowman-disguise.free"
+    Name: "&f&lSnowman disguise"
+    #Price for this skin?
+    Price: 50
+    Economy:
+      #Economy type for this skin? Available types are: VAULT, PLAYER_POINTS, TOKEN_MANAGER and LEVEL.
+      Type: "VAULT"
+      #Ignore this for now.
+      Material: "DIAMOND"
+    #Want to set a custom model data for this skin?
+    Custom-model-data: 0
+    #This is how the item will look like in the shop.
+    Item-shop:
+      Free:
+        #Amount of items displayed in gui when its LOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTExMzY2MTZkOGM0YTg3YTU0Y2U3OGE5N2I1NTE2MTBjMmIyYzhmNmQ0MTBiYzM4Yjg1OGY5NzRiMTEzYjIwOCJ9fX0="
+        Custom-model-data: 0
+        Displayname: "&f&lSnowman disguise"
+        Lore:
+        - "&7Disguise as a snowman"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &c&m{PRICE}&r &aFREE!"
+        - ""
+        - "&cFree with your current rank!"
+        Glow: false
+        Hide-flags: true
+      Locked:
+        #Amount of items displayed in gui when its LOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTExMzY2MTZkOGM0YTg3YTU0Y2U3OGE5N2I1NTE2MTBjMmIyYzhmNmQ0MTBiYzM4Yjg1OGY5NzRiMTEzYjIwOCJ9fX0="
+        Custom-model-data: 0
+        Displayname: "&f&lSnowman disguise"
+        Lore:
+        - "&7Disguise as a snowman"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&cRequires &a[RANK]&c rank!"
+        - "&cPurchase on &bstore.yournetwork.net&c!"
+        Glow: false
+        Hide-flags: true
+      Unlocked:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTExMzY2MTZkOGM0YTg3YTU0Y2U3OGE5N2I1NTE2MTBjMmIyYzhmNmQ0MTBiYzM4Yjg1OGY5NzRiMTEzYjIwOCJ9fX0="
+        Custom-model-data: 0
+        Displayname: "&f&lSnowman disguise"
+        Lore:
+        - "&7Disguise as a snowman"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&eClick to purchase!"
+        Glow: false
+        Hide-flags: true
+      Selected:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTExMzY2MTZkOGM0YTg3YTU0Y2U3OGE5N2I1NTE2MTBjMmIyYzhmNmQ0MTBiYzM4Yjg1OGY5NzRiMTEzYjIwOCJ9fX0="
+        Custom-model-data: 0
+        Displayname: "&f&lSnowman disguise"
+        Lore:
+        - "&7Disguise as a snowman"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&aSelected."
+        Glow: true
+        Hide-flags: true
+      Selected-free:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTExMzY2MTZkOGM0YTg3YTU0Y2U3OGE5N2I1NTE2MTBjMmIyYzhmNmQ0MTBiYzM4Yjg1OGY5NzRiMTEzYjIwOCJ9fX0="
+        Custom-model-data: 0
+        Displayname: "&f&lSnowman disguise"
+        Lore:
+        - "&7Disguise as a snowman"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &c&m{PRICE}&r &aFREE!"
+        - ""
+        - "&aSelected!"
+        Glow: true
+        Hide-flags: true
+    Messages:
+      Economy-not-available: "&cEconomy for this item is not available. If you think this is an error contact an administrator."
+      No-permission: "&cYou need &a[RANK]&c rank to purchase this item. Get it on &bstore.yournetwork.net&c!"
+      No-enough-money: "&cYou don't have enough money to purchase this item!"
+      Selected-free:
+      - "&aYou selected {NAME}&a."
+      - "&aYou'll receive the item(s) in your next game!"
+      Unselected-free: "&cYou unselected {NAME}&c!"
+      Purchased-success-free:
+      - "&d✫ &7Purchased {NAME}&7 for &aFREE&7!"
+      Selected:
+      - "&aYou selected {NAME}&a."
+      - "&aYou'll receive the item(s) in your next game!"
+      - "&aMoney will be taken in that moment if enough, otherwise &c&nitem will be unselected&a!."
+      Unselected: "&cYou unselected {NAME}&c. You won't be charged in next games!"
+      Purchased-success:
+      - "&c- {PRICE} &7(Purchased {NAME}&7)"
+      Purchased-failed: "&cNot enough money to purchase {NAME}&c."
+      Disguise-success: "&c&lYou are now disguised as &7&lSnowman&c&l!"
+  iron-golem-disguise:
+    Type: "BEAST_SKIN"
+    Disguise-type: "IRON_GOLEM"
+    Slot: 13
+    #Permission required to BUY this upgrade? Set to "none" to not require any permission.
+    Permission: "alonsorftb.beasts-shop.iron-golem-disguise"
+    Free-permission: "alonsorftb.beasts-shop.iron-golem-disguise.free"
+    Name: "&7&lIron Golem disguise"
+    #Price for this skin?
+    Price: 50
+    Economy:
+      #Economy type for this skin? Available types are: VAULT, PLAYER_POINTS, TOKEN_MANAGER and LEVEL.
+      Type: "VAULT"
+      #Ignore this for now.
+      Material: "DIAMOND"
+    #Want to set a custom model data for this skin?
+    Custom-model-data: 0
+    #This is how the item will look like in the shop.
+    Item-shop:
+      Free:
+        #Amount of items displayed in gui when its LOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTEzZjM0MjI3MjgzNzk2YmMwMTcyNDRjYjQ2NTU3ZDY0YmQ1NjJmYTlkYWIwZTEyYWY1ZDIzYWQ2OTljZjY5NyJ9fX0="
+        Custom-model-data: 0
+        Displayname: "&7&lIron Golem disguise"
+        Lore:
+        - "&7Disguise as a iron golem"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &c&m{PRICE}&r &aFREE!"
+        - ""
+        - "&cFree with your current rank!"
+        Glow: false
+        Hide-flags: true
+      Locked:
+        #Amount of items displayed in gui when its LOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTEzZjM0MjI3MjgzNzk2YmMwMTcyNDRjYjQ2NTU3ZDY0YmQ1NjJmYTlkYWIwZTEyYWY1ZDIzYWQ2OTljZjY5NyJ9fX0="
+        Custom-model-data: 0
+        Displayname: "&7&lIron Golem disguise"
+        Lore:
+        - "&7Disguise as a iron golem"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&cRequires &a[RANK]&c rank!"
+        - "&cPurchase on &bstore.yournetwork.net&c!"
+        Glow: false
+        Hide-flags: true
+      Unlocked:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTEzZjM0MjI3MjgzNzk2YmMwMTcyNDRjYjQ2NTU3ZDY0YmQ1NjJmYTlkYWIwZTEyYWY1ZDIzYWQ2OTljZjY5NyJ9fX0="
+        Custom-model-data: 0
+        Displayname: "&7&lIron Golem disguise"
+        Lore:
+        - "&7Disguise as a iron golem"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&eClick to purchase!"
+        Glow: false
+        Hide-flags: true
+      Selected:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTEzZjM0MjI3MjgzNzk2YmMwMTcyNDRjYjQ2NTU3ZDY0YmQ1NjJmYTlkYWIwZTEyYWY1ZDIzYWQ2OTljZjY5NyJ9fX0="
+        Custom-model-data: 0
+        Displayname: "&7&lIron Golem disguise"
+        Lore:
+        - "&7Disguise as a iron golem"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&aSelected."
+        Glow: true
+        Hide-flags: true
+      Selected-free:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTEzZjM0MjI3MjgzNzk2YmMwMTcyNDRjYjQ2NTU3ZDY0YmQ1NjJmYTlkYWIwZTEyYWY1ZDIzYWQ2OTljZjY5NyJ9fX0="
+        Custom-model-data: 0
+        Displayname: "&7&lIron Golem disguise"
+        Lore:
+        - "&7Disguise as a iron golem"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &c&m{PRICE}&r &aFREE!"
+        - ""
+        - "&aSelected!"
+        Glow: true
+        Hide-flags: true
+    Messages:
+      Economy-not-available: "&cEconomy for this item is not available. If you think this is an error contact an administrator."
+      No-permission: "&cYou need &a[RANK]&c rank to purchase this item. Get it on &bstore.yournetwork.net&c!"
+      No-enough-money: "&cYou don't have enough money to purchase this item!"
+      Selected-free:
+      - "&aYou selected {NAME}&a."
+      - "&aYou'll receive the item(s) in your next game!"
+      Unselected-free: "&cYou unselected {NAME}&c!"
+      Purchased-success-free:
+      - "&d✫ &7Purchased {NAME}&7 for &aFREE&7!"
+      Selected:
+      - "&aYou selected {NAME}&a."
+      - "&aYou'll receive the item(s) in your next game!"
+      - "&aMoney will be taken in that moment if enough, otherwise &c&nitem will be unselected&a!."
+      Unselected: "&cYou unselected {NAME}&c. You won't be charged in next games!"
+      Purchased-success:
+      - "&c- {PRICE} &7(Purchased {NAME}&7)"
+      Purchased-failed: "&cNot enough money to purchase {NAME}&c."
+      Disguise-success: "&c&lYou are now disguised as &7&lIron Golem&c&l!"
+  pigzombie-disguise:
+    Type: "BEAST_SKIN"
+    Disguise-type: "PIG_ZOMBIE"
+    Slot: 14
+    #Permission required to BUY this upgrade? Set to "none" to not require any permission.
+    Permission: "alonsorftb.beasts-shop.pigzombie-disguise"
+    Free-permission: "alonsorftb.beasts-shop.pigzombie-disguise.free"
+    Name: "&d&lPig zombie disguise"
+    #Price for this skin?
+    Price: 50
+    Economy:
+      #Economy type for this skin? Available types are: VAULT, PLAYER_POINTS, TOKEN_MANAGER and LEVEL.
+      Type: "VAULT"
+      #Ignore this for now.
+      Material: "DIAMOND"
+    #Want to set a custom model data for this skin?
+    Custom-model-data: 0
+    #This is how the item will look like in the shop.
+    Item-shop:
+      Free:
+        #Amount of items displayed in gui when its LOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWQyNDk5MTQzNWU0ZTdmYjFhOWFkMjNkYjc1YzgwYWVjMzAwZDAwM2VjMGM1OTYzZTBlZDY1ODYzNDAyNzg4OSJ9fX0="
+        Custom-model-data: 0
+        Displayname: "&d&lPig zombie disguise"
+        Lore:
+        - "&7Disguise as a pig zombie"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &c&m{PRICE}&r &aFREE!"
+        - ""
+        - "&cFree with your current rank!"
+        Glow: false
+        Hide-flags: true
+      Locked:
+        #Amount of items displayed in gui when its LOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWQyNDk5MTQzNWU0ZTdmYjFhOWFkMjNkYjc1YzgwYWVjMzAwZDAwM2VjMGM1OTYzZTBlZDY1ODYzNDAyNzg4OSJ9fX0="
+        Custom-model-data: 0
+        Displayname: "&d&lPig zombie disguise"
+        Lore:
+        - "&7Disguise as a pig zombie"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&cRequires &a[RANK]&c rank!"
+        - "&cPurchase on &bstore.yournetwork.net&c!"
+        Glow: false
+        Hide-flags: true
+      Unlocked:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWQyNDk5MTQzNWU0ZTdmYjFhOWFkMjNkYjc1YzgwYWVjMzAwZDAwM2VjMGM1OTYzZTBlZDY1ODYzNDAyNzg4OSJ9fX0="
+        Custom-model-data: 0
+        Displayname: "&d&lPig zombie disguise"
+        Lore:
+        - "&7Disguise as a pig zombie"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&eClick to purchase!"
+        Glow: false
+        Hide-flags: true
+      Selected:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWQyNDk5MTQzNWU0ZTdmYjFhOWFkMjNkYjc1YzgwYWVjMzAwZDAwM2VjMGM1OTYzZTBlZDY1ODYzNDAyNzg4OSJ9fX0="
+        Custom-model-data: 0
+        Displayname: "&d&lPig zombie disguise"
+        Lore:
+        - "&7Disguise as a pig zombie"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&aSelected."
+        Glow: true
+        Hide-flags: true
+      Selected-free:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWQyNDk5MTQzNWU0ZTdmYjFhOWFkMjNkYjc1YzgwYWVjMzAwZDAwM2VjMGM1OTYzZTBlZDY1ODYzNDAyNzg4OSJ9fX0="
+        Custom-model-data: 0
+        Displayname: "&d&lPig zombie disguise"
+        Lore:
+        - "&7Disguise as a pig zombie"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &c&m{PRICE}&r &aFREE!"
+        - ""
+        - "&aSelected!"
+        Glow: true
+        Hide-flags: true
+    Messages:
+      Economy-not-available: "&cEconomy for this item is not available. If you think this is an error contact an administrator."
+      No-permission: "&cYou need &a[RANK]&c rank to purchase this item. Get it on &bstore.yournetwork.net&c!"
+      No-enough-money: "&cYou don't have enough money to purchase this item!"
+      Selected-free:
+      - "&aYou selected {NAME}&a."
+      - "&aYou'll receive the item(s) in your next game!"
+      Unselected-free: "&cYou unselected {NAME}&c!"
+      Purchased-success-free:
+      - "&d✫ &7Purchased {NAME}&7 for &aFREE&7!"
+      Selected:
+      - "&aYou selected {NAME}&a."
+      - "&aYou'll receive the item(s) in your next game!"
+      - "&aMoney will be taken in that moment if enough, otherwise &c&nitem will be unselected&a!."
+      Unselected: "&cYou unselected {NAME}&c. You won't be charged in next games!"
+      Purchased-success:
+      - "&c- {PRICE} &7(Purchased {NAME}&7)"
+      Purchased-failed: "&cNot enough money to purchase {NAME}&c."
+      Disguise-success: "&c&lYou are now disguised as &d&lPig zombie&c&l!"
+  guardian-disguise:
+    Type: "BEAST_SKIN"
+    Disguise-type: "GUARDIAN"
+    Slot: 15
+    #Permission required to BUY this upgrade? Set to "none" to not require any permission.
+    Permission: "alonsorftb.beasts-shop.guardian-disguise"
+    Free-permission: "alonsorftb.beasts-shop.guardian-disguise.free"
+    Name: "&3&lGuardian disguise"
+    #Price for this skin?
+    Price: 50
+    Economy:
+      #Economy type for this skin? Available types are: VAULT, PLAYER_POINTS, TOKEN_MANAGER and LEVEL.
+      Type: "VAULT"
+      #Ignore this for now.
+      Material: "DIAMOND"
+    #Want to set a custom model data for this skin?
+    Custom-model-data: 0
+    #This is how the item will look like in the shop.
+    Item-shop:
+      Free:
+        #Amount of items displayed in gui when its LOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMThkMmE3ZmVhN2YyZTBkOTE2YzdjNmQ3OTE0OTM3YmI4ZGQzZmJmZDdmOTQ4M2E0YTM5MTJmNWEwZmM2M2QzIn19fQ=="
+        Custom-model-data: 0
+        Displayname: "&3&lGuardian disguise"
+        Lore:
+        - "&7Disguise as a guardian"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &c&m{PRICE}&r &aFREE!"
+        - ""
+        - "&cFree with your current rank!"
+        Glow: false
+        Hide-flags: true
+      Locked:
+        #Amount of items displayed in gui when its LOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMThkMmE3ZmVhN2YyZTBkOTE2YzdjNmQ3OTE0OTM3YmI4ZGQzZmJmZDdmOTQ4M2E0YTM5MTJmNWEwZmM2M2QzIn19fQ=="
+        Custom-model-data: 0
+        Displayname: "&3&lGuardian disguise"
+        Lore:
+        - "&7Disguise as a guardian"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&cRequires &a[RANK]&c rank!"
+        - "&cPurchase on &bstore.yournetwork.net&c!"
+        Glow: false
+        Hide-flags: true
+      Unlocked:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMThkMmE3ZmVhN2YyZTBkOTE2YzdjNmQ3OTE0OTM3YmI4ZGQzZmJmZDdmOTQ4M2E0YTM5MTJmNWEwZmM2M2QzIn19fQ=="
+        Custom-model-data: 0
+        Displayname: "&3&lGuardian disguise"
+        Lore:
+        - "&7Disguise as a guardian"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&eClick to purchase!"
+        Glow: false
+        Hide-flags: true
+      Selected:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMThkMmE3ZmVhN2YyZTBkOTE2YzdjNmQ3OTE0OTM3YmI4ZGQzZmJmZDdmOTQ4M2E0YTM5MTJmNWEwZmM2M2QzIn19fQ=="
+        Custom-model-data: 0
+        Displayname: "&3&lGuardian disguise"
+        Lore:
+        - "&7Disguise as a guardian"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&aSelected."
+        Glow: true
+        Hide-flags: true
+      Selected-free:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMThkMmE3ZmVhN2YyZTBkOTE2YzdjNmQ3OTE0OTM3YmI4ZGQzZmJmZDdmOTQ4M2E0YTM5MTJmNWEwZmM2M2QzIn19fQ=="
+        Custom-model-data: 0
+        Displayname: "&3&lGuardian disguise"
+        Lore:
+        - "&7Disguise as a guardian"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &c&m{PRICE}&r &aFREE!"
+        - ""
+        - "&aSelected!"
+        Glow: true
+        Hide-flags: true
+    Messages:
+      Economy-not-available: "&cEconomy for this item is not available. If you think this is an error contact an administrator."
+      No-permission: "&cYou need &a[RANK]&c rank to purchase this item. Get it on &bstore.yournetwork.net&c!"
+      No-enough-money: "&cYou don't have enough money to purchase this item!"
+      Selected-free:
+      - "&aYou selected {NAME}&a."
+      - "&aYou'll receive the item(s) in your next game!"
+      Unselected-free: "&cYou unselected {NAME}&c!"
+      Purchased-success-free:
+      - "&d✫ &7Purchased {NAME}&7 for &aFREE&7!"
+      Selected:
+      - "&aYou selected {NAME}&a."
+      - "&aYou'll receive the item(s) in your next game!"
+      - "&aMoney will be taken in that moment if enough, otherwise &c&nitem will be unselected&a!."
+      Unselected: "&cYou unselected {NAME}&c. You won't be charged in next games!"
+      Purchased-success:
+      - "&c- {PRICE} &7(Purchased {NAME}&7)"
+      Purchased-failed: "&cNot enough money to purchase {NAME}&c."
+      Disguise-success: "&c&lYou are now disguised as &3&lGuardian&c&l!"
+  axolotl-disguise:
+    Type: "BEAST_SKIN"
+    Disguise-type: "AXOLOTL"
+    Slot: 17
+    #Permission required to BUY this upgrade? Set to "none" to not require any permission.
+    Permission: "alonsorftb.beasts-shop.axolotl-disguise"
+    Free-permission: "alonsorftb.beasts-shop.axolotl-disguise.free"
+    Axolotl-variant: "LUCY"
+    Name: "&d&lAxolotl disguise"
+    #Price for this skin?
+    Price: 50
+    Economy:
+      #Economy type for this skin? Available types are: VAULT, PLAYER_POINTS, TOKEN_MANAGER and LEVEL.
+      Type: "VAULT"
+      #Ignore this for now.
+      Material: "DIAMOND"
+    #Want to set a custom model data for this skin?
+    Custom-model-data: 0
+    #This is how the item will look like in the shop.
+    Item-shop:
+      Free:
+        #Amount of items displayed in gui when its LOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWZlMTljNjMxMWVhMDM4NTk2NjY4ZmYwOTFlNDRjZGU0MDk0M2ZmNTcxOGQ1ZjI5ZWI5MGYwMjFhMWI0NThiOSJ9fX0="
+        Custom-model-data: 0
+        Displayname: "&d&lAxolotl disguise"
+        Lore:
+        - "&7Disguise as an axolotl"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &c&m{PRICE}&r &aFREE!"
+        - ""
+        - "&cFree with your current rank!"
+        Glow: false
+        Hide-flags: true
+      Locked:
+        #Amount of items displayed in gui when its LOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWZlMTljNjMxMWVhMDM4NTk2NjY4ZmYwOTFlNDRjZGU0MDk0M2ZmNTcxOGQ1ZjI5ZWI5MGYwMjFhMWI0NThiOSJ9fX0="
+        Custom-model-data: 0
+        Displayname: "&d&lAxolotl disguise"
+        Lore:
+        - "&7Disguise as an axolotl"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&cRequires &6[RANK]&c rank!"
+        - "&cPurchase on &bstore.yournetwork.net&c!"
+        Glow: false
+        Hide-flags: true
+      Unlocked:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWZlMTljNjMxMWVhMDM4NTk2NjY4ZmYwOTFlNDRjZGU0MDk0M2ZmNTcxOGQ1ZjI5ZWI5MGYwMjFhMWI0NThiOSJ9fX0="
+        Custom-model-data: 0
+        Displayname: "&d&lAxolotl disguise"
+        Lore:
+        - "&7Disguise as an axolotl"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&eClick to purchase!"
+        Glow: false
+        Hide-flags: true
+      Selected:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWZlMTljNjMxMWVhMDM4NTk2NjY4ZmYwOTFlNDRjZGU0MDk0M2ZmNTcxOGQ1ZjI5ZWI5MGYwMjFhMWI0NThiOSJ9fX0="
+        Custom-model-data: 0
+        Displayname: "&d&lAxolotl disguise"
+        Lore:
+        - "&7Disguise as an axolotl"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&aSelected."
+        Glow: true
+        Hide-flags: true
+      Selected-free:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWZlMTljNjMxMWVhMDM4NTk2NjY4ZmYwOTFlNDRjZGU0MDk0M2ZmNTcxOGQ1ZjI5ZWI5MGYwMjFhMWI0NThiOSJ9fX0="
+        Custom-model-data: 0
+        Displayname: "&d&lAxolotl disguise"
+        Lore:
+        - "&7Disguise as an axolotl"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &c&m{PRICE}&r &aFREE!"
+        - ""
+        - "&aSelected!"
+        Glow: true
+        Hide-flags: true
+    Messages:
+      Economy-not-available: "&cEconomy for this item is not available. If you think this is an error contact an administrator."
+      No-permission: "&cYou need &6[RANK]&c rank to purchase this item. Get it on &bstore.yournetwork.net&c!"
+      No-enough-money: "&cYou don't have enough money to purchase this item!"
+      Selected-free:
+      - "&aYou selected {NAME}&a."
+      - "&aYou'll receive the item(s) in your next game!"
+      Unselected-free: "&cYou unselected {NAME}&c!"
+      Purchased-success-free:
+      - "&d✫ &7Purchased {NAME}&7 for &aFREE&7!"
+      Selected:
+      - "&aYou selected {NAME}&a."
+      - "&aYou'll receive the item(s) in your next game!"
+      - "&aMoney will be taken in that moment if enough, otherwise &c&nitem will be unselected&a!."
+      Unselected: "&cYou unselected {NAME}&c. You won't be charged in next games!"
+      Purchased-success:
+      - "&c- {PRICE} &7(Purchased {NAME}&7)"
+      Purchased-failed: "&cNot enough money to purchase {NAME}&c."
+      Disguise-success: "&c&lYou are now disguised as &d&lAxolotl&c&l!"
+  #Last tier (This is an example only)
+  enderman-disguise:
+    Type: "BEAST_SKIN"
+    Disguise-type: "ENDERMAN"
+    Slot: 18
+    #Permission required to BUY this upgrade? Set to "none" to not require any permission.
+    Permission: "alonsorftb.beasts-shop.enderman-disguise"
+    Free-permission: "alonsorftb.beasts-shop.enderman-disguise.free"
+    Name: "&5&lEnderman disguise"
+    #Price for this skin?
+    Price: 50
+    Economy:
+      #Economy type for this skin? Available types are: VAULT, PLAYER_POINTS, TOKEN_MANAGER and LEVEL.
+      Type: "VAULT"
+      #Ignore this for now.
+      Material: "DIAMOND"
+    #Want to set a custom model data for this skin?
+    Custom-model-data: 0
+    #This is how the item will look like in the shop.
+    Item-shop:
+      Free:
+        #Amount of items displayed in gui when its LOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDY4NWUyZTkwNmI0NDY0N2E5Y2RjODA2NmIxMDZiYzUwYTJjOWFiZjk3NGU2OTIzOTkxN2ZkMjFhMTViNDM2OCJ9fX0="
+        Custom-model-data: 0
+        Displayname: "&5&lEnderman disguise"
+        Lore:
+        - "&7Disguise as an enderman"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &c&m{PRICE}&r &aFREE!"
+        - ""
+        - "&cFree with your current rank!"
+        Glow: false
+        Hide-flags: true
+      Locked:
+        #Amount of items displayed in gui when its LOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDY4NWUyZTkwNmI0NDY0N2E5Y2RjODA2NmIxMDZiYzUwYTJjOWFiZjk3NGU2OTIzOTkxN2ZkMjFhMTViNDM2OCJ9fX0="
+        Custom-model-data: 0
+        Displayname: "&5&lEnderman disguise"
+        Lore:
+        - "&7Disguise as an enderman"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&cRequires &a[RANK]&c rank!"
+        - "&cPurchase on &bstore.yournetwork.net&c!"
+        Glow: false
+        Hide-flags: true
+      Unlocked:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDY4NWUyZTkwNmI0NDY0N2E5Y2RjODA2NmIxMDZiYzUwYTJjOWFiZjk3NGU2OTIzOTkxN2ZkMjFhMTViNDM2OCJ9fX0="
+        Custom-model-data: 0
+        Displayname: "&5&lEnderman disguise"
+        Lore:
+        - "&7Disguise as an enderman"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&eClick to purchase!"
+        Glow: false
+        Hide-flags: true
+      Selected:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDY4NWUyZTkwNmI0NDY0N2E5Y2RjODA2NmIxMDZiYzUwYTJjOWFiZjk3NGU2OTIzOTkxN2ZkMjFhMTViNDM2OCJ9fX0="
+        Custom-model-data: 0
+        Displayname: "&5&lEnderman disguise"
+        Lore:
+        - "&7Disguise as an enderman"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&aSelected."
+        Glow: true
+        Hide-flags: true
+      Selected-free:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDY4NWUyZTkwNmI0NDY0N2E5Y2RjODA2NmIxMDZiYzUwYTJjOWFiZjk3NGU2OTIzOTkxN2ZkMjFhMTViNDM2OCJ9fX0="
+        Custom-model-data: 0
+        Displayname: "&5&lEnderman disguise"
+        Lore:
+        - "&7Disguise as an enderman"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &c&m{PRICE}&r &aFREE!"
+        - ""
+        - "&aSelected!"
+        Glow: true
+        Hide-flags: true
+    Messages:
+      Economy-not-available: "&cEconomy for this item is not available. If you think this is an error contact an administrator."
+      No-permission: "&cYou need &a[RANK]&c rank to purchase this item. Get it on &bstore.yournetwork.net&c!"
+      No-enough-money: "&cYou don't have enough money to purchase this item!"
+      Selected-free:
+      - "&aYou selected {NAME}&a."
+      - "&aYou'll receive the item(s) in your next game!"
+      Unselected-free: "&cYou unselected {NAME}&c!"
+      Purchased-success-free:
+      - "&d✫ &7Purchased {NAME}&7 for &aFREE&7!"
+      Selected:
+      - "&aYou selected {NAME}&a."
+      - "&aYou'll receive the item(s) in your next game!"
+      - "&aMoney will be taken in that moment if enough, otherwise &c&nitem will be unselected&a!."
+      Unselected: "&cYou unselected {NAME}&c. You won't be charged in next games!"
+      Purchased-success:
+      - "&c- {PRICE} &7(Purchased {NAME}&7)"
+      Purchased-failed: "&cNot enough money to purchase {NAME}&c."
+      Disguise-success: "&c&lYou are now disguised as &5&lEnderman&c&l!"
+  charged-creeper-disguise:
+    Type: "BEAST_SKIN"
+    Disguise-type: "CREEPER"
+    Charged-creeper: true
+    Slot: 19
+    #Permission required to BUY this upgrade? Set to "none" to not require any permission.
+    Permission: "alonsorftb.beasts-shop.charged-creeper-disguise"
+    Free-permission: "alonsorftb.beasts-shop.charged-creeper-disguise.free"
+    Name: "&2&lCharged Creeper disguise"
+    #Price for this skin?
+    Price: 50
+    Economy:
+      #Economy type for this skin? Available types are: VAULT, PLAYER_POINTS, TOKEN_MANAGER and LEVEL.
+      Type: "VAULT"
+      #Ignore this for now.
+      Material: "DIAMOND"
+    #Want to set a custom model data for this skin?
+    Custom-model-data: 0
+    #This is how the item will look like in the shop.
+    Item-shop:
+      Free:
+        #Amount of items displayed in gui when its LOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjJjZWIzOWRkNGRlMjRhN2FkZmUyOTFhM2EwY2ZjN2NmNGY2NDVkZTU5YjYwM2ZjZmUwNmM2YjVhMDZlMjYifX19"
+        Custom-model-data: 0
+        Displayname: "&2&lCharged Creeper disguise"
+        Lore:
+        - "&7Disguise as a charged creeper"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &c&m{PRICE}&r &aFREE!"
+        - ""
+        - "&cFree with your current rank!"
+        Glow: false
+        Hide-flags: true
+      Locked:
+        #Amount of items displayed in gui when its LOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjJjZWIzOWRkNGRlMjRhN2FkZmUyOTFhM2EwY2ZjN2NmNGY2NDVkZTU5YjYwM2ZjZmUwNmM2YjVhMDZlMjYifX19"
+        Custom-model-data: 0
+        Displayname: "&2&lCharged Creeper disguise"
+        Lore:
+        - "&7Disguise as a charged creeper"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&cRequires &5[RANK]&c rank!"
+        - "&cPurchase on &bstore.yournetwork.net&c!"
+        Glow: false
+        Hide-flags: true
+      Unlocked:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjJjZWIzOWRkNGRlMjRhN2FkZmUyOTFhM2EwY2ZjN2NmNGY2NDVkZTU5YjYwM2ZjZmUwNmM2YjVhMDZlMjYifX19"
+        Custom-model-data: 0
+        Displayname: "&2&lCharged Creeper disguise"
+        Lore:
+        - "&7Disguise as a charged creeper"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&eClick to purchase!"
+        Glow: false
+        Hide-flags: true
+      Selected:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjJjZWIzOWRkNGRlMjRhN2FkZmUyOTFhM2EwY2ZjN2NmNGY2NDVkZTU5YjYwM2ZjZmUwNmM2YjVhMDZlMjYifX19"
+        Custom-model-data: 0
+        Displayname: "&2&lCharged Creeper disguise"
+        Lore:
+        - "&7Disguise as a charged creeper"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&aSelected."
+        Glow: true
+        Hide-flags: true
+      Selected-free:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjJjZWIzOWRkNGRlMjRhN2FkZmUyOTFhM2EwY2ZjN2NmNGY2NDVkZTU5YjYwM2ZjZmUwNmM2YjVhMDZlMjYifX19"
+        Custom-model-data: 0
+        Displayname: "&2&lCharged Creeper disguise"
+        Lore:
+        - "&7Disguise as a charged creeper"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &c&m{PRICE}&r &aFREE!"
+        - ""
+        - "&aSelected!"
+        Glow: true
+        Hide-flags: true
+    Messages:
+      Economy-not-available: "&cEconomy for this item is not available. If you think this is an error contact an administrator."
+      No-permission: "&cYou need &5[RANK]&c rank to purchase this item. Get it on &bstore.yournetwork.net&c!"
+      No-enough-money: "&cYou don't have enough money to purchase this item!"
+      Selected-free:
+      - "&aYou selected {NAME}&a."
+      - "&aYou'll receive the item(s) in your next game!"
+      Unselected-free: "&cYou unselected {NAME}&c!"
+      Purchased-success-free:
+      - "&d✫ &7Purchased {NAME}&7 for &aFREE&7!"
+      Selected:
+      - "&aYou selected {NAME}&a."
+      - "&aYou'll receive the item(s) in your next game!"
+      - "&aMoney will be taken in that moment if enough, otherwise &c&nitem will be unselected&a!."
+      Unselected: "&cYou unselected {NAME}&c. You won't be charged in next games!"
+      Purchased-success:
+      - "&c- {PRICE} &7(Purchased {NAME}&7)"
+      Purchased-failed: "&cNot enough money to purchase {NAME}&c."
+      Disguise-success: "&c&lYou are now disguised as &2&lCharged Creeper&c&l!"
+  magma-cube-disguise:
+    Type: "BEAST_SKIN"
+    Disguise-type: "MAGMA_CUBE"
+    Slime-size: 2
+    Slot: 20
+    #Permission required to BUY this upgrade? Set to "none" to not require any permission.
+    Permission: "alonsorftb.beasts-shop.magma-cube-disguise"
+    Free-permission: "alonsorftb.beasts-shop.magma-cube-disguise.free"
+    Name: "&4&lMagma Cube disguise"
+    #Price for this skin?
+    Price: 50
+    Economy:
+      #Economy type for this skin? Available types are: VAULT, PLAYER_POINTS, TOKEN_MANAGER and LEVEL.
+      Type: "VAULT"
+      #Ignore this for now.
+      Material: "DIAMOND"
+    #Want to set a custom model data for this skin?
+    Custom-model-data: 0
+    #This is how the item will look like in the shop.
+    Item-shop:
+      Free:
+        #Amount of items displayed in gui when its LOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTFjOTdhMDZlZmRlMDRkMDAyODdiZjIwNDE2NDA0YWIyMTAzZTEwZjA4NjIzMDg3ZTFiMGMxMjY0YTFjMGYwYyJ9fX0="
+        Custom-model-data: 0
+        Displayname: "&4&lMagma Cube disguise"
+        Lore:
+        - "&7Disguise as a magma cube"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &c&m{PRICE}&r &aFREE!"
+        - ""
+        - "&cFree with your current rank!"
+        Glow: false
+        Hide-flags: true
+      Locked:
+        #Amount of items displayed in gui when its LOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTFjOTdhMDZlZmRlMDRkMDAyODdiZjIwNDE2NDA0YWIyMTAzZTEwZjA4NjIzMDg3ZTFiMGMxMjY0YTFjMGYwYyJ9fX0="
+        Custom-model-data: 0
+        Displayname: "&4&lMagma Cube disguise"
+        Lore:
+        - "&7Disguise as a magma cube"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&cRequires &5[RANK]&c rank!"
+        - "&cPurchase on &bstore.yournetwork.net&c!"
+        Glow: false
+        Hide-flags: true
+      Unlocked:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTFjOTdhMDZlZmRlMDRkMDAyODdiZjIwNDE2NDA0YWIyMTAzZTEwZjA4NjIzMDg3ZTFiMGMxMjY0YTFjMGYwYyJ9fX0="
+        Custom-model-data: 0
+        Displayname: "&4&lMagma Cube disguise"
+        Lore:
+        - "&7Disguise as a magma cube"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&eClick to purchase!"
+        Glow: false
+        Hide-flags: true
+      Selected:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTFjOTdhMDZlZmRlMDRkMDAyODdiZjIwNDE2NDA0YWIyMTAzZTEwZjA4NjIzMDg3ZTFiMGMxMjY0YTFjMGYwYyJ9fX0="
+        Custom-model-data: 0
+        Displayname: "&4&lMagma Cube disguise"
+        Lore:
+        - "&7Disguise as a magma cube"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&aSelected."
+        Glow: true
+        Hide-flags: true
+      Selected-free:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTFjOTdhMDZlZmRlMDRkMDAyODdiZjIwNDE2NDA0YWIyMTAzZTEwZjA4NjIzMDg3ZTFiMGMxMjY0YTFjMGYwYyJ9fX0="
+        Custom-model-data: 0
+        Displayname: "&4&lMagma Cube disguise"
+        Lore:
+        - "&7Disguise as a magma cube"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &c&m{PRICE}&r &aFREE!"
+        - ""
+        - "&aSelected!"
+        Glow: true
+        Hide-flags: true
+    Messages:
+      Economy-not-available: "&cEconomy for this item is not available. If you think this is an error contact an administrator."
+      No-permission: "&cYou need &5[RANK]&c rank to purchase this item. Get it on &bstore.yournetwork.net&c!"
+      No-enough-money: "&cYou don't have enough money to purchase this item!"
+      Selected-free:
+      - "&aYou selected {NAME}&a."
+      - "&aYou'll receive the item(s) in your next game!"
+      Unselected-free: "&cYou unselected {NAME}&c!"
+      Purchased-success-free:
+      - "&d✫ &7Purchased {NAME}&7 for &aFREE&7!"
+      Selected:
+      - "&aYou selected {NAME}&a."
+      - "&aYou'll receive the item(s) in your next game!"
+      - "&aMoney will be taken in that moment if enough, otherwise &c&nitem will be unselected&a!."
+      Unselected: "&cYou unselected {NAME}&c. You won't be charged in next games!"
+      Purchased-success:
+      - "&c- {PRICE} &7(Purchased {NAME}&7)"
+      Purchased-failed: "&cNot enough money to purchase {NAME}&c."
+      Disguise-success: "&c&lYou are now disguised as &4&lMagma Cube&c&l!"
+  wither-disguise:
+    Type: "BEAST_SKIN"
+    Disguise-type: "WITHER"
+    Slot: 21
+    #Permission required to BUY this upgrade? Set to "none" to not require any permission.
+    Permission: "alonsorftb.beasts-shop.wither-disguise"
+    Free-permission: "alonsorftb.beasts-shop.wither-disguise.free"
+    Name: "&7&lWither disguise"
+    #Price for this skin?
+    Price: 50
+    Economy:
+      #Economy type for this skin? Available types are: VAULT, PLAYER_POINTS, TOKEN_MANAGER and LEVEL.
+      Type: "VAULT"
+      #Ignore this for now.
+      Material: "DIAMOND"
+    #Want to set a custom model data for this skin?
+    Custom-model-data: 0
+    #This is how the item will look like in the shop.
+    Item-shop:
+      Free:
+        #Amount of items displayed in gui when its LOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWRhOTdjMDZjMDdhMDM1YmQ4NzQ2YjQ4ZDMyZGMwNGU4NDE2MGJkMTYxZjI2YmUxMjcyYjYyNzEyNTFhYWE3In19fQ=="
+        Custom-model-data: 0
+        Displayname: "&7&lWither disguise"
+        Lore:
+        - "&7Disguise as a wither"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &c&m{PRICE}&r &aFREE!"
+        - ""
+        - "&cFree with your current rank!"
+        Glow: false
+        Hide-flags: true
+      Locked:
+        #Amount of items displayed in gui when its LOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWRhOTdjMDZjMDdhMDM1YmQ4NzQ2YjQ4ZDMyZGMwNGU4NDE2MGJkMTYxZjI2YmUxMjcyYjYyNzEyNTFhYWE3In19fQ=="
+        Custom-model-data: 0
+        Displayname: "&7&lWither disguise"
+        Lore:
+        - "&7Disguise as a wither"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&cRequires &5[RANK]&c rank!"
+        - "&cPurchase on &bstore.yournetwork.net&c!"
+        Glow: false
+        Hide-flags: true
+      Unlocked:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWRhOTdjMDZjMDdhMDM1YmQ4NzQ2YjQ4ZDMyZGMwNGU4NDE2MGJkMTYxZjI2YmUxMjcyYjYyNzEyNTFhYWE3In19fQ=="
+        Custom-model-data: 0
+        Displayname: "&7&lWither disguise"
+        Lore:
+        - "&7Disguise as a wither"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&eClick to purchase!"
+        Glow: false
+        Hide-flags: true
+      Selected:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWRhOTdjMDZjMDdhMDM1YmQ4NzQ2YjQ4ZDMyZGMwNGU4NDE2MGJkMTYxZjI2YmUxMjcyYjYyNzEyNTFhYWE3In19fQ=="
+        Custom-model-data: 0
+        Displayname: "&7&lWither disguise"
+        Lore:
+        - "&7Disguise as a wither"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&aSelected."
+        Glow: true
+        Hide-flags: true
+      Selected-free:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWRhOTdjMDZjMDdhMDM1YmQ4NzQ2YjQ4ZDMyZGMwNGU4NDE2MGJkMTYxZjI2YmUxMjcyYjYyNzEyNTFhYWE3In19fQ=="
+        Custom-model-data: 0
+        Displayname: "&7&lWither disguise"
+        Lore:
+        - "&7Disguise as a wither"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &c&m{PRICE}&r &aFREE!"
+        - ""
+        - "&aSelected!"
+        Glow: true
+        Hide-flags: true
+    Messages:
+      Economy-not-available: "&cEconomy for this item is not available. If you think this is an error contact an administrator."
+      No-permission: "&cYou need &5[RANK]&c rank to purchase this item. Get it on &bstore.yournetwork.net&c!"
+      No-enough-money: "&cYou don't have enough money to purchase this item!"
+      Selected-free:
+      - "&aYou selected {NAME}&a."
+      - "&aYou'll receive the item(s) in your next game!"
+      Unselected-free: "&cYou unselected {NAME}&c!"
+      Purchased-success-free:
+      - "&d✫ &7Purchased {NAME}&7 for &aFREE&7!"
+      Selected:
+      - "&aYou selected {NAME}&a."
+      - "&aYou'll receive the item(s) in your next game!"
+      - "&aMoney will be taken in that moment if enough, otherwise &c&nitem will be unselected&a!."
+      Unselected: "&cYou unselected {NAME}&c. You won't be charged in next games!"
+      Purchased-success:
+      - "&c- {PRICE} &7(Purchased {NAME}&7)"
+      Purchased-failed: "&cNot enough money to purchase {NAME}&c."
+      Disguise-success: "&c&lYou are now disguised as &7&lWither&c&l!"
+  king-pigzombie-disguise:
+    Type: "BEAST_SKIN"
+    Disguise-type: "PIG_ZOMBIE"
+    Slot: 22
+    #Permission required to BUY this upgrade? Set to "none" to not require any permission.
+    Permission: "alonsorftb.beasts-shop.king-pigzombie-disguise"
+    Free-permission: "alonsorftb.beasts-shop.king-pigzombie-disguise.free"
+    Name: "&6❂ &d&l&nKing Pig zombie disguise&r &6❂"
+    #Price for this skin?
+    Price: 50
+    Economy:
+      #Economy type for this skin? Available types are: VAULT, PLAYER_POINTS, TOKEN_MANAGER and LEVEL.
+      Type: "VAULT"
+      #Ignore this for now.
+      Material: "DIAMOND"
+    #Want to set a custom model data for this skin?
+    Custom-model-data: 0
+    #This is how the item will look like in the shop.
+    Item-shop:
+      Free:
+        #Amount of items displayed in gui when its LOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTNmZTNlYzU3YjYwMDkxMzg1MWVjMDMyODBjOTc5MTZmYWU5ZTA4NmFlYWFhNDcwMzM5NDE2ZmRmNGEyYTMwZiJ9fX0="
+        Custom-model-data: 0
+        Displayname: "&6❂ &d&l&nKing Pig zombie disguise&r &6❂"
+        Lore:
+        - "&7Disguise as a pig zombie"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &c&m{PRICE}&r &aFREE!"
+        - ""
+        - "&cFree with your current rank!"
+        Glow: false
+        Hide-flags: true
+      Locked:
+        #Amount of items displayed in gui when its LOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTNmZTNlYzU3YjYwMDkxMzg1MWVjMDMyODBjOTc5MTZmYWU5ZTA4NmFlYWFhNDcwMzM5NDE2ZmRmNGEyYTMwZiJ9fX0="
+        Custom-model-data: 0
+        Displayname: "&6❂ &d&l&nKing Pig zombie disguise&r &6❂"
+        Lore:
+        - "&7Disguise as a pig zombie"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&cRequires &5[RANK]&c rank!"
+        - "&cPurchase on &bstore.yournetwork.net&c!"
+        Glow: false
+        Hide-flags: true
+      Unlocked:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTNmZTNlYzU3YjYwMDkxMzg1MWVjMDMyODBjOTc5MTZmYWU5ZTA4NmFlYWFhNDcwMzM5NDE2ZmRmNGEyYTMwZiJ9fX0="
+        Custom-model-data: 0
+        Displayname: "&6❂ &d&l&nKing Pig zombie disguise&r &6❂"
+        Lore:
+        - "&7Disguise as a pig zombie"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&eClick to purchase!"
+        Glow: false
+        Hide-flags: true
+      Selected:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTNmZTNlYzU3YjYwMDkxMzg1MWVjMDMyODBjOTc5MTZmYWU5ZTA4NmFlYWFhNDcwMzM5NDE2ZmRmNGEyYTMwZiJ9fX0="
+        Custom-model-data: 0
+        Displayname: "&6❂ &d&l&nKing Pig zombie disguise&r &6❂"
+        Lore:
+        - "&7Disguise as a pig zombie"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&aSelected."
+        Glow: true
+        Hide-flags: true
+      Selected-free:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTNmZTNlYzU3YjYwMDkxMzg1MWVjMDMyODBjOTc5MTZmYWU5ZTA4NmFlYWFhNDcwMzM5NDE2ZmRmNGEyYTMwZiJ9fX0="
+        Custom-model-data: 0
+        Displayname: "&6❂ &d&l&nKing Pig zombie disguise&r &6❂"
+        Lore:
+        - "&7Disguise as a pig zombie"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &c&m{PRICE}&r &aFREE!"
+        - ""
+        - "&aSelected!"
+        Glow: true
+        Hide-flags: true
+    #Item used in disguise helmet. (Only available in some disguises, use it only IF NECESSARY!)
+    Item-helmet:
+      Material: "CUSTOM_HEAD"
+      Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTNmZTNlYzU3YjYwMDkxMzg1MWVjMDMyODBjOTc5MTZmYWU5ZTA4NmFlYWFhNDcwMzM5NDE2ZmRmNGEyYTMwZiJ9fX0="
+      Custom-model-data: 0
+      Glow: true
+    Messages:
+      Economy-not-available: "&cEconomy for this item is not available. If you think this is an error contact an administrator."
+      No-permission: "&cYou need &5[RANK]&c rank to purchase this item. Get it on &bstore.yournetwork.net&c!"
+      No-enough-money: "&cYou don't have enough money to purchase this item!"
+      Selected-free:
+      - "&aYou selected {NAME}&a."
+      - "&aYou'll receive the item(s) in your next game!"
+      Unselected-free: "&cYou unselected {NAME}&c!"
+      Purchased-success-free:
+      - "&d✫ &7Purchased {NAME}&7 for &aFREE&7!"
+      Selected:
+      - "&aYou selected {NAME}&a."
+      - "&aYou'll receive the item(s) in your next game!"
+      - "&aMoney will be taken in that moment if enough, otherwise &c&nitem will be unselected&a!."
+      Unselected: "&cYou unselected {NAME}&c. You won't be charged in next games!"
+      Purchased-success:
+      - "&c- {PRICE} &7(Purchased {NAME}&7)"
+      Purchased-failed: "&cNot enough money to purchase {NAME}&c."
+      Disguise-success: "&c&lYou are now disguised as &6❂ &d&l&nKing Pig zombie disguise&r &6❂&c&l!"
+  king-skeleton-disguise:
+    Type: "BEAST_SKIN"
+    Disguise-type: "SKELETON"
+    Slot: 23
+    #Permission required to BUY this upgrade? Set to "none" to not require any permission.
+    Permission: "alonsorftb.beasts-shop.king-skeleton-disguise"
+    Free-permission: "alonsorftb.beasts-shop.king-skeleton-disguise.free"
+    Name: "&6❂ &f&l&nKing Skeleton disguise&r &6❂"
+    #Price for this skin?
+    Price: 50
+    Economy:
+      #Economy type for this skin? Available types are: VAULT, PLAYER_POINTS, TOKEN_MANAGER and LEVEL.
+      Type: "VAULT"
+      #Ignore this for now.
+      Material: "DIAMOND"
+    #Want to set a custom model data for this skin?
+    Custom-model-data: 0
+    #This is how the item will look like in the shop.
+    Item-shop:
+      Free:
+        #Amount of items displayed in gui when its LOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWUwZmVhZDczMjU3MWRiNWQ1MDQ4OGM1YjUwZDRkYTc5MTU5MDg2MWEyMTJkZTNhODI0ZTQ0MDE1YjdmM2NjOCJ9fX0="
+        Custom-model-data: 0
+        Displayname: "&6❂ &f&l&nKing Skeleton disguise&r &6❂"
+        Lore:
+        - "&7Disguise as a king skeleton"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &c&m{PRICE}&r &aFREE!"
+        - ""
+        - "&cFree with your current rank!"
+        Glow: false
+        Hide-flags: true
+      Locked:
+        #Amount of items displayed in gui when its LOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWUwZmVhZDczMjU3MWRiNWQ1MDQ4OGM1YjUwZDRkYTc5MTU5MDg2MWEyMTJkZTNhODI0ZTQ0MDE1YjdmM2NjOCJ9fX0="
+        Custom-model-data: 0
+        Displayname: "&6❂ &f&l&nKing Skeleton disguise&r &6❂"
+        Lore:
+        - "&7Disguise as a king skeleton"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&cRequires &5[RANK]&c rank!"
+        - "&cPurchase on &bstore.yournetwork.net&c!"
+        Glow: false
+        Hide-flags: true
+      Unlocked:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWUwZmVhZDczMjU3MWRiNWQ1MDQ4OGM1YjUwZDRkYTc5MTU5MDg2MWEyMTJkZTNhODI0ZTQ0MDE1YjdmM2NjOCJ9fX0="
+        Custom-model-data: 0
+        Displayname: "&6❂ &f&l&nKing Skeleton disguise&r &6❂"
+        Lore:
+        - "&7Disguise as a king skeleton"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&eClick to purchase!"
+        Glow: false
+        Hide-flags: true
+      Selected:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWUwZmVhZDczMjU3MWRiNWQ1MDQ4OGM1YjUwZDRkYTc5MTU5MDg2MWEyMTJkZTNhODI0ZTQ0MDE1YjdmM2NjOCJ9fX0="
+        Custom-model-data: 0
+        Displayname: "&6❂ &f&l&nKing Skeleton disguise&r &6❂"
+        Lore:
+        - "&7Disguise as a king skeleton"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&aSelected."
+        Glow: true
+        Hide-flags: true
+      Selected-free:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWUwZmVhZDczMjU3MWRiNWQ1MDQ4OGM1YjUwZDRkYTc5MTU5MDg2MWEyMTJkZTNhODI0ZTQ0MDE1YjdmM2NjOCJ9fX0="
+        Custom-model-data: 0
+        Displayname: "&6❂ &f&l&nKing Skeleton disguise&r &6❂"
+        Lore:
+        - "&7Disguise as a king skeleton"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &c&m{PRICE}&r &aFREE!"
+        - ""
+        - "&aSelected!"
+        Glow: true
+        Hide-flags: true
+    #Item used in disguise helmet. (Only available in some disguises, use it only IF NECESSARY!)
+    Item-helmet:
+      Material: "CUSTOM_HEAD"
+      Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWUwZmVhZDczMjU3MWRiNWQ1MDQ4OGM1YjUwZDRkYTc5MTU5MDg2MWEyMTJkZTNhODI0ZTQ0MDE1YjdmM2NjOCJ9fX0="
+      Custom-model-data: 0
+      Glow: true
+    Messages:
+      Economy-not-available: "&cEconomy for this item is not available. If you think this is an error contact an administrator."
+      No-permission: "&cYou need &5[RANK]&c rank to purchase this item. Get it on &bstore.yournetwork.net&c!"
+      No-enough-money: "&cYou don't have enough money to purchase this item!"
+      Selected-free:
+      - "&aYou selected {NAME}&a."
+      - "&aYou'll receive the item(s) in your next game!"
+      Unselected-free: "&cYou unselected {NAME}&c!"
+      Purchased-success-free:
+      - "&d✫ &7Purchased {NAME}&7 for &aFREE&7!"
+      Selected:
+      - "&aYou selected {NAME}&a."
+      - "&aYou'll receive the item(s) in your next game!"
+      - "&aMoney will be taken in that moment if enough, otherwise &c&nitem will be unselected&a!."
+      Unselected: "&cYou unselected {NAME}&c. You won't be charged in next games!"
+      Purchased-success:
+      - "&c- {PRICE} &7(Purchased {NAME}&7)"
+      Purchased-failed: "&cNot enough money to purchase {NAME}&c."
+      Disguise-success: "&c&lYou are now disguised as &6❂ &f&l&nKing Skeleton&r &6❂&c&l!"
+  warden-disguise:
+    Type: "BEAST_SKIN"
+    Disguise-type: "WARDEN"
+    Slot: 24
+    #Permission required to BUY this upgrade? Set to "none" to not require any permission.
+    Permission: "alonsorftb.beasts-shop.warden-disguise"
+    Free-permission: "alonsorftb.beasts-shop.warden-disguise.free"
+    Name: "&3&lWarden disguise"
+    #Price for this skin?
+    Price: 50
+    Economy:
+      #Economy type for this skin? Available types are: VAULT, PLAYER_POINTS, TOKEN_MANAGER and LEVEL.
+      Type: "VAULT"
+      #Ignore this for now.
+      Material: "DIAMOND"
+    #Want to set a custom model data for this skin?
+    Custom-model-data: 0
+    #This is how the item will look like in the shop.
+    Item-shop:
+      Free:
+        #Amount of items displayed in gui when its LOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2Y2NDgxYzdjNDM1YzM0ZjIxZGZmMTA0M2E0YzcwMzRjNDQ1YTM4M2E1NDM1ZmExZjJhNTAzYTM0OGFmZDYyZiJ9fX0="
+        Custom-model-data: 0
+        Displayname: "&3&lWarden disguise"
+        Lore:
+        - "&7Disguise as a warden"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &c&m{PRICE}&r &aFREE!"
+        - ""
+        - "&cFree with your current rank!"
+        Glow: false
+        Hide-flags: true
+      Locked:
+        #Amount of items displayed in gui when its LOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2Y2NDgxYzdjNDM1YzM0ZjIxZGZmMTA0M2E0YzcwMzRjNDQ1YTM4M2E1NDM1ZmExZjJhNTAzYTM0OGFmZDYyZiJ9fX0="
+        Custom-model-data: 0
+        Displayname: "&3&lWarden disguise"
+        Lore:
+        - "&7Disguise as a warden"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&cRequires &5[RANK]&c rank!"
+        - "&cPurchase on &bstore.yournetwork.net&c!"
+        Glow: false
+        Hide-flags: true
+      Unlocked:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2Y2NDgxYzdjNDM1YzM0ZjIxZGZmMTA0M2E0YzcwMzRjNDQ1YTM4M2E1NDM1ZmExZjJhNTAzYTM0OGFmZDYyZiJ9fX0="
+        Custom-model-data: 0
+        Displayname: "&3&lWarden disguise"
+        Lore:
+        - "&7Disguise as a warden"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&eClick to purchase!"
+        Glow: false
+        Hide-flags: true
+      Selected:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2Y2NDgxYzdjNDM1YzM0ZjIxZGZmMTA0M2E0YzcwMzRjNDQ1YTM4M2E1NDM1ZmExZjJhNTAzYTM0OGFmZDYyZiJ9fX0="
+        Custom-model-data: 0
+        Displayname: "&3&lWarden disguise"
+        Lore:
+        - "&7Disguise as a warden"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&aSelected."
+        Glow: true
+        Hide-flags: true
+      Selected-free:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2Y2NDgxYzdjNDM1YzM0ZjIxZGZmMTA0M2E0YzcwMzRjNDQ1YTM4M2E1NDM1ZmExZjJhNTAzYTM0OGFmZDYyZiJ9fX0="
+        Custom-model-data: 0
+        Displayname: "&3&lWarden disguise"
+        Lore:
+        - "&7Disguise as a warden"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &c&m{PRICE}&r &aFREE!"
+        - ""
+        - "&aSelected!"
+        Glow: true
+        Hide-flags: true
+    Messages:
+      Economy-not-available: "&cEconomy for this item is not available. If you think this is an error contact an administrator."
+      No-permission: "&cYou need &5[RANK]&c rank to purchase this item. Get it on &bstore.yournetwork.net&c!"
+      No-enough-money: "&cYou don't have enough money to purchase this item!"
+      Selected-free:
+      - "&aYou selected {NAME}&a."
+      - "&aYou'll receive the item(s) in your next game!"
+      Unselected-free: "&cYou unselected {NAME}&c!"
+      Purchased-success-free:
+      - "&d✫ &7Purchased {NAME}&7 for &aFREE&7!"
+      Selected:
+      - "&aYou selected {NAME}&a."
+      - "&aYou'll receive the item(s) in your next game!"
+      - "&aMoney will be taken in that moment if enough, otherwise &c&nitem will be unselected&a!."
+      Unselected: "&cYou unselected {NAME}&c. You won't be charged in next games!"
+      Purchased-success:
+      - "&c- {PRICE} &7(Purchased {NAME}&7)"
+      Purchased-failed: "&cNot enough money to purchase {NAME}&c."
+      Disguise-success: "&c&lYou are now disguised as &3&lWarden&c&l!"
+  allay-disguise:
+    Type: "BEAST_SKIN"
+    Disguise-type: "ALLAY"
+    Slot: 26
+    #Permission required to BUY this upgrade? Set to "none" to not require any permission.
+    Permission: "alonsorftb.beasts-shop.allay-disguise"
+    Free-permission: "alonsorftb.beasts-shop.allay-disguise.free"
+    Name: "&b&lAllay disguise"
+    #Price for this skin?
+    Price: 50
+    Economy:
+      #Economy type for this skin? Available types are: VAULT, PLAYER_POINTS, TOKEN_MANAGER and LEVEL.
+      Type: "VAULT"
+      #Ignore this for now.
+      Material: "DIAMOND"
+    #Want to set a custom model data for this skin?
+    Custom-model-data: 0
+    #This is how the item will look like in the shop.
+    Item-shop:
+      Free:
+        #Amount of items displayed in gui when its LOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmVlYTg0NWNjMGI1OGZmNzYzZGVjZmZlMTFjZDFjODQ1YzVkMDljM2IwNGZlODBiMDY2M2RhNWM3YzY5OWViMyJ9fX0="
+        Custom-model-data: 0
+        Displayname: "&b&lAllay disguise"
+        Lore:
+        - "&7Disguise as an allay"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &c&m{PRICE}&r &aFREE!"
+        - ""
+        - "&cFree with your current rank!"
+        Glow: false
+        Hide-flags: true
+      Locked:
+        #Amount of items displayed in gui when its LOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmVlYTg0NWNjMGI1OGZmNzYzZGVjZmZlMTFjZDFjODQ1YzVkMDljM2IwNGZlODBiMDY2M2RhNWM3YzY5OWViMyJ9fX0="
+        Custom-model-data: 0
+        Displayname: "&b&lAllay disguise"
+        Lore:
+        - "&7Disguise as an allay"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&cRequires &6[RANK]&c rank!"
+        - "&cPurchase on &bstore.yournetwork.net&c!"
+        Glow: false
+        Hide-flags: true
+      Unlocked:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmVlYTg0NWNjMGI1OGZmNzYzZGVjZmZlMTFjZDFjODQ1YzVkMDljM2IwNGZlODBiMDY2M2RhNWM3YzY5OWViMyJ9fX0="
+        Custom-model-data: 0
+        Displayname: "&b&lAllay disguise"
+        Lore:
+        - "&7Disguise as an allay"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&eClick to purchase!"
+        Glow: false
+        Hide-flags: true
+      Selected:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmVlYTg0NWNjMGI1OGZmNzYzZGVjZmZlMTFjZDFjODQ1YzVkMDljM2IwNGZlODBiMDY2M2RhNWM3YzY5OWViMyJ9fX0="
+        Custom-model-data: 0
+        Displayname: "&b&lAllay disguise"
+        Lore:
+        - "&7Disguise as an allay"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&aSelected."
+        Glow: true
+        Hide-flags: true
+      Selected-free:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "CUSTOM_HEAD"
+        Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmVlYTg0NWNjMGI1OGZmNzYzZGVjZmZlMTFjZDFjODQ1YzVkMDljM2IwNGZlODBiMDY2M2RhNWM3YzY5OWViMyJ9fX0="
+        Custom-model-data: 0
+        Displayname: "&b&lAllay disguise"
+        Lore:
+        - "&7Disguise as an allay"
+        - "&7and hunt all runners!"
+        - ""
+        - "&7Price: &c&m{PRICE}&r &aFREE!"
+        - ""
+        - "&aSelected!"
+        Glow: true
+        Hide-flags: true
+    Messages:
+      Economy-not-available: "&cEconomy for this item is not available. If you think this is an error contact an administrator."
+      No-permission: "&cYou need &6[RANK]&c rank to purchase this item. Get it on &bstore.yournetwork.net&c!"
+      No-enough-money: "&cYou don't have enough money to purchase this item!"
+      Selected-free:
+      - "&aYou selected {NAME}&a."
+      - "&aYou'll receive the item(s) in your next game!"
+      Unselected-free: "&cYou unselected {NAME}&c!"
+      Purchased-success-free:
+      - "&d✫ &7Purchased {NAME}&7 for &aFREE&7!"
+      Selected:
+      - "&aYou selected {NAME}&a."
+      - "&aYou'll receive the item(s) in your next game!"
+      - "&aMoney will be taken in that moment if enough, otherwise &c&nitem will be unselected&a!."
+      Unselected: "&cYou unselected {NAME}&c. You won't be charged in next games!"
+      Purchased-success:
+      - "&c- {PRICE} &7(Purchased {NAME}&7)"
+      Purchased-failed: "&cNot enough money to purchase {NAME}&c."
+      Disguise-success: "&c&lYou are now disguised as &b&lAllay&c&l!"
+  zapper-one:
+    Type: "ZAPPER"
+    Zapper-uses: 1
+    Slot: 36
+    #Permission required to BUY this upgrade? Set to "none" to not require any permission.
+    Permission: "none"
+    Free-permission: "alonsorftb.beasts-shop.zapper-one.free"
+    Name: "&eZapper &8[{USES} use]"
+    #Price for this skin?
+    Price: 50
+    Economy:
+      #Economy type for this skin? Available types are: VAULT, PLAYER_POINTS, TOKEN_MANAGER and LEVEL.
+      Type: "VAULT"
+      #Ignore this for now.
+      Material: "DIAMOND"
+    #Want to set a custom model data for this skin?
+    Custom-model-data: 0
+    #This is how the item will look like in the shop.
+    Item-shop:
+      Free:
+        #Amount of items displayed in gui when its LOCKED.
+        Amount: 1
+        Material: "WOODEN_HOE"
+        Custom-model-data: 0
+        Displayname: "&eZapper &7- &e{USES} use"
+        Lore:
+        - "&7Blind your enemies to attack them!"
+        - ""
+        - "&7Price: &c&m{PRICE}&r &aFREE!"
+        - ""
+        - "&cFree with your current rank!"
+        Glow: false
+        Hide-flags: true
+      Locked:
+        #Amount of items displayed in gui when its LOCKED.
+        Amount: 1
+        Material: "WOODEN_HOE"
+        Custom-model-data: 0
+        Displayname: "&eZapper &7- &e{USES} use"
+        Lore:
+        - "&7Blind your enemies to attack them!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&cRequires &a[RANK]&c rank!"
+        - "&cPurchase on &bstore.yournetwork.net&c!"
+        Glow: false
+        Hide-flags: true
+      Unlocked:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "WOODEN_HOE"
+        Custom-model-data: 0
+        Displayname: "&eZapper &7- &e{USES} use"
+        Lore:
+        - "&7Blind your enemies to attack them!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&eClick to purchase!"
+        Glow: false
+        Hide-flags: true
+      Selected:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "WOODEN_HOE"
+        Custom-model-data: 0
+        Displayname: "&eZapper &7- &e{USES} use"
+        Lore:
+        - "&7Blind your enemies to attack them!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&aSelected."
+        Glow: true
+        Hide-flags: true
+      Selected-free:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "WOODEN_HOE"
+        Custom-model-data: 0
+        Displayname: "&eZapper &7- &e{USES} use"
+        Lore:
+        - "&7Blind your enemies to attack them!"
+        - ""
+        - "&7Price: &c&m{PRICE}&r &aFREE!"
+        - ""
+        - "&aSelected!"
+        Glow: true
+        Hide-flags: true
+    #This is how the item will look like when given to the player.
+    Item:
+      #Amount of items given to the player.
+      Amount: 1
+      Material: "WOODEN_HOE"
+      Custom-model-data: 0
+      Displayname: "&eZapper &7- &e{USES} use"
+      Lore:
+      - "&7Blind your enemies to attack them!"
+      - ""
+      - "&eRight click to shoot!"
+      Glow: false
+      Hide-flags: true
+    Messages:
+      Economy-not-available: "&cEconomy for this item is not available. If you think this is an error contact an administrator."
+      No-permission: "&cYou need &a[RANK]&c rank to purchase this item. Get it on &bstore.yournetwork.net&c!"
+      No-enough-money: "&cYou don't have enough money to purchase this item!"
+      Selected-free:
+      - "&aYou selected {NAME}&a."
+      - "&aYou'll receive the item(s) in your next game!"
+      Unselected-free: "&cYou unselected {NAME}&c!"
+      Purchased-success-free:
+      - "&d✫ &7Purchased {NAME}&7 for &aFREE&7!"
+      Selected:
+      - "&aYou selected {NAME}&a."
+      - "&aYou'll receive the item(s) in your next game!"
+      - "&aMoney will be taken in that moment if enough, otherwise &c&nitem will be unselected&a!."
+      Unselected: "&cYou unselected {NAME}&c. You won't be charged in next games!"
+      Purchased-success:
+      - "&c- {PRICE} &7(Purchased {NAME}&7)"
+      Purchased-failed: "&cNot enough money to purchase {NAME}&c."
+  zapper-two:
+    Type: "ZAPPER"
+    Zapper-uses: 2
+    Slot: 37
+    #Permission required to BUY this upgrade? Set to "none" to not require any permission.
+    Permission: "none"
+    Free-permission: "alonsorftb.beasts-shop.zapper-two.free"
+    Name: "&6&lZapper &8[{USES} uses]"
+    #Price for this skin?
+    Price: 50
+    Economy:
+      #Economy type for this skin? Available types are: VAULT, PLAYER_POINTS, TOKEN_MANAGER and LEVEL.
+      Type: "VAULT"
+      #Ignore this for now.
+      Material: "DIAMOND"
+    #Want to set a custom model data for this skin?
+    Custom-model-data: 0
+    #This is how the item will look like in the shop.
+    Item-shop:
+      Free:
+        #Amount of items displayed in gui when its LOCKED.
+        Amount: 1
+        Material: "STONE_HOE"
+        Custom-model-data: 0
+        Displayname: "&a&lZapper &7- &e{USES} uses"
+        Lore:
+        - "&7Blind your enemies to attack them!"
+        - ""
+        - "&7Price: &c&m{PRICE}&r &aFREE!"
+        - ""
+        - "&cFree with your current rank!"
+        Glow: false
+        Hide-flags: true
+      Locked:
+        #Amount of items displayed in gui when its LOCKED.
+        Amount: 1
+        Material: "STONE_HOE"
+        Custom-model-data: 0
+        Displayname: "&a&lZapper &7- &e{USES} uses"
+        Lore:
+        - "&7Blind your enemies to attack them!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&cRequires &a[RANK]&c rank!"
+        - "&cPurchase on &bstore.yournetwork.net&c!"
+        Glow: false
+        Hide-flags: true
+      Unlocked:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "STONE_HOE"
+        Custom-model-data: 0
+        Displayname: "&a&lZapper &7- &e{USES} uses"
+        Lore:
+        - "&7Blind your enemies to attack them!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&eClick to purchase!"
+        Glow: false
+        Hide-flags: true
+      Selected:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "STONE_HOE"
+        Custom-model-data: 0
+        Displayname: "&a&lZapper &7- &e{USES} uses"
+        Lore:
+        - "&7Blind your enemies to attack them!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&aSelected."
+        Glow: true
+        Hide-flags: true
+      Selected-free:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "STONE_HOE"
+        Custom-model-data: 0
+        Displayname: "&a&lZapper &7- &e{USES} uses"
+        Lore:
+        - "&7Blind your enemies to attack them!"
+        - ""
+        - "&7Price: &c&m{PRICE}&r &aFREE!"
+        - ""
+        - "&aSelected!"
+        Glow: true
+        Hide-flags: true
+    #This is how the item will look like when given to the player.
+    Item:
+      #Amount of items given to the player.
+      Amount: 1
+      Material: "STONE_HOE"
+      Custom-model-data: 0
+      Displayname: "&a&lZapper &7- &e{USES} uses"
+      Lore:
+      - "&7Blind your enemies to attack them!"
+      - ""
+      - "&eRight click to shoot!"
+      Glow: false
+      Hide-flags: true
+    Messages:
+      Economy-not-available: "&cEconomy for this item is not available. If you think this is an error contact an administrator."
+      No-permission: "&cYou need &a[RANK]&c rank to purchase this item. Get it on &bstore.yournetwork.net&c!"
+      No-enough-money: "&cYou don't have enough money to purchase this item!"
+      Selected-free:
+      - "&aYou selected {NAME}&a."
+      - "&aYou'll receive the item(s) in your next game!"
+      Unselected-free: "&cYou unselected {NAME}&c!"
+      Purchased-success-free:
+      - "&d✫ &7Purchased {NAME}&7 for &aFREE&7!"
+      Selected:
+      - "&aYou selected {NAME}&a."
+      - "&aYou'll receive the item(s) in your next game!"
+      - "&aMoney will be taken in that moment if enough, otherwise &c&nitem will be unselected&a!."
+      Unselected: "&cYou unselected {NAME}&c. You won't be charged in next games!"
+      Purchased-success:
+      - "&c- {PRICE} &7(Purchased {NAME}&7)"
+      Purchased-failed: "&cNot enough money to purchase {NAME}&c."
+  zapper-three:
+    Type: "ZAPPER"
+    Zapper-uses: 3
+    Slot: 38
+    #Permission required to BUY this upgrade? Set to "none" to not require any permission.
+    Permission: "alonsorftb.beasts-shop.zapper-three"
+    Free-permission: "alonsorftb.beasts-shop.zapper-three.free"
+    Name: "&b&lZapper &8[{USES} uses]"
+    #Price for this skin?
+    Price: 50
+    Economy:
+      #Economy type for this skin? Available types are: VAULT, PLAYER_POINTS, TOKEN_MANAGER and LEVEL.
+      Type: "VAULT"
+      #Ignore this for now.
+      Material: "DIAMOND"
+    #Want to set a custom model data for this skin?
+    Custom-model-data: 0
+    #This is how the item will look like in the shop.
+    Item-shop:
+      Free:
+        #Amount of items displayed in gui when its LOCKED.
+        Amount: 1
+        Material: "GOLDEN_HOE"
+        Custom-model-data: 0
+        Displayname: "&b&lZapper &7- &e{USES} uses"
+        Lore:
+        - "&7Blind your enemies to attack them!"
+        - ""
+        - "&7Price: &c&m{PRICE}&r &aFREE!"
+        - ""
+        - "&cFree with your current rank!"
+        Glow: false
+        Hide-flags: true
+      Locked:
+        #Amount of items displayed in gui when its LOCKED.
+        Amount: 1
+        Material: "GOLDEN_HOE"
+        Custom-model-data: 0
+        Displayname: "&b&lZapper &7- &e{USES} uses"
+        Lore:
+        - "&7Blind your enemies to attack them!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&cRequires &a[RANK]&c rank!"
+        - "&cPurchase on &bstore.yournetwork.net&c!"
+        Glow: false
+        Hide-flags: true
+      Unlocked:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "GOLDEN_HOE"
+        Custom-model-data: 0
+        Displayname: "&b&lZapper &7- &e{USES} uses"
+        Lore:
+        - "&7Blind your enemies to attack them!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&eClick to purchase!"
+        Glow: false
+        Hide-flags: true
+      Selected:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "GOLDEN_HOE"
+        Custom-model-data: 0
+        Displayname: "&b&lZapper &7- &e{USES} uses"
+        Lore:
+        - "&7Blind your enemies to attack them!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&aSelected."
+        Glow: true
+        Hide-flags: true
+      Selected-free:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "GOLDEN_HOE"
+        Custom-model-data: 0
+        Displayname: "&b&lZapper &7- &e{USES} uses"
+        Lore:
+        - "&7Blind your enemies to attack them!"
+        - ""
+        - "&7Price: &c&m{PRICE}&r &aFREE!"
+        - ""
+        - "&aSelected!"
+        Glow: true
+        Hide-flags: true
+    #This is how the item will look like when given to the player.
+    Item:
+      #Amount of items given to the player.
+      Amount: 1
+      Material: "GOLDEN_HOE"
+      Custom-model-data: 0
+      Displayname: "&b&lZapper &7- &e{USES} uses"
+      Lore:
+      - "&7Blind your enemies to attack them!"
+      - ""
+      - "&eRight click to shoot!"
+      Glow: false
+      Hide-flags: true
+    Messages:
+      Economy-not-available: "&cEconomy for this item is not available. If you think this is an error contact an administrator."
+      No-permission: "&cYou need &a[RANK]&c rank to purchase this item. Get it on &bstore.yournetwork.net&c!"
+      No-enough-money: "&cYou don't have enough money to purchase this item!"
+      Selected-free:
+      - "&aYou selected {NAME}&a."
+      - "&aYou'll receive the item(s) in your next game!"
+      Unselected-free: "&cYou unselected {NAME}&c!"
+      Purchased-success-free:
+      - "&d✫ &7Purchased {NAME}&7 for &aFREE&7!"
+      Selected:
+      - "&aYou selected {NAME}&a."
+      - "&aYou'll receive the item(s) in your next game!"
+      - "&aMoney will be taken in that moment if enough, otherwise &c&nitem will be unselected&a!."
+      Unselected: "&cYou unselected {NAME}&c. You won't be charged in next games!"
+      Purchased-success:
+      - "&c- {PRICE} &7(Purchased {NAME}&7)"
+      Purchased-failed: "&cNot enough money to purchase {NAME}&c."
+  zapper-four:
+    Type: "ZAPPER"
+    Zapper-uses: 4
+    Slot: 39
+    #Permission required to BUY this upgrade? Set to "none" to not require any permission.
+    Permission: "alonsorftb.beasts-shop.zapper-four"
+    Free-permission: "alonsorftb.beasts-shop.zapper-four.free"
+    Name: "&6&lZapper &8[{USES} uses]"
+    #Price for this skin?
+    Price: 50
+    Economy:
+      #Economy type for this skin? Available types are: VAULT, PLAYER_POINTS, TOKEN_MANAGER and LEVEL.
+      Type: "VAULT"
+      #Ignore this for now.
+      Material: "DIAMOND"
+    #Want to set a custom model data for this skin?
+    Custom-model-data: 0
+    #This is how the item will look like in the shop.
+    Item-shop:
+      Free:
+        #Amount of items displayed in gui when its LOCKED.
+        Amount: 1
+        Material: "IRON_HOE"
+        Custom-model-data: 0
+        Displayname: "&6&lZapper &7- &e{USES} uses"
+        Lore:
+        - "&7Blind your enemies to attack them!"
+        - ""
+        - "&7Price: &c&m{PRICE}&r &aFREE!"
+        - ""
+        - "&cFree with your current rank!"
+        Glow: false
+        Hide-flags: true
+      Locked:
+        #Amount of items displayed in gui when its LOCKED.
+        Amount: 1
+        Material: "IRON_HOE"
+        Custom-model-data: 0
+        Displayname: "&6&lZapper &7- &e{USES} uses"
+        Lore:
+        - "&7Blind your enemies to attack them!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&cRequires &d[RANK]&c rank!"
+        - "&cPurchase on &bstore.yournetwork.net&c!"
+        Glow: false
+        Hide-flags: true
+      Unlocked:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "IRON_HOE"
+        Custom-model-data: 0
+        Displayname: "&6&lZapper &7- &e{USES} uses"
+        Lore:
+        - "&7Blind your enemies to attack them!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&eClick to purchase!"
+        Glow: false
+        Hide-flags: true
+      Selected:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "IRON_HOE"
+        Custom-model-data: 0
+        Displayname: "&6&lZapper &7- &e{USES} uses"
+        Lore:
+        - "&7Blind your enemies to attack them!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&aSelected."
+        Glow: true
+        Hide-flags: true
+      Selected-free:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "IRON_HOE"
+        Custom-model-data: 0
+        Displayname: "&6&lZapper &7- &e{USES} uses"
+        Lore:
+        - "&7Blind your enemies to attack them!"
+        - ""
+        - "&7Price: &c&m{PRICE}&r &aFREE!"
+        - ""
+        - "&aSelected!"
+        Glow: true
+        Hide-flags: true
+    #This is how the item will look like when given to the player.
+    Item:
+      #Amount of items given to the player.
+      Amount: 1
+      Material: "IRON_HOE"
+      Custom-model-data: 0
+      Displayname: "&6&lZapper &7- &e{USES} uses"
+      Lore:
+      - "&7Blind your enemies to attack them!"
+      - ""
+      - "&eRight click to shoot!"
+      Glow: false
+      Hide-flags: true
+    Messages:
+      Economy-not-available: "&cEconomy for this item is not available. If you think this is an error contact an administrator."
+      No-permission: "&cYou need &d[RANK]&c rank to purchase this item. Get it on &bstore.yournetwork.net&c!"
+      No-enough-money: "&cYou don't have enough money to purchase this item!"
+      Selected-free:
+      - "&aYou selected {NAME}&a."
+      - "&aYou'll receive the item(s) in your next game!"
+      Unselected-free: "&cYou unselected {NAME}&c!"
+      Purchased-success-free:
+      - "&d✫ &7Purchased {NAME}&7 for &aFREE&7!"
+      Selected:
+      - "&aYou selected {NAME}&a."
+      - "&aYou'll receive the item(s) in your next game!"
+      - "&aMoney will be taken in that moment if enough, otherwise &c&nitem will be unselected&a!."
+      Unselected: "&cYou unselected {NAME}&c. You won't be charged in next games!"
+      Purchased-success:
+      - "&c- {PRICE} &7(Purchased {NAME}&7)"
+      Purchased-failed: "&cNot enough money to purchase {NAME}&c."
+  zapper-five:
+    Type: "ZAPPER"
+    Zapper-uses: 5
+    Slot: 40
+    #Permission required to BUY this upgrade? Set to "none" to not require any permission.
+    Permission: "alonsorftb.beasts-shop.zapper-five"
+    Free-permission: "alonsorftb.beasts-shop.zapper-five.free"
+    Name: "&5&lZapper &8[{USES} uses]"
+    #Price for this skin?
+    Price: 50
+    Economy:
+      #Economy type for this skin? Available types are: VAULT, PLAYER_POINTS, TOKEN_MANAGER and LEVEL.
+      Type: "VAULT"
+      #Ignore this for now.
+      Material: "DIAMOND"
+    #Want to set a custom model data for this skin?
+    Custom-model-data: 0
+    #This is how the item will look like in the shop.
+    Item-shop:
+      Free:
+        #Amount of items displayed in gui when its LOCKED.
+        Amount: 1
+        Material: "DIAMOND_HOE"
+        Custom-model-data: 0
+        Displayname: "&5&lZapper &7- &e{USES} uses"
+        Lore:
+        - "&7Blind your enemies to attack them!"
+        - ""
+        - "&7Price: &c&m{PRICE}&r &aFREE!"
+        - ""
+        - "&cFree with your current rank!"
+        Glow: false
+        Hide-flags: true
+      Locked:
+        #Amount of items displayed in gui when its LOCKED.
+        Amount: 1
+        Material: "DIAMOND_HOE"
+        Custom-model-data: 0
+        Displayname: "&5&lZapper &7- &e{USES} uses"
+        Lore:
+        - "&7Blind your enemies to attack them!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&cRequires &5[RANK]&c rank!"
+        - "&cPurchase on &bstore.yournetwork.net&c!"
+        Glow: false
+        Hide-flags: true
+      Unlocked:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "DIAMOND_HOE"
+        Custom-model-data: 0
+        Displayname: "&5&lZapper &7- &e{USES} uses"
+        Lore:
+        - "&7Blind your enemies to attack them!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&eClick to purchase!"
+        Glow: false
+        Hide-flags: true
+      Selected:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "DIAMOND_HOE"
+        Custom-model-data: 0
+        Displayname: "&5&lZapper &7- &e{USES} uses"
+        Lore:
+        - "&7Blind your enemies to attack them!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&aSelected."
+        Glow: true
+        Hide-flags: true
+      Selected-free:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "DIAMOND_HOE"
+        Custom-model-data: 0
+        Displayname: "&5&lZapper &7- &e{USES} uses"
+        Lore:
+        - "&7Blind your enemies to attack them!"
+        - ""
+        - "&7Price: &c&m{PRICE}&r &aFREE!"
+        - ""
+        - "&aSelected!"
+        Glow: true
+        Hide-flags: true
+    #This is how the item will look like when given to the player.
+    Item:
+      #Amount of items given to the player.
+      Amount: 1
+      Material: "DIAMOND_HOE"
+      Custom-model-data: 0
+      Displayname: "&5&lZapper &7- &e{USES} uses"
+      Lore:
+      - "&7Blind your enemies to attack them!"
+      - ""
+      - "&eRight click to shoot!"
+      Glow: false
+      Hide-flags: true
+    Messages:
+      Economy-not-available: "&cEconomy for this item is not available. If you think this is an error contact an administrator."
+      No-permission: "&cYou need &5[RANK]&c rank to purchase this item. Get it on &bstore.yournetwork.net&c!"
+      No-enough-money: "&cYou don't have enough money to purchase this item!"
+      Selected-free:
+      - "&aYou selected {NAME}&a."
+      - "&aYou'll receive the item(s) in your next game!"
+      Unselected-free: "&cYou unselected {NAME}&c!"
+      Purchased-success-free:
+      - "&d✫ &7Purchased {NAME}&7 for &aFREE&7!"
+      Selected:
+      - "&aYou selected {NAME}&a."
+      - "&aYou'll receive the item(s) in your next game!"
+      - "&aMoney will be taken in that moment if enough, otherwise &c&nitem will be unselected&a!."
+      Unselected: "&cYou unselected {NAME}&c. You won't be charged in next games!"
+      Purchased-success:
+      - "&c- {PRICE} &7(Purchased {NAME}&7)"
+      Purchased-failed: "&cNot enough money to purchase {NAME}&c."
+  armor-remover-trap:
+    Type: "ARMOR_REMOVER_TRAP"
+    Slot: 45
+    #Permission required to BUY this upgrade? Set to "none" to not require any permission.
+    Permission: "alonsorftb.beasts-shop.armor-remover-trap"
+    Free-permission: "alonsorftb.beasts-shop.armor-remover-trap.free"
+    Name: "&c&lArmor Remover Trap"
+    #Price for this skin?
+    Price: 100
+    Economy:
+      #Economy type for this skin? Available types are: VAULT, PLAYER_POINTS, TOKEN_MANAGER and LEVEL.
+      Type: "VAULT"
+      #Ignore this for now.
+      Material: "DIAMOND"
+    #Want to set a custom model data for this skin?
+    Custom-model-data: 0
+    #This is how the item will look like in the shop.
+    Item-shop:
+      Free:
+        #Amount of items displayed in gui when its LOCKED.
+        Amount: 2
+        Material: LIGHT_WEIGHTED_PRESSURE_PLATE
+        Custom-model-data: 0
+        Displayname: "&c&lArmor Remover Trap"
+        Lore:
+        - "&7Place on the floor to arm the trap."
+        - "&7If a runner walks in it, it will"
+        - "&7lose the armor it's wearing!"
+        - ""
+        - "&7Price: &c&m{PRICE}&r &aFREE!"
+        - ""
+        - "&cFree with your current rank!"
+        Glow: false
+        Hide-flags: true
+      Locked:
+        #Amount of items displayed in gui when its LOCKED.
+        Amount: 2
+        Material: LIGHT_WEIGHTED_PRESSURE_PLATE
+        Custom-model-data: 0
+        Displayname: "&c&lArmor Remover Trap"
+        Lore:
+        - "&7Place on the floor to arm the trap."
+        - "&7If a runner walks in it, it will"
+        - "&7lose the armor it's wearing!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&cRequires &e[RANK]&c rank!"
+        - "&cPurchase on &bstore.yournetwork.net&c!"
+        Glow: false
+        Hide-flags: true
+      Unlocked:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 2
+        Material: LIGHT_WEIGHTED_PRESSURE_PLATE
+        Custom-model-data: 0
+        Displayname: "&c&lArmor Remover Trap"
+        Lore:
+        - "&7Place on the floor to arm the trap."
+        - "&7If a runner walks in it, it will"
+        - "&7lose the armor it's wearing!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&eClick to purchase!"
+        Glow: false
+        Hide-flags: true
+      Selected:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 2
+        Material: LIGHT_WEIGHTED_PRESSURE_PLATE
+        Custom-model-data: 0
+        Displayname: "&c&lArmor Remover Trap"
+        Lore:
+        - "&7Place on the floor to arm the trap."
+        - "&7If a runner walks in it, it will"
+        - "&7lose the armor it's wearing!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&aSelected."
+        Glow: true
+        Hide-flags: true
+      Selected-free:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 2
+        Material: LIGHT_WEIGHTED_PRESSURE_PLATE
+        Custom-model-data: 0
+        Displayname: "&c&lArmor Remover Trap"
+        Lore:
+        - "&7Place on the floor to arm the trap."
+        - "&7If a runner walks in it, it will"
+        - "&7lose the armor it's wearing!"
+        - ""
+        - "&7Price: &c&m{PRICE}&r &aFREE!"
+        - ""
+        - "&aSelected!"
+        Glow: true
+        Hide-flags: true
+    #This is how the item will look like when given to the player.
+    Item:
+      #Amount of items given to the player.
+      Amount: 2
+      Material: LIGHT_WEIGHTED_PRESSURE_PLATE
+      Custom-model-data: 0
+      Displayname: "&c&lArmor Remover Trap"
+      Lore:
+      - "&7Place on the floor to arm the trap."
+      - "&7If a runner walks in it, it will"
+      - "&7lose the armor it's wearing!"
+      Glow: false
+      Hide-flags: true
+    Messages:
+      Economy-not-available: "&cEconomy for this item is not available. If you think this is an error contact an administrator."
+      No-permission: "&cYou need &e[RANK]&c rank to purchase this item. Get it on &bstore.yournetwork.net&c!"
+      No-enough-money: "&cYou don't have enough money to purchase this item!"
+      Selected-free:
+      - "&aYou selected {NAME}&a."
+      - "&aYou'll receive the item(s) in your next game!"
+      Unselected-free: "&cYou unselected {NAME}&c!"
+      Purchased-success-free:
+      - "&d✫ &7Purchased {NAME}&7 for &aFREE&7!"
+      Selected:
+      - "&aYou selected {NAME}&a."
+      - "&aYou'll receive the item(s) in your next game!"
+      - "&aMoney will be taken in that moment if enough, otherwise &c&nitem will be unselected&a!."
+      Unselected: "&cYou unselected {NAME}&c. You won't be charged in next games!"
+      Purchased-success:
+      - "&c- {PRICE} &7(Purchased {NAME}&7)"
+      Purchased-failed: "&cNot enough money to purchase {NAME}&c."
+  speed-potion:
+    Type: "POTION"
+    Slot: 46
+    #Permission required to BUY this upgrade? Set to "none" to not require any permission.
+    Permission: "none"
+    Free-permission: "alonsorftb.beasts-shop.speed-potion.free"
+    Name: "&b&lSpeed Potion"
+    #Price for this skin?
+    Price: 50
+    Economy:
+      #Economy type for this skin? Available types are: VAULT, PLAYER_POINTS, TOKEN_MANAGER and LEVEL.
+      Type: "VAULT"
+      #Ignore this for now.
+      Material: "DIAMOND"
+    #Want to set a custom model data for this skin?
+    Custom-model-data: 0
+    #This is how the item will look like in the shop.
+    Item-shop:
+      Free:
+        #Amount of items displayed in gui when its LOCKED.
+        Amount: 1
+        Material: "custom:speed-potion"
+        Custom-model-data: 0
+        Displayname: "&b&lSpeed Potion"
+        Lore:
+        - "&7Boost your start!"
+        - ""
+        - "&7Price: &c&m{PRICE}&r &aFREE!"
+        - ""
+        - "&cFree with your current rank!"
+        Glow: false
+        Hide-flags: true
+      Locked:
+        #Amount of items displayed in gui when its LOCKED.
+        Amount: 1
+        Material: "custom:speed-potion"
+        Custom-model-data: 0
+        Displayname: "&b&lSpeed Potion"
+        Lore:
+        - "&7Boost your start!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&cRequires &e[RANK]&c rank!"
+        - "&cPurchase on &bstore.yournetwork.net&c!"
+        Glow: false
+        Hide-flags: true
+      Unlocked:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "custom:speed-potion"
+        Custom-model-data: 0
+        Displayname: "&b&lSpeed Potion"
+        Lore:
+        - "&7Boost your start!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&eClick to purchase!"
+        Glow: false
+        Hide-flags: true
+      Selected:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "custom:speed-potion"
+        Custom-model-data: 0
+        Displayname: "&b&lSpeed Potion"
+        Lore:
+        - "&7Boost your start!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&aSelected."
+        Glow: true
+        Hide-flags: true
+      Selected-free:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "custom:speed-potion"
+        Custom-model-data: 0
+        Displayname: "&b&lSpeed Potion"
+        Lore:
+        - "&7Boost your start!"
+        - ""
+        - "&7Price: &c&m{PRICE}&r &aFREE!"
+        - ""
+        - "&aSelected!"
+        Glow: true
+        Hide-flags: true
+    #This is how the item will look like when given to the player.
+    Item:
+      #Amount of items given to the player.
+      Amount: 1
+      Material: "custom:speed-potion"
+      Custom-model-data: 0
+      Displayname: "&b&lSpeed Potion"
+      Lore:
+      - "&7Boost your start!"
+      Glow: false
+      Hide-flags: true
+    Messages:
+      Economy-not-available: "&cEconomy for this item is not available. If you think this is an error contact an administrator."
+      No-permission: "&cYou need &e[RANK]&c rank to purchase this item. Get it on &bstore.yournetwork.net&c!"
+      No-enough-money: "&cYou don't have enough money to purchase this item!"
+      Selected-free:
+      - "&aYou selected {NAME}&a."
+      - "&aYou'll receive the item(s) in your next game!"
+      Unselected-free: "&cYou unselected {NAME}&c!"
+      Purchased-success-free:
+      - "&d✫ &7Purchased {NAME}&7 for &aFREE&7!"
+      Selected:
+      - "&aYou selected {NAME}&a."
+      - "&aYou'll receive the item(s) in your next game!"
+      - "&aMoney will be taken in that moment if enough, otherwise &c&nitem will be unselected&a!."
+      Unselected: "&cYou unselected {NAME}&c. You won't be charged in next games!"
+      Purchased-success:
+      - "&c- {PRICE} &7(Purchased {NAME}&7)"
+      Purchased-failed: "&cNot enough money to purchase {NAME}&c."
+  beast-pass:
+    Type: "BEAST_PASS"
+    Slot: 53
+    #Permission required to BUY this upgrade? Set to "none" to not require any permission.
+    Permission: "none"
+    Free-permission: "alonsorftb.beasts-shop.beast-pass.free"
+    Name: "&6⛨ &6&l&nBEAST PASS&r &6⛨"
+    #Price for this skin?
+    Price: 50
+    Economy:
+      #Economy type for this skin? Available types are: VAULT, PLAYER_POINTS, TOKEN_MANAGER and LEVEL.
+      Type: "VAULT"
+      #Ignore this for now.
+      Material: "DIAMOND"
+    #Want to set a custom model data for this skin?
+    Custom-model-data: 0
+    #This is how the item will look like in the shop.
+    Item-shop:
+      Free:
+        #Amount of items displayed in gui when its LOCKED.
+        Amount: 1
+        Material: "COOKIE"
+        Custom-model-data: 0
+        Displayname: "&6⛨ &6&l&nBEAST PASS&r &6⛨"
+        Lore:
+        - "&7Get more chances to be"
+        - "&7selected as beast!"
+        - "&cPriority depends on how many"
+        - "&cplayers get beast pass too!"
+        - ""
+        - "&7Price: &c&m{PRICE}&r &aFREE!"
+        - ""
+        - "&cFree with your current rank!"
+        Glow: false
+        Hide-flags: true
+      Locked:
+        #Amount of items displayed in gui when its LOCKED.
+        Amount: 1
+        Material: "COOKIE"
+        Custom-model-data: 0
+        Displayname: "&6⛨ &6&l&nBEAST PASS&r &6⛨"
+        Lore:
+        - "&7Get more chances to be"
+        - "&7selected as beast!"
+        - "&cPriority depends on how many"
+        - "&cplayers get beast pass too!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&cRequires &5[RANK]&c rank!"
+        - "&cPurchase on &bstore.yournetwork.net&c!"
+        Glow: false
+        Hide-flags: true
+      Unlocked:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "COOKIE"
+        Custom-model-data: 0
+        Displayname: "&6⛨ &6&l&nBEAST PASS&r &6⛨"
+        Lore:
+        - "&7Get more chances to be"
+        - "&7selected as beast!"
+        - "&cPriority depends on how many"
+        - "&cplayers get beast pass too!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&eClick to purchase!"
+        Glow: false
+        Hide-flags: true
+      Selected:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "COOKIE"
+        Custom-model-data: 0
+        Displayname: "&6⛨ &6&l&nBEAST PASS&r &6⛨"
+        Lore:
+        - "&7Get more chances to be"
+        - "&7selected as beast!"
+        - "&cPriority depends on how many"
+        - "&cplayers get beast pass too!"
+        - ""
+        - "&7Price: &a{PRICE}"
+        - ""
+        - "&aSelected."
+        Glow: true
+        Hide-flags: true
+      Selected-free:
+        #Amount of items displayed in gui when its UNLOCKED.
+        Amount: 1
+        Material: "COOKIE"
+        Custom-model-data: 0
+        Displayname: "&6⛨ &6&l&nBEAST PASS&r &6⛨"
+        Lore:
+        - "&7Get more chances to be"
+        - "&7selected as beast!"
+        - "&cPriority depends on how many"
+        - "&cplayers get beast pass too!"
+        - ""
+        - "&7Price: &c&m{PRICE}&r &aFREE!"
+        - ""
+        - "&aSelected!"
+        Glow: true
+        Hide-flags: true
+    Messages:
+      Economy-not-available: "&cEconomy for this item is not available. If you think this is an error contact an administrator."
+      No-permission: "&cYou need &5[RANK]&c rank to purchase this item. Get it on &bstore.yournetwork.net&c!"
+      No-enough-money: "&cYou don't have enough money to purchase this item!"
+      Selected-free:
+      - "&aYou selected {NAME}&a."
+      - "&7This pass gives you more chances to be selected as the beast!"
+      - "&7This depends on how many players have Beast Pass too so it's not 100% guaranteed!"
+      Unselected-free: "&cYou unselected {NAME}&c!"
+      Purchased-success-free:
+      - "&d✫ &7Purchased {NAME}&7 for &aFREE&7!"
+      - "&cYou were selected as the Beast!"
+      Selected:
+      - "&aYou selected {NAME}&a."
+      - "&7This pass gives you more chances to be selected as the beast!"
+      - "&7This depends on how many players have Beast Pass too so it's not 100% guaranteed!"
+      - "&c&lONCE SELECTED AS BEAST. IF YOU LEAVE THE GAME, MONEY WILL STILL BE TAKEN!"
+      Unselected: "&cYou unselected {NAME}&c. You won't be charged in next games!"
+      Purchased-success:
+      - "&c- {PRICE} &7(Purchased {NAME}&7)"
+      - "&cYou were selected as the Beast!"
+      Purchased-failed: "&cNot enough money to purchase {NAME}&c."
